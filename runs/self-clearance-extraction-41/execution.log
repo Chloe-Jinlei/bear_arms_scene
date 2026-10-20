@@ -1,0 +1,41 @@
+Genesis backend: cuda
+[38;5;226m[Genesis] [22:34:51] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [22:34:51] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+[38;5;226m[Genesis] [22:34:51] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [22:34:51] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+Building scene and compiling physics kernels...
+[38;5;226m[Genesis] [22:34:52] [WARNING] Neutral robot position (qpos0) exceeds joint limits.[0m
+[38;5;226m[Genesis] [22:34:53] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (12, 17), (13, 17), (20, 27), (21, 26), (22, 29), (23, 28), (36, 41), (37, 41), (44, 51), (45, 50), (46, 53), (47, 52). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+/home/chloe/Desktop/genesis-local/.venv/lib/python3.12/site-packages/quadrants/_test_tools/warnings_helper.py:11: UserWarning: cannot create weak reference to 'tuple' object. Template mapper caching disabled.
+  warnings.warn(message)
+Phase regrasp_left: t=46.36s
+Velcro: 1 active / 1 formed, t=46.36s
+Step 4700, regrasp_left, max cloth stretch 1.249
+Step 4800, regrasp_left, max cloth stretch 1.249
+Step 4900, regrasp_left, max cloth stretch 1.249
+Step 5000, regrasp_left, max cloth stretch 1.249
+Step 5100, regrasp_left, max cloth stretch 1.333
+Phase pull_left: t=51.17s
+Step 5200, pull_left, max cloth stretch 1.264
+Step 5300, pull_left, max cloth stretch 1.212
+Step 5400, pull_left, max cloth stretch 1.154
+Step 5500, pull_left, max cloth stretch 1.148
+Step 5600, pull_left, max cloth stretch 1.275
+Step 5700, pull_left, max cloth stretch 1.323
+Step 5800, pull_left, max cloth stretch 1.173
+Step 5900, pull_left, max cloth stretch 1.159
+Step 6000, pull_left, max cloth stretch 1.161
+Phase pull_right: t=60.07s
+Phase pull_left: t=60.07s
+Phase thread_arms: t=60.07s
+Traceback (most recent call last):
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-self-clearance-extraction-41/scene.py", line 348, in <module>
+    main()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-self-clearance-extraction-41/scene.py", line 254, in main
+    return run_wrap(args)
+           ^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-self-clearance-extraction-41/wrap_task.py", line 642, in run_wrap
+    if not okay:raise RuntimeError(f"Wrapping checks not satisfied: {report['wrapping']['checks']}")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Wrapping checks not satisfied: {'both_front_corners_contact_grasped': True, 'bear_base_fixed': True, 'no_inter_arm_collision': True, 'no_robot_self_collision': True, 'no_robot_table_collision': True, 'cloth_not_overstretched': True, 'finite_state': True, 'no_deep_cloth_body_penetration': True, 'bear_stays_upright': True, 'angular_wrap_over_300_deg': True, 'encircles_body': True, 'corners_near_behind_body': True, 'cloth_lifted_to_belly': False, 'cloth_contacts_front_and_sides': True, 'velcro_joined_after_contact': True, 'adhesive_contact_patch_present': True, 'adhesive_error_below_detachment_threshold': True, 'activation_requires_actual_contact': True, 'accepted_press_state': True, 'both_arms_contact_grasped': True, 'cloth_released_by_both_grippers': True, 'velcro_still_joined': True, 'both_paws_outside_holes': True, 'whole_paw_particle_groups_outside': True, 'both_arm_cores_pass_through_holes': True, 'bear_base_still_fixed': True}
+

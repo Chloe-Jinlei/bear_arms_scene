@@ -1,0 +1,35 @@
+Genesis backend: cuda
+[38;5;226m[Genesis] [21:53:26] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [21:53:26] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+[38;5;226m[Genesis] [21:53:26] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [21:53:26] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+Building scene and compiling physics kernels...
+[38;5;226m[Genesis] [21:53:26] [WARNING] Neutral robot position (qpos0) exceeds joint limits.[0m
+[38;5;226m[Genesis] [21:53:27] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (12, 17), (13, 17), (20, 27), (21, 26), (22, 29), (23, 28), (36, 41), (37, 41), (44, 51), (45, 50), (46, 53), (47, 52). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+/home/chloe/Desktop/genesis-local/.venv/lib/python3.12/site-packages/quadrants/_test_tools/warnings_helper.py:11: UserWarning: cannot create weak reference to 'tuple' object. Template mapper caching disabled.
+  warnings.warn(message)
+Phase press: t=34.23s
+Phase regrasp_right: t=34.23s
+Velcro: 1 active / 1 formed, t=34.23s
+Step 3500, regrasp_right, max cloth stretch 1.377
+Step 3600, regrasp_right, max cloth stretch 1.377
+Step 3700, regrasp_right, max cloth stretch 1.377
+Step 3800, regrasp_right, max cloth stretch 1.377
+Step 3900, regrasp_right, max cloth stretch 1.377
+Traceback (most recent call last):
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-local-adhesion-extract-26/scene.py", line 348, in <module>
+    main()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-local-adhesion-extract-26/scene.py", line 254, in main
+    return run_wrap(args)
+           ^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-local-adhesion-extract-26/wrap_task.py", line 631, in run_wrap
+    okay=experiment.execute()
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-local-adhesion-extract-26/arms_task.py", line 324, in execute
+    self.extract('right')
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-local-adhesion-extract-26/arms_task.py", line 263, in extract
+    self.move({side:center-direction*.085},1.8,{side:quat})
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-local-adhesion-extract-26/arms_task.py", line 215, in move
+    raise RuntimeError(f'Arm route clearance failed at {u}: {clearance}')
+RuntimeError: Arm route clearance failed at 0.6833333333333333: {'left_bear': {'distance': 0.07812749641089102, 'body': 'left_left_finger', 'obstacle': 'bear_1'}, 'left_table': {'distance': 0.17599593221477028, 'body': 'left_link1', 'obstacle': 'table'}, 'right_bear': {'distance': -0.08715876256059564, 'body': 'right_link7', 'obstacle': 'bear_0'}, 'right_table': {'distance': 0.0009260574226201969, 'body': 'right_link6', 'obstacle': 'table'}, 'arms': {'distance': 0.14314851021870917, 'bodies': ['left_right_finger', 'right_link5']}}
+

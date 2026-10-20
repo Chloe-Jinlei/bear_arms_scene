@@ -1,0 +1,13 @@
+{
+  "constraint": "Scene-local mass-weighted signed tetrahedron volume inequality with a target floor at 10% of rest volume; no object pose target.",
+  "per_particle_correction_cap_m": 0.00025,
+  "passes_per_volume_call": 3,
+  "equation_check": "signed-volume-barrier-equation-check.json",
+  "stability_run": "volume-stability-47",
+  "negative_volume_fraction_after_stability_check": 6.288693368921485e-05,
+  "review_limit": 0.0001,
+  "final_full_run": "stabilized-dressing-complete-48",
+  "installed_Genesis_source_modified": false,
+  "final_full_run_status": "passed",
+  "independent_full_run_review_status": "passed"
+}

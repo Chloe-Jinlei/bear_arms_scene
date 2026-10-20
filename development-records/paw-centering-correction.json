@@ -1,0 +1,9 @@
+{
+  "issue": "The soft paw centroid is offset from the gripper TCP; aligning only the TCP with the aperture pulls the lower paw against the rim.",
+  "fix": "The first pull target includes the measured TCP minus actual paw centroid offset.",
+  "successful_continuation": "paw-centering-44",
+  "assets_changed": false,
+  "superseded_full_recording": "paw-centered-complete-45",
+  "successful_full_recording": "stabilized-dressing-complete-48",
+  "includes_signed_volume_stabilization": true
+}

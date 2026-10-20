@@ -1,0 +1,69 @@
+{
+  "units": "metres",
+  "bear_front": "negative Y",
+  "bear_up": "positive Z",
+  "bear": {
+    "height_m": 0.48057875650086407,
+    "bounds_m": [
+      [
+        -0.14375085504564566,
+        -0.12646746748014273,
+        0.0
+      ],
+      [
+        0.1440620492024476,
+        0.10788218650634984,
+        0.48057875650086407
+      ]
+    ],
+    "physics_vertices": 1358,
+    "tetrahedra": 5477,
+    "surface_vertices": 902,
+    "surface_faces": 1800,
+    "visual_vertices": 4502,
+    "visual_faces": 9000,
+    "volume_m3": 0.016066142657241236,
+    "watertight": true,
+    "connected_components": 1,
+    "fixed_base_vertices": 70,
+    "fixed_base_z_max_m": 0.012,
+    "belly_circumference_m": 0.7678338107335538,
+    "belly_measurement_z_m": 0.17,
+    "mesh": "bear.obj",
+    "physics": "bear.npz",
+    "texture": "bear_fur.png",
+    "features": [
+      "armless",
+      "flat fixed base",
+      "round ears",
+      "muzzle",
+      "two small feet"
+    ]
+  },
+  "cotton": {
+    "length_m": 0.86,
+    "width_m": 0.2,
+    "area_m2": 0.17200000000000001,
+    "belly_overlap_fraction": 0.12003403337812735,
+    "vertices": 1190,
+    "faces": 2208,
+    "grid_spacing_m": [
+      0.012463768115942029,
+      0.0125
+    ],
+    "mesh": "cotton.obj",
+    "physics": "cotton.npz",
+    "texture": "cotton_weave.png",
+    "areal_density_kg_m2": 0.18,
+    "suggested_mass_kg": 0.03096
+  },
+  "provenance": "Original deterministic procedural geometry and textures; generated locally.",
+  "velcro": {
+    "strip_width_m": 0.04,
+    "strip_length_m": 0.2,
+    "locations": "original left/right short-end regions of same cotton mesh",
+    "visual": "navy hook / ochre loop zones; activation sides set by config",
+    "model": "surface bond zones, no additional thickness or mass",
+    "active_faces": "both original +Z faces, meeting as a folded seam"
+  }
+}

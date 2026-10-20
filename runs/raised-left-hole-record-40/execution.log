@@ -1,0 +1,93 @@
+Genesis backend: cuda
+[38;5;226m[Genesis] [22:25:04] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [22:25:04] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+[38;5;226m[Genesis] [22:25:04] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [22:25:04] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+Building scene and compiling physics kernels...
+[38;5;226m[Genesis] [22:25:04] [WARNING] Neutral robot position (qpos0) exceeds joint limits.[0m
+[38;5;226m[Genesis] [22:25:06] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (12, 17), (13, 17), (20, 27), (21, 26), (22, 29), (23, 28), (36, 41), (37, 41), (44, 51), (45, 50), (46, 53), (47, 52). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+/home/chloe/Desktop/genesis-local/.venv/lib/python3.12/site-packages/quadrants/_test_tools/warnings_helper.py:11: UserWarning: cannot create weak reference to 'tuple' object. Template mapper caching disabled.
+  warnings.warn(message)
+Phase settle: t=0.00s
+Phase pregrasp: t=0.50s
+Step 100, pregrasp, max cloth stretch 1.000
+Step 200, pregrasp, max cloth stretch 1.000
+Phase grasp: t=2.28s
+Step 300, grasp, max cloth stretch 1.000
+Step 400, grasp, max cloth stretch 1.000
+Step 500, grasp, max cloth stretch 1.000
+left grasp gated by both pads: [0, 1, 70, 71]
+right grasp gated by both pads: [68, 69, 138, 139]
+Phase lift: t=5.77s
+Step 600, lift, max cloth stretch 1.005
+Step 700, lift, max cloth stretch 1.116
+Step 800, lift, max cloth stretch 1.088
+Phase approach_body: t=8.35s
+Step 900, approach_body, max cloth stretch 1.088
+Step 1000, approach_body, max cloth stretch 1.088
+Step 1100, approach_body, max cloth stretch 1.079
+Phase wrap: t=11.63s
+Step 1200, wrap, max cloth stretch 1.077
+Step 1300, wrap, max cloth stretch 1.095
+Step 1400, wrap, max cloth stretch 1.121
+Step 1500, wrap, max cloth stretch 1.142
+Step 1600, wrap, max cloth stretch 1.158
+Step 1700, wrap, max cloth stretch 1.192
+Step 1800, wrap, max cloth stretch 1.252
+Step 1900, wrap, max cloth stretch 1.320
+Step 2000, wrap, max cloth stretch 1.287
+Step 2100, wrap, max cloth stretch 1.271
+Step 2200, wrap, max cloth stretch 1.346
+Step 2300, wrap, max cloth stretch 1.212
+Velcro: 1 active / 1 formed, t=23.76s
+Phase press: t=23.85s
+Step 2400, press, max cloth stretch 1.233
+Phase regrasp_right: t=24.45s
+Phase regrasp_right: t=24.45s
+Step 2500, regrasp_right, max cloth stretch 1.216
+Step 2600, regrasp_right, max cloth stretch 1.214
+Step 2700, regrasp_right, max cloth stretch 1.213
+Step 2800, regrasp_right, max cloth stretch 1.214
+Step 2900, regrasp_right, max cloth stretch 1.214
+Step 3000, regrasp_right, max cloth stretch 1.214
+Step 3100, regrasp_right, max cloth stretch 1.214
+Step 3200, regrasp_right, max cloth stretch 1.214
+Step 3300, regrasp_right, max cloth stretch 1.214
+Step 3400, regrasp_right, max cloth stretch 1.214
+Phase pull_right: t=34.96s
+Step 3500, pull_right, max cloth stretch 1.104
+Step 3600, pull_right, max cloth stretch 1.100
+Step 3700, pull_right, max cloth stretch 1.144
+Step 3800, pull_right, max cloth stretch 1.188
+Step 3900, pull_right, max cloth stretch 1.218
+Step 4000, pull_right, max cloth stretch 1.177
+Phase regrasp_left: t=40.66s
+Phase regrasp_left: t=40.66s
+Step 4100, regrasp_left, max cloth stretch 1.249
+Step 4200, regrasp_left, max cloth stretch 1.249
+Step 4300, regrasp_left, max cloth stretch 1.249
+Step 4400, regrasp_left, max cloth stretch 1.249
+Step 4500, regrasp_left, max cloth stretch 1.249
+Step 4600, regrasp_left, max cloth stretch 1.249
+Step 4700, regrasp_left, max cloth stretch 1.249
+Traceback (most recent call last):
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-raised-left-hole-record-40/scene.py", line 348, in <module>
+    main()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-raised-left-hole-record-40/scene.py", line 254, in main
+    return run_wrap(args)
+           ^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-raised-left-hole-record-40/wrap_task.py", line 640, in run_wrap
+    okay=experiment.execute()
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-raised-left-hole-record-40/arms_task.py", line 400, in execute
+    self.extract('left')
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-raised-left-hole-record-40/arms_task.py", line 317, in extract
+    self.move({side:approach},2.2,{side:quat},joint=True)
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-raised-left-hole-record-40/arms_task.py", line 238, in move
+    self.step()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-raised-left-hole-record-40/arms_task.py", line 67, in step
+    super().step()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-raised-left-hole-record-40/wrap_task.py", line 219, in step
+    raise RuntimeError(f"{s} robot self-collision")
+RuntimeError: left robot self-collision
+

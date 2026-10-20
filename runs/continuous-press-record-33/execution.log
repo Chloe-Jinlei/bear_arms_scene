@@ -1,0 +1,72 @@
+Genesis backend: cuda
+[38;5;226m[Genesis] [22:07:56] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [22:07:56] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+[38;5;226m[Genesis] [22:07:56] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [22:07:56] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+Building scene and compiling physics kernels...
+[38;5;226m[Genesis] [22:07:57] [WARNING] Neutral robot position (qpos0) exceeds joint limits.[0m
+[38;5;226m[Genesis] [22:07:58] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (12, 17), (13, 17), (20, 27), (21, 26), (22, 29), (23, 28), (36, 41), (37, 41), (44, 51), (45, 50), (46, 53), (47, 52). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+/home/chloe/Desktop/genesis-local/.venv/lib/python3.12/site-packages/quadrants/_test_tools/warnings_helper.py:11: UserWarning: cannot create weak reference to 'tuple' object. Template mapper caching disabled.
+  warnings.warn(message)
+Phase press: t=23.85s
+Seam refine 0: gap=0.0026 m, normal dot=-0.146, bonds=0
+Step 2400, press, max cloth stretch 1.120
+Seam refine 1: gap=0.0045 m, normal dot=-0.155, bonds=0
+Step 2500, press, max cloth stretch 1.122
+Seam refine 2: gap=0.0063 m, normal dot=-0.161, bonds=0
+Step 2600, press, max cloth stretch 1.125
+Seam refine 3: gap=0.0063 m, normal dot=-0.168, bonds=0
+Step 2700, press, max cloth stretch 1.128
+Seam refine 4: gap=0.0064 m, normal dot=-0.177, bonds=0
+Step 2800, press, max cloth stretch 1.130
+Seam refine 5: gap=0.0066 m, normal dot=-0.188, bonds=0
+Step 2900, press, max cloth stretch 1.125
+Seam refine 6: gap=0.0080 m, normal dot=-0.766, bonds=0
+Step 3000, press, max cloth stretch 1.125
+Seam refine 7: gap=0.0074 m, normal dot=-0.253, bonds=0
+Step 3100, press, max cloth stretch 1.125
+Seam refine 8: gap=0.0088 m, normal dot=-0.259, bonds=0
+Seam refine 9: gap=0.0095 m, normal dot=-0.264, bonds=0
+Step 3200, press, max cloth stretch 1.129
+Step 3300, press, max cloth stretch 1.168
+Velcro: 1 active / 1 formed, t=33.09s
+Step 3400, press, max cloth stretch 1.154
+Phase regrasp_right: t=34.10s
+Phase regrasp_right: t=34.10s
+Step 3500, regrasp_right, max cloth stretch 1.159
+Step 3600, regrasp_right, max cloth stretch 1.159
+Step 3700, regrasp_right, max cloth stretch 1.159
+Traceback (most recent call last):
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-press-record-33/scene.py", line 348, in <module>
+    main()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-press-record-33/scene.py", line 254, in main
+    return run_wrap(args)
+           ^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-press-record-33/wrap_task.py", line 640, in run_wrap
+    okay=experiment.execute()
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-press-record-33/arms_task.py", line 374, in execute
+    if continuation!='arm_out_right':self.extract('right',skip_to='aperture' if continuation=='regrasp_right_outside' else 'pull' if continuation in ('grasp_arm_right','regrasp_left_outside') else None)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-press-record-33/arms_task.py", line 260, in extract
+    if side in self.bindings:self.free_hand(side)
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-press-record-33/arms_task.py", line 253, in free_hand
+    self.move({side:[sign*.34,.15,1.10]},3.0,{side:quat},joint=True)
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-press-record-33/arms_task.py", line 227, in move
+    self.step()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-press-record-33/arms_task.py", line 65, in step
+    super().step()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-press-record-33/wrap_task.py", line 189, in step
+    self.contact.refresh()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-press-record-33/wrap_contact.py", line 256, in refresh
+    selected, bn, bw, normals = geometry.query(body_positions, cloth_positions)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-press-record-33/wrap_contact.py", line 102, in query
+    closest, distance, triangles = trimesh.proximity.closest_point(mesh, samples[selected])
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Desktop/genesis-local/.venv/lib/python3.12/site-packages/trimesh/proximity.py", line 182, in closest_point
+    idxs = np.int32([qd.argsort()[:2] if len(qd) > 1 else [0, 0] for qd in qds])
+                     ^^^^^^^^^^^^
+KeyboardInterrupt
+

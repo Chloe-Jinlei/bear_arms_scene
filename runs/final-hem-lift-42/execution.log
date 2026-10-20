@@ -1,0 +1,22 @@
+Genesis backend: cuda
+[38;5;226m[Genesis] [22:38:29] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [22:38:29] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+[38;5;226m[Genesis] [22:38:30] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [22:38:30] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+Building scene and compiling physics kernels...
+[38;5;226m[Genesis] [22:38:30] [WARNING] Neutral robot position (qpos0) exceeds joint limits.[0m
+[38;5;226m[Genesis] [22:38:31] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (12, 17), (13, 17), (20, 27), (21, 26), (22, 29), (23, 28), (36, 41), (37, 41), (44, 51), (45, 50), (46, 53), (47, 52). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+/home/chloe/Desktop/genesis-local/.venv/lib/python3.12/site-packages/quadrants/_test_tools/warnings_helper.py:11: UserWarning: cannot create weak reference to 'tuple' object. Template mapper caching disabled.
+  warnings.warn(message)
+Phase pull_right: t=60.57s
+Phase pull_left: t=60.57s
+Phase pull_left: t=60.57s
+Velcro: 1 active / 1 formed, t=60.57s
+Step 6100, pull_left, max cloth stretch 1.168
+Step 6200, pull_left, max cloth stretch 1.199
+Step 6300, pull_left, max cloth stretch 1.114
+Step 6400, pull_left, max cloth stretch 1.126
+Step 6500, pull_left, max cloth stretch 1.142
+Phase thread_arms: t=65.67s
+Step 6600, thread_arms, max cloth stretch 1.139
+PASS: passed /home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/final-hem-lift-42

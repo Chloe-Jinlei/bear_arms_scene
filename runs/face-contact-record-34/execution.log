@@ -1,0 +1,117 @@
+Genesis backend: cuda
+[38;5;226m[Genesis] [22:10:12] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [22:10:12] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+[38;5;226m[Genesis] [22:10:12] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [22:10:12] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+Building scene and compiling physics kernels...
+[38;5;226m[Genesis] [22:10:12] [WARNING] Neutral robot position (qpos0) exceeds joint limits.[0m
+[38;5;226m[Genesis] [22:10:14] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (12, 17), (13, 17), (20, 27), (21, 26), (22, 29), (23, 28), (36, 41), (37, 41), (44, 51), (45, 50), (46, 53), (47, 52). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+/home/chloe/Desktop/genesis-local/.venv/lib/python3.12/site-packages/quadrants/_test_tools/warnings_helper.py:11: UserWarning: cannot create weak reference to 'tuple' object. Template mapper caching disabled.
+  warnings.warn(message)
+Phase press: t=23.85s
+Seam refine 0: gap=0.0403 m, normal dot=-0.821, bonds=0
+Step 2400, press, max cloth stretch 1.120
+Seam refine 1: gap=0.0377 m, normal dot=-0.820, bonds=0
+Step 2500, press, max cloth stretch 1.115
+Seam refine 2: gap=0.0033 m, normal dot=-0.801, bonds=0
+Step 2600, press, max cloth stretch 1.113
+Seam refine 3: gap=0.0034 m, normal dot=-0.772, bonds=0
+Step 2700, press, max cloth stretch 1.115
+Seam refine 4: gap=0.0037 m, normal dot=-0.739, bonds=0
+Step 2800, press, max cloth stretch 1.109
+Seam refine 5: gap=0.0032 m, normal dot=-0.742, bonds=0
+Step 2900, press, max cloth stretch 1.099
+Seam refine 6: gap=0.0030 m, normal dot=-0.745, bonds=0
+Step 3000, press, max cloth stretch 1.089
+Seam refine 7: gap=0.0093 m, normal dot=-0.733, bonds=0
+Step 3100, press, max cloth stretch 1.090
+Seam refine 8: gap=0.0085 m, normal dot=-0.732, bonds=0
+Seam refine 9: gap=0.0080 m, normal dot=-0.730, bonds=0
+Step 3200, press, max cloth stretch 1.094
+Seam refine 10: gap=0.0077 m, normal dot=-0.727, bonds=0
+Step 3300, press, max cloth stretch 1.095
+Seam refine 11: gap=0.0076 m, normal dot=-0.723, bonds=0
+Step 3400, press, max cloth stretch 1.094
+Seam refine 12: gap=0.0104 m, normal dot=-0.560, bonds=0
+Step 3500, press, max cloth stretch 1.092
+Seam refine 13: gap=0.0099 m, normal dot=-0.554, bonds=0
+Step 3600, press, max cloth stretch 1.111
+Seam refine 14: gap=0.0094 m, normal dot=-0.546, bonds=0
+Step 3700, press, max cloth stretch 1.158
+Seam refine 15: gap=0.0096 m, normal dot=-0.383, bonds=0
+Step 3800, press, max cloth stretch 1.116
+Seam refine 16: gap=0.0109 m, normal dot=-0.425, bonds=0
+Step 3900, press, max cloth stretch 1.122
+Seam refine 17: gap=0.0122 m, normal dot=-0.470, bonds=0
+Step 4000, press, max cloth stretch 1.110
+Seam refine 18: gap=0.0136 m, normal dot=-0.492, bonds=0
+Seam refine 19: gap=0.0741 m, normal dot=-0.825, bonds=0
+Step 4100, press, max cloth stretch 1.112
+Seam refine 20: gap=0.0159 m, normal dot=-0.557, bonds=0
+Step 4200, press, max cloth stretch 1.117
+Seam refine 21: gap=0.0717 m, normal dot=-0.840, bonds=0
+Step 4300, press, max cloth stretch 1.119
+Seam refine 22: gap=0.0683 m, normal dot=-0.833, bonds=0
+Step 4400, press, max cloth stretch 1.124
+Seam refine 23: gap=0.0649 m, normal dot=-0.826, bonds=0
+Step 4500, press, max cloth stretch 1.123
+Seam refine 24: gap=0.0184 m, normal dot=-0.681, bonds=0
+Step 4600, press, max cloth stretch 1.123
+Seam refine 25: gap=0.0544 m, normal dot=-0.828, bonds=0
+Step 4700, press, max cloth stretch 1.126
+Seam refine 26: gap=0.0509 m, normal dot=-0.824, bonds=0
+Step 4800, press, max cloth stretch 1.135
+Seam refine 27: gap=0.0559 m, normal dot=-0.822, bonds=0
+Step 4900, press, max cloth stretch 1.150
+Seam refine 28: gap=0.0588 m, normal dot=-0.862, bonds=0
+Seam refine 29: gap=0.0548 m, normal dot=-0.862, bonds=0
+Step 5000, press, max cloth stretch 1.164
+Seam refine 30: gap=0.0508 m, normal dot=-0.868, bonds=0
+Step 5100, press, max cloth stretch 1.165
+Seam refine 31: gap=0.0468 m, normal dot=-0.871, bonds=0
+Step 5200, press, max cloth stretch 1.165
+Velcro: 1 active / 1 formed, t=52.91s
+Step 5300, press, max cloth stretch 1.303
+Phase regrasp_right: t=53.92s
+Phase regrasp_right: t=53.92s
+Step 5400, regrasp_right, max cloth stretch 1.259
+Step 5500, regrasp_right, max cloth stretch 1.159
+Step 5600, regrasp_right, max cloth stretch 1.116
+Step 5700, regrasp_right, max cloth stretch 1.117
+Step 5800, regrasp_right, max cloth stretch 1.118
+Step 5900, regrasp_right, max cloth stretch 1.118
+Step 6000, regrasp_right, max cloth stretch 1.119
+Step 6100, regrasp_right, max cloth stretch 1.119
+Step 6200, regrasp_right, max cloth stretch 1.119
+Step 6300, regrasp_right, max cloth stretch 1.119
+Step 6400, regrasp_right, max cloth stretch 1.129
+Phase pull_right: t=64.03s
+Step 6500, pull_right, max cloth stretch 1.139
+Step 6600, pull_right, max cloth stretch 1.105
+Step 6700, pull_right, max cloth stretch 1.136
+Step 6800, pull_right, max cloth stretch 1.152
+Step 6900, pull_right, max cloth stretch 1.197
+Phase regrasp_left: t=69.73s
+Phase regrasp_left: t=69.73s
+Step 7000, regrasp_left, max cloth stretch 1.125
+Step 7100, regrasp_left, max cloth stretch 1.158
+Step 7200, regrasp_left, max cloth stretch 1.157
+Step 7300, regrasp_left, max cloth stretch 1.156
+Step 7400, regrasp_left, max cloth stretch 1.156
+Step 7500, regrasp_left, max cloth stretch 1.155
+Traceback (most recent call last):
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-face-contact-record-34/scene.py", line 348, in <module>
+    main()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-face-contact-record-34/scene.py", line 254, in main
+    return run_wrap(args)
+           ^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-face-contact-record-34/wrap_task.py", line 640, in run_wrap
+    okay=experiment.execute()
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-face-contact-record-34/arms_task.py", line 377, in execute
+    self.extract('left')
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-face-contact-record-34/arms_task.py", line 299, in extract
+    if chosen is None:raise RuntimeError(side+' has no reachable grasp that passes through the actual aperture')
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: left has no reachable grasp that passes through the actual aperture
+

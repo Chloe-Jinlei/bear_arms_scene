@@ -1,0 +1,237 @@
+{
+  "scope": "Independent saved-state checks of the corrected left-paw continuation; full fresh validation is pending.",
+  "checks": {
+    "reported_complete": true,
+    "fresh_simulation_not_resumed": false,
+    "finite_states": true,
+    "base_fixed_all_saved_stages": true,
+    "no_deep_cloth_body_penetration_saved_stages": true,
+    "no_substantial_negative_body_volume": false,
+    "two_closed_real_apertures": true,
+    "connected_cloth": true,
+    "connected_bear_surface": true
+  },
+  "stage_measurements": [
+    {
+      "stage": "through_hole_left",
+      "step": 5497,
+      "finite": true,
+      "fixed_base_max_drift_m": 2.977691606381897e-08,
+      "head_horizontal_displacement_m": 0.013731981918167447,
+      "cloth_max_stretch_ratio": 1.3505524002708678,
+      "inverted_tets": 9,
+      "inverted_volume_fraction": 6.892171852844116e-05,
+      "cloth_body_penetration": {
+        "method": "solid-angle winding and exact triangle distance",
+        "body_surface_vertices": 1102,
+        "body_surface_triangles": 2200,
+        "body_watertight": true,
+        "sample_count": 6499,
+        "penetration_tolerance_m": 0.0005,
+        "inside_samples": 0,
+        "max_penetration_m": 0.0,
+        "minimum_sample_clearance_m": 0.0011594371196334873,
+        "near_surface_samples": 2508,
+        "samples": {
+          "vertices": {
+            "count": 1153,
+            "inside": 0,
+            "max_penetration_m": 0.0
+          },
+          "edge_midpoints": {
+            "count": 3250,
+            "inside": 0,
+            "max_penetration_m": 0.0
+          },
+          "face_centroids": {
+            "count": 2096,
+            "inside": 0,
+            "max_penetration_m": 0.0
+          }
+        },
+        "no_sample_penetration_over_tolerance": true,
+        "elapsed_seconds": 1.3100577099976363
+      },
+      "arm_apertures": {
+        "left": {
+          "root_signed_distance_m": -0.09178185100451128,
+          "tip_signed_distance_m": -0.005034291251119446,
+          "core_crossings": [],
+          "core_passes_through_aperture": false,
+          "hole_planarity_error_m": 0.008415456861257553
+        },
+        "right": {
+          "root_signed_distance_m": -0.04432540311853801,
+          "tip_signed_distance_m": 0.03178805929011569,
+          "core_crossings": [
+            {
+              "point_m": [
+                0.15975460578511907,
+                0.07587286909624168,
+                1.0135580568040086
+              ],
+              "inside_aperture": true,
+              "boundary_clearance_m": 0.011706909319785463
+            }
+          ],
+          "core_passes_through_aperture": true,
+          "hole_planarity_error_m": 0.0126233771443367
+        }
+      }
+    },
+    {
+      "stage": "arm_out_left",
+      "step": 6327,
+      "finite": true,
+      "fixed_base_max_drift_m": 2.977691606381897e-08,
+      "head_horizontal_displacement_m": 0.05025399580597026,
+      "cloth_max_stretch_ratio": 1.1157818907481996,
+      "inverted_tets": 16,
+      "inverted_volume_fraction": 0.0001515375673690988,
+      "cloth_body_penetration": {
+        "method": "solid-angle winding and exact triangle distance",
+        "body_surface_vertices": 1102,
+        "body_surface_triangles": 2200,
+        "body_watertight": true,
+        "sample_count": 6499,
+        "penetration_tolerance_m": 0.0005,
+        "inside_samples": 0,
+        "max_penetration_m": 0.0,
+        "minimum_sample_clearance_m": 0.0016533625055611325,
+        "near_surface_samples": 1566,
+        "samples": {
+          "vertices": {
+            "count": 1153,
+            "inside": 0,
+            "max_penetration_m": 0.0
+          },
+          "edge_midpoints": {
+            "count": 3250,
+            "inside": 0,
+            "max_penetration_m": 0.0
+          },
+          "face_centroids": {
+            "count": 2096,
+            "inside": 0,
+            "max_penetration_m": 0.0
+          }
+        },
+        "no_sample_penetration_over_tolerance": true,
+        "elapsed_seconds": 1.2780461780057522
+      },
+      "arm_apertures": {
+        "left": {
+          "root_signed_distance_m": -0.06875262061574988,
+          "tip_signed_distance_m": 0.052171464660882856,
+          "core_crossings": [
+            {
+              "point_m": [
+                -0.20849130857890474,
+                0.12979388218413535,
+                0.9987911401833196
+              ],
+              "inside_aperture": true,
+              "boundary_clearance_m": 0.014003778266555904
+            }
+          ],
+          "core_passes_through_aperture": true,
+          "hole_planarity_error_m": 0.01049771811813116
+        },
+        "right": {
+          "root_signed_distance_m": -0.025458568313838623,
+          "tip_signed_distance_m": 0.0712823426431693,
+          "core_crossings": [
+            {
+              "point_m": [
+                0.11023652846438774,
+                0.08491938789003647,
+                1.0209573711881328
+              ],
+              "inside_aperture": true,
+              "boundary_clearance_m": 0.015783783185024464
+            }
+          ],
+          "core_passes_through_aperture": true,
+          "hole_planarity_error_m": 0.011141406372189522
+        }
+      }
+    },
+    {
+      "stage": "thread_arms",
+      "step": 6887,
+      "finite": true,
+      "fixed_base_max_drift_m": 2.977691606381897e-08,
+      "head_horizontal_displacement_m": 0.046541933489584554,
+      "cloth_max_stretch_ratio": 1.133527263435866,
+      "inverted_tets": 16,
+      "inverted_volume_fraction": 0.00016790362214459025,
+      "cloth_body_penetration": {
+        "method": "solid-angle winding and exact triangle distance",
+        "body_surface_vertices": 1102,
+        "body_surface_triangles": 2200,
+        "body_watertight": true,
+        "sample_count": 6499,
+        "penetration_tolerance_m": 0.0005,
+        "inside_samples": 0,
+        "max_penetration_m": 0.0,
+        "minimum_sample_clearance_m": 0.00200085885020268,
+        "near_surface_samples": 1424,
+        "samples": {
+          "vertices": {
+            "count": 1153,
+            "inside": 0,
+            "max_penetration_m": 0.0
+          },
+          "edge_midpoints": {
+            "count": 3250,
+            "inside": 0,
+            "max_penetration_m": 0.0
+          },
+          "face_centroids": {
+            "count": 2096,
+            "inside": 0,
+            "max_penetration_m": 0.0
+          }
+        },
+        "no_sample_penetration_over_tolerance": true,
+        "elapsed_seconds": 1.2796998779958813
+      },
+      "arm_apertures": {
+        "left": {
+          "root_signed_distance_m": -0.03872132368467672,
+          "tip_signed_distance_m": 0.08102903804911259,
+          "core_crossings": [
+            {
+              "point_m": [
+                -0.17719088679410205,
+                0.12395171848141079,
+                1.0227218076813345
+              ],
+              "inside_aperture": true,
+              "boundary_clearance_m": 0.01904849129609273
+            }
+          ],
+          "core_passes_through_aperture": true,
+          "hole_planarity_error_m": 0.0073342942632734776
+        },
+        "right": {
+          "root_signed_distance_m": -0.02801576758530073,
+          "tip_signed_distance_m": 0.07397425062312772,
+          "core_crossings": [
+            {
+              "point_m": [
+                0.11194520121320485,
+                0.08300900885174961,
+                1.0355229237727381
+              ],
+              "inside_aperture": true,
+              "boundary_clearance_m": 0.016175835290079446
+            }
+          ],
+          "core_passes_through_aperture": true,
+          "hole_planarity_error_m": 0.01103871688246727
+        }
+      }
+    }
+  ]
+}

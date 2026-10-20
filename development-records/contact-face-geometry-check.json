@@ -1,0 +1,8 @@
+{
+  "checks": {
+    "opposed_faces_touch_activate": true,
+    "distant_faces_do_not_activate": true,
+    "same_facing_faces_do_not_activate": true
+  },
+  "method": "Synthetic actual incident-face contact, separation and back-face cases; does not validate the dressing motion."
+}

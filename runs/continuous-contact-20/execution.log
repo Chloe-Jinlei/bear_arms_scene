@@ -1,0 +1,95 @@
+Genesis backend: cuda
+[38;5;226m[Genesis] [21:41:51] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [21:41:51] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+[38;5;226m[Genesis] [21:41:51] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [21:41:51] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+Building scene and compiling physics kernels...
+[38;5;226m[Genesis] [21:41:51] [WARNING] Neutral robot position (qpos0) exceeds joint limits.[0m
+[38;5;226m[Genesis] [21:41:52] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (12, 17), (13, 17), (20, 27), (21, 26), (22, 29), (23, 28), (36, 41), (37, 41), (44, 51), (45, 50), (46, 53), (47, 52). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+/home/chloe/Desktop/genesis-local/.venv/lib/python3.12/site-packages/quadrants/_test_tools/warnings_helper.py:11: UserWarning: cannot create weak reference to 'tuple' object. Template mapper caching disabled.
+  warnings.warn(message)
+Phase wrap: t=17.53s
+Step 1800, wrap, max cloth stretch 1.460
+Step 1900, wrap, max cloth stretch 1.525
+Step 2000, wrap, max cloth stretch 1.446
+Step 2100, wrap, max cloth stretch 1.475
+Step 2200, wrap, max cloth stretch 1.632
+Step 2300, wrap, max cloth stretch 1.409
+Velcro: 1 active / 1 formed, t=23.27s
+Phase press: t=23.85s
+Step 2400, press, max cloth stretch 1.376
+Step 2500, press, max cloth stretch 1.432
+Velcro: 2 active / 2 formed, t=25.11s
+Step 2600, press, max cloth stretch 1.529
+Seam refine 0: gap=0.0094 m, normal dot=-0.866, bonds=2
+Seam refine 1: gap=0.0091 m, normal dot=-0.865, bonds=2
+Step 2700, press, max cloth stretch 1.520
+Seam refine 2: gap=0.0089 m, normal dot=-0.858, bonds=2
+Step 2800, press, max cloth stretch 1.504
+Seam refine 3: gap=0.0086 m, normal dot=-0.843, bonds=2
+Step 2900, press, max cloth stretch 1.503
+Seam refine 4: gap=0.0084 m, normal dot=-0.824, bonds=2
+Step 3000, press, max cloth stretch 1.519
+Seam refine 5: gap=0.0153 m, normal dot=-0.928, bonds=2
+Seam refine 6: gap=0.0143 m, normal dot=-0.922, bonds=2
+Step 3100, press, max cloth stretch 1.503
+Seam refine 7: gap=0.0087 m, normal dot=-0.828, bonds=2
+Step 3200, press, max cloth stretch 1.499
+Seam refine 8: gap=0.0142 m, normal dot=-0.917, bonds=2
+Step 3300, press, max cloth stretch 1.500
+Seam refine 9: gap=0.0087 m, normal dot=-0.824, bonds=2
+Step 3400, press, max cloth stretch 1.506
+Seam refine 10: gap=0.0141 m, normal dot=-0.912, bonds=2
+Step 3500, press, max cloth stretch 1.500
+Seam refine 11: gap=0.0088 m, normal dot=-0.822, bonds=2
+Seam refine 12: gap=0.0140 m, normal dot=-0.908, bonds=2
+Step 3600, press, max cloth stretch 1.508
+Seam refine 13: gap=0.0131 m, normal dot=-0.894, bonds=2
+Step 3700, press, max cloth stretch 1.501
+Seam refine 14: gap=0.0091 m, normal dot=-0.831, bonds=2
+Step 3800, press, max cloth stretch 1.505
+Seam refine 15: gap=0.0089 m, normal dot=-0.822, bonds=2
+Step 3900, press, max cloth stretch 1.513
+Step 4000, press, max cloth stretch 1.454
+Step 4100, press, max cloth stretch 1.639
+Step 4200, press, max cloth stretch 1.664
+Step 4300, press, max cloth stretch 1.670
+Step 4400, press, max cloth stretch 1.716
+Step 4500, press, max cloth stretch 1.722
+Step 4600, press, max cloth stretch 1.773
+Step 4700, press, max cloth stretch 1.786
+Velcro: 3 active / 3 formed, t=47.97s
+Step 4800, press, max cloth stretch 1.782
+Step 4900, press, max cloth stretch 1.780
+Seam refine 0: gap=0.0050 m, normal dot=-0.926, bonds=3
+Velcro: 4 active / 4 formed, t=49.77s
+Step 5000, press, max cloth stretch 1.790
+Traceback (most recent call last):
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-contact-20/scene.py", line 348, in <module>
+    main()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-contact-20/scene.py", line 254, in main
+    return run_wrap(args)
+           ^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-contact-20/wrap_task.py", line 613, in run_wrap
+    okay=experiment.execute()
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-contact-20/arms_task.py", line 300, in execute
+    okay=super().execute()
+         ^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-contact-20/wrap_task.py", line 448, in execute
+    self.wait(.6);self.tighten_seam();self.save("press");stage="press"
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-contact-20/arms_task.py", line 101, in tighten_seam
+    self.move({'left':self.tcp('left')},1.8,{'left':lifted})
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-contact-20/arms_task.py", line 185, in move
+    return super().move(targets,seconds,quats,joint)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-contact-20/wrap_task.py", line 254, in move
+    self.step()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-contact-20/arms_task.py", line 65, in step
+    super().step()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-contact-20/wrap_task.py", line 219, in step
+    if stretch.max()>1.8:raise RuntimeError(f"Excessive cloth stretch {stretch.max():.3f}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Excessive cloth stretch 1.800
+

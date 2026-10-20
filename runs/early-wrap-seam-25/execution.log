@@ -1,0 +1,85 @@
+Genesis backend: cuda
+[38;5;226m[Genesis] [21:50:52] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [21:50:52] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+[38;5;226m[Genesis] [21:50:52] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [21:50:52] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+Building scene and compiling physics kernels...
+[38;5;226m[Genesis] [21:50:53] [WARNING] Neutral robot position (qpos0) exceeds joint limits.[0m
+[38;5;226m[Genesis] [21:50:54] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (12, 17), (13, 17), (20, 27), (21, 26), (22, 29), (23, 28), (36, 41), (37, 41), (44, 51), (45, 50), (46, 53), (47, 52). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+/home/chloe/Desktop/genesis-local/.venv/lib/python3.12/site-packages/quadrants/_test_tools/warnings_helper.py:11: UserWarning: cannot create weak reference to 'tuple' object. Template mapper caching disabled.
+  warnings.warn(message)
+Phase press: t=23.85s
+Seam refine 0: gap=0.0079 m, normal dot=-0.841, bonds=0
+Step 2400, press, max cloth stretch 1.183
+Seam refine 1: gap=0.0056 m, normal dot=-0.840, bonds=0
+Step 2500, press, max cloth stretch 1.182
+Velcro: 1 active / 1 formed, t=25.13s
+Seam refine 2: gap=0.0121 m, normal dot=-0.835, bonds=1
+Step 2600, press, max cloth stretch 1.184
+Seam refine 3: gap=0.0108 m, normal dot=-0.835, bonds=1
+Step 2700, press, max cloth stretch 1.186
+Seam refine 4: gap=0.0094 m, normal dot=-0.876, bonds=1
+Seam refine 5: gap=0.0086 m, normal dot=-0.934, bonds=1
+Step 2800, press, max cloth stretch 1.200
+Seam refine 6: gap=0.0028 m, normal dot=-0.348, bonds=1
+Step 2900, press, max cloth stretch 1.219
+Seam refine 7: gap=0.0038 m, normal dot=-0.327, bonds=1
+Step 3000, press, max cloth stretch 1.247
+Seam refine 8: gap=0.0047 m, normal dot=-0.476, bonds=1
+Step 3100, press, max cloth stretch 1.174
+Step 3200, press, max cloth stretch 1.211
+Seam refine 0: gap=0.0127 m, normal dot=-0.918, bonds=1
+Step 3300, press, max cloth stretch 1.218
+Seam refine 1: gap=0.0080 m, normal dot=-0.844, bonds=1
+Step 3400, press, max cloth stretch 1.219
+Seam refine 2: gap=0.0065 m, normal dot=-0.875, bonds=1
+Step 3500, press, max cloth stretch 1.224
+Seam refine 3: gap=0.0052 m, normal dot=-0.897, bonds=1
+Velcro: 2 active / 2 formed, t=35.41s
+Seam refine 4: gap=0.0081 m, normal dot=-0.867, bonds=2
+Step 3600, press, max cloth stretch 1.230
+Seam refine 5: gap=0.0060 m, normal dot=-0.889, bonds=2
+Step 3700, press, max cloth stretch 1.233
+Velcro: 3 active / 3 formed, t=37.16s
+Seam refine 6: gap=0.0153 m, normal dot=-0.885, bonds=3
+Step 3800, press, max cloth stretch 1.234
+Seam refine 7: gap=0.0148 m, normal dot=-0.878, bonds=3
+Step 3900, press, max cloth stretch 1.256
+Seam refine 8: gap=0.0147 m, normal dot=-0.922, bonds=3
+Traceback (most recent call last):
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-early-wrap-seam-25/scene.py", line 348, in <module>
+    main()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-early-wrap-seam-25/scene.py", line 254, in main
+    return run_wrap(args)
+           ^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-early-wrap-seam-25/wrap_task.py", line 622, in run_wrap
+    okay=experiment.execute()
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-early-wrap-seam-25/arms_task.py", line 311, in execute
+    okay=super().execute()
+         ^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-early-wrap-seam-25/wrap_task.py", line 446, in execute
+    self.refine_seam_current_pose()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-early-wrap-seam-25/arms_task.py", line 153, in refine_seam_current_pose
+    self.move({side:destination},.55,{side:lifted});self.wait(.15)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-early-wrap-seam-25/arms_task.py", line 187, in move
+    return super().move(targets,seconds,quats,joint)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-early-wrap-seam-25/wrap_task.py", line 254, in move
+    self.step()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-early-wrap-seam-25/arms_task.py", line 65, in step
+    super().step()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-early-wrap-seam-25/wrap_task.py", line 183, in step
+    self.contact.refresh()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-early-wrap-seam-25/wrap_contact.py", line 256, in refresh
+    selected, bn, bw, normals = geometry.query(body_positions, cloth_positions)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-early-wrap-seam-25/wrap_contact.py", line 102, in query
+    closest, distance, triangles = trimesh.proximity.closest_point(mesh, samples[selected])
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Desktop/genesis-local/.venv/lib/python3.12/site-packages/trimesh/proximity.py", line 163, in closest_point
+    all_candidates = np.concatenate(candidates)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+

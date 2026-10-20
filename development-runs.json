@@ -1,0 +1,770 @@
+[
+  {
+    "run": "aligned-holes-full-23",
+    "status": "failed",
+    "simulated_seconds": 46.61,
+    "resumed_from": null,
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "The strips did not form a distributed contact-gated seam"
+  },
+  {
+    "run": "aperture-staging-record-38",
+    "status": "failed",
+    "simulated_seconds": 50.86,
+    "resumed_from": {
+      "snapshot": "outputs/bear_arms_scene/runs/contact-feedback-record-36/state-regrasp_right_outside.npz",
+      "initialized_from_stage": "regrasp_right_outside",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [
+      "wrapping-process.mp4",
+      "wrapping-left-side.mp4",
+      "wrapping-rear.mp4"
+    ],
+    "source_snapshot": true,
+    "error": "left has no reachable grasp that passes through the actual aperture"
+  },
+  {
+    "run": "arms-press-01",
+    "status": "failed",
+    "simulated_seconds": 36.35,
+    "resumed_from": null,
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "The strips did not form a distributed contact-gated seam"
+  },
+  {
+    "run": "arms-press-02",
+    "status": "failed",
+    "simulated_seconds": 36.35,
+    "resumed_from": null,
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "The strips did not form a distributed contact-gated seam"
+  },
+  {
+    "run": "arms-raised-03",
+    "status": "failed",
+    "simulated_seconds": 37.77,
+    "resumed_from": null,
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Inter-arm collision"
+  },
+  {
+    "run": "arms-short-04",
+    "status": "failed",
+    "simulated_seconds": 37.37,
+    "resumed_from": null,
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "The strips did not form a distributed contact-gated seam"
+  },
+  {
+    "run": "balanced-contact-record-35",
+    "status": "stopped_diagnostic",
+    "simulated_seconds": 40.050000000000004,
+    "resumed_from": {
+      "snapshot": "outputs/bear_arms_scene/runs/height-aligned-record-32/state-wrap.npz",
+      "initialized_from_stage": "wrap",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [
+      "wrapping-process.mp4",
+      "wrapping-left-side.mp4",
+      "wrapping-rear.mp4"
+    ],
+    "source_snapshot": true,
+    "error": null
+  },
+  {
+    "run": "belly-wrap-08",
+    "status": "failed",
+    "simulated_seconds": 42.51,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/arms-short-04/state-grasp.npz",
+      "initialized_from_stage": "grasp",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "The strips did not form a distributed contact-gated seam"
+  },
+  {
+    "run": "centered-aperture-pull-31",
+    "status": "failed",
+    "simulated_seconds": 45.51,
+    "resumed_from": {
+      "snapshot": "outputs/bear_arms_scene/runs/normal-aperture-grasp-27/state-grasp_arm_right.npz",
+      "initialized_from_stage": "grasp_arm_right",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Excessive cloth stretch 1.823"
+  },
+  {
+    "run": "complete-controller-record-39",
+    "status": "stopped_diagnostic",
+    "simulated_seconds": 39.46,
+    "resumed_from": null,
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [
+      "wrapping-process.mp4",
+      "wrapping-left-side.mp4",
+      "wrapping-rear.mp4"
+    ],
+    "source_snapshot": true,
+    "error": null
+  },
+  {
+    "run": "complete-dressing-record-43",
+    "status": "failed",
+    "simulated_seconds": 63.27,
+    "resumed_from": null,
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [
+      "wrapping-process.mp4",
+      "wrapping-left-side.mp4",
+      "wrapping-rear.mp4"
+    ],
+    "source_snapshot": true,
+    "error": "Arm route clearance failed at 0.31666666666666665: {'left_self': {'distance': 0.0028828121840984455, 'bodies': ['left_link1', 'left_link6']}, 'left_bear': {'distance': 0.12836904249703737, 'body': 'left_left_finger', 'obstacle': 'bear_0'}, 'left_table': {'distance': 0.11593799215862365, 'body': 'left_link7', 'obstacle': 'table'}, 'right_self': {'distance': 0.021688530928638015, 'bodies': ['right_link5', 'right_link7']}, 'right_bear': {'distance': 0.07217318594938593, 'body': 'right_left_finger', 'obstacle': 'bear_0'}, 'right_table': {'distance': 0.15969393238467966, 'body': 'right_link6', 'obstacle': 'table'}, 'arms': {'distance': 0.2, 'bodies': ['left_link1', 'right_link1']}}"
+  },
+  {
+    "run": "contact-feedback-record-36",
+    "status": "failed",
+    "simulated_seconds": 34.65,
+    "resumed_from": {
+      "snapshot": "outputs/bear_arms_scene/runs/height-aligned-record-32/state-wrap.npz",
+      "initialized_from_stage": "wrap",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [
+      "wrapping-process.mp4",
+      "wrapping-left-side.mp4",
+      "wrapping-rear.mp4"
+    ],
+    "source_snapshot": true,
+    "error": "right has no reachable grasp that passes through the actual aperture"
+  },
+  {
+    "run": "contact-history-15",
+    "status": "failed",
+    "simulated_seconds": 38.11,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/arms-short-04/state-grasp.npz",
+      "initialized_from_stage": "grasp",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [
+      "cloth_not_overstretched",
+      "no_deep_cloth_body_penetration"
+    ],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Wrapping checks not satisfied: {'both_front_corners_contact_grasped': True, 'bear_base_fixed': True, 'no_inter_arm_collision': True, 'no_robot_self_collision': True, 'no_robot_table_collision': True, 'cloth_not_overstretched': False, 'finite_state': True, 'no_deep_cloth_body_penetration': False, 'bear_stays_upright': True, 'angular_wrap_over_300_deg': True, 'encircles_body': True, 'corners_near_behind_body': True, 'cloth_lifted_to_belly': True, 'cloth_contacts_front_and_sides': True, 'velcro_joined_after_contact': True, 'adhesive_seam_distributed': True, 'adhesive_error_below_detachment_threshold': True, 'activation_requires_actual_contact': True}"
+  },
+  {
+    "run": "contact-refined-05",
+    "status": "failed",
+    "simulated_seconds": 37.37,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/arms-short-04/state-taut_30.npz",
+      "initialized_from_stage": "taut_30",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "The strips did not form a distributed contact-gated seam"
+  },
+  {
+    "run": "continuous-contact-20",
+    "status": "failed",
+    "simulated_seconds": 50.15,
+    "resumed_from": {
+      "snapshot": "outputs/bear_arms_scene/runs/flat-arms-full-19/state-taut_75.npz",
+      "initialized_from_stage": "taut_75",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Excessive cloth stretch 1.800"
+  },
+  {
+    "run": "continuous-extract-debug-21",
+    "status": "failed",
+    "simulated_seconds": 39.160000000000004,
+    "resumed_from": {
+      "snapshot": "outputs/bear_arms_scene/runs/flat-arms-full-19/state-press.npz",
+      "initialized_from_stage": "press",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [
+      "no_deep_cloth_body_penetration"
+    ],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Excessive cloth stretch 1.807"
+  },
+  {
+    "run": "continuous-press-record-33",
+    "status": "stopped_diagnostic",
+    "simulated_seconds": 34.1,
+    "resumed_from": {
+      "snapshot": "outputs/bear_arms_scene/runs/height-aligned-record-32/state-wrap.npz",
+      "initialized_from_stage": "wrap",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [
+      "wrapping-process.mp4",
+      "wrapping-left-side.mp4",
+      "wrapping-rear.mp4"
+    ],
+    "source_snapshot": true,
+    "error": null
+  },
+  {
+    "run": "coupled-seam-pull-30",
+    "status": "failed",
+    "simulated_seconds": 53.63,
+    "resumed_from": {
+      "snapshot": "outputs/bear_arms_scene/runs/free-cloth-before-pull-29/state-regrasp_left_outside.npz",
+      "initialized_from_stage": "regrasp_left_outside",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Excessive cloth stretch 1.834"
+  },
+  {
+    "run": "early-wrap-seam-25",
+    "status": "stopped_diagnostic",
+    "simulated_seconds": 39.15,
+    "resumed_from": {
+      "snapshot": "outputs/bear_arms_scene/runs/aligned-holes-full-23/state-wrap.npz",
+      "initialized_from_stage": "wrap",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": null
+  },
+  {
+    "run": "extract-trial-01",
+    "status": "failed",
+    "simulated_seconds": 37.77,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/arms-press-02/state-press.npz",
+      "initialized_from_stage": "press",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Inter-arm collision"
+  },
+  {
+    "run": "extract-trial-02",
+    "status": "failed",
+    "simulated_seconds": 28.740000000000002,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/arms-short-04/state-press_separate.npz",
+      "initialized_from_stage": "press_separate",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [
+      "no_deep_cloth_body_penetration"
+    ],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Wrapping checks not satisfied: {'both_front_corners_contact_grasped': True, 'bear_base_fixed': True, 'no_inter_arm_collision': True, 'no_robot_self_collision': True, 'no_robot_table_collision': True, 'cloth_not_overstretched': True, 'finite_state': True, 'no_deep_cloth_body_penetration': False, 'bear_stays_upright': True, 'angular_wrap_over_300_deg': True, 'encircles_body': True, 'corners_near_behind_body': True, 'cloth_lifted_to_belly': True, 'cloth_contacts_front_and_sides': True, 'velcro_joined_after_contact': True, 'adhesive_seam_distributed': True, 'adhesive_error_below_detachment_threshold': True, 'activation_requires_actual_contact': True}"
+  },
+  {
+    "run": "extraction-debug-16",
+    "status": "failed",
+    "simulated_seconds": 39.22,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/seam-near-pairs-14/state-press_surface_15.npz",
+      "initialized_from_stage": "press_surface_15",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [
+      "no_deep_cloth_body_penetration"
+    ],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Velcro seam detached during arm extraction"
+  },
+  {
+    "run": "face-contact-record-34",
+    "status": "stopped_diagnostic",
+    "simulated_seconds": 75.43,
+    "resumed_from": {
+      "snapshot": "outputs/bear_arms_scene/runs/height-aligned-record-32/state-wrap.npz",
+      "initialized_from_stage": "wrap",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [
+      "wrapping-process.mp4",
+      "wrapping-left-side.mp4",
+      "wrapping-rear.mp4"
+    ],
+    "source_snapshot": true,
+    "error": "left has no reachable grasp that passes through the actual aperture"
+  },
+  {
+    "run": "final-hem-lift-42",
+    "status": "passed",
+    "simulated_seconds": 66.17,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/self-clearance-extraction-41/state-thread_arms.npz",
+      "initialized_from_stage": "thread_arms",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": null
+  },
+  {
+    "run": "flat-arms-full-19",
+    "status": "failed",
+    "simulated_seconds": 39.07,
+    "resumed_from": null,
+    "complete_fresh_recording": false,
+    "failed_checks": [
+      "no_deep_cloth_body_penetration"
+    ],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Wrapping checks not satisfied: {'both_front_corners_contact_grasped': True, 'bear_base_fixed': True, 'no_inter_arm_collision': True, 'no_robot_self_collision': True, 'no_robot_table_collision': True, 'cloth_not_overstretched': True, 'finite_state': True, 'no_deep_cloth_body_penetration': False, 'bear_stays_upright': True, 'angular_wrap_over_300_deg': True, 'encircles_body': True, 'corners_near_behind_body': True, 'cloth_lifted_to_belly': True, 'cloth_contacts_front_and_sides': True, 'velcro_joined_after_contact': True, 'adhesive_seam_distributed': True, 'adhesive_error_below_detachment_threshold': True, 'activation_requires_actual_contact': True}"
+  },
+  {
+    "run": "free-cloth-before-pull-29",
+    "status": "failed",
+    "simulated_seconds": 53.300000000000004,
+    "resumed_from": {
+      "snapshot": "outputs/bear_arms_scene/runs/normal-aperture-grasp-27/state-grasp_arm_right.npz",
+      "initialized_from_stage": "grasp_arm_right",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Excessive cloth stretch 1.802"
+  },
+  {
+    "run": "full-dressing-record-37",
+    "status": "failed",
+    "simulated_seconds": 34.65,
+    "resumed_from": null,
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [
+      "wrapping-process.mp4",
+      "wrapping-left-side.mp4",
+      "wrapping-rear.mp4"
+    ],
+    "source_snapshot": true,
+    "error": "right has no reachable grasp that passes through the actual aperture"
+  },
+  {
+    "run": "height-aligned-record-32",
+    "status": "failed",
+    "simulated_seconds": 25.2,
+    "resumed_from": null,
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [
+      "wrapping-process.mp4",
+      "wrapping-left-side.mp4",
+      "wrapping-rear.mp4"
+    ],
+    "source_snapshot": true,
+    "error": "Excessive cloth stretch 1.860"
+  },
+  {
+    "run": "local-adhesion-extract-26",
+    "status": "failed",
+    "simulated_seconds": 39.93,
+    "resumed_from": {
+      "snapshot": "outputs/bear_arms_scene/runs/early-wrap-seam-25/state-press_surface_1.npz",
+      "initialized_from_stage": "press_surface_1",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Arm route clearance failed at 0.6833333333333333: {'left_bear': {'distance': 0.07812749641089102, 'body': 'left_left_finger', 'obstacle': 'bear_1'}, 'left_table': {'distance': 0.17599593221477028, 'body': 'left_link1', 'obstacle': 'table'}, 'right_bear': {'distance': -0.08715876256059564, 'body': 'right_link7', 'obstacle': 'bear_0'}, 'right_table': {'distance': 0.0009260574226201969, 'body': 'right_link6', 'obstacle': 'table'}, 'arms': {'distance': 0.14314851021870917, 'bodies': ['left_right_finger', 'right_link5']}}"
+  },
+  {
+    "run": "normal-aperture-grasp-27",
+    "status": "failed",
+    "simulated_seconds": 45.75,
+    "resumed_from": {
+      "snapshot": "outputs/bear_arms_scene/runs/local-adhesion-extract-26/state-regrasp_right_outside.npz",
+      "initialized_from_stage": "regrasp_right_outside",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Excessive cloth stretch 1.802"
+  },
+  {
+    "run": "outward-arm-pull-28",
+    "status": "failed",
+    "simulated_seconds": 47.81,
+    "resumed_from": {
+      "snapshot": "outputs/bear_arms_scene/runs/normal-aperture-grasp-27/state-grasp_arm_right.npz",
+      "initialized_from_stage": "grasp_arm_right",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Excessive cloth stretch 1.802"
+  },
+  {
+    "run": "paw-centered-complete-45",
+    "status": "stopped_superseded",
+    "simulated_seconds": 34.96,
+    "resumed_from": null,
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [
+      "wrapping-process.mp4",
+      "wrapping-left-side.mp4",
+      "wrapping-rear.mp4"
+    ],
+    "source_snapshot": true,
+    "error": null
+  },
+  {
+    "run": "paw-centering-44",
+    "status": "passed",
+    "simulated_seconds": 68.87,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/complete-dressing-record-43/state-grasp_arm_left.npz",
+      "initialized_from_stage": "grasp_arm_left",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": null
+  },
+  {
+    "run": "raised-left-hole-record-40",
+    "status": "failed",
+    "simulated_seconds": 47.57,
+    "resumed_from": null,
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [
+      "wrapping-process.mp4",
+      "wrapping-left-side.mp4",
+      "wrapping-rear.mp4"
+    ],
+    "source_snapshot": true,
+    "error": "left robot self-collision"
+  },
+  {
+    "run": "release-route-debug-18",
+    "status": "failed",
+    "simulated_seconds": 41.57,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/work/material-resumes/strong-seam.npz",
+      "initialized_from_stage": "press_surface_15",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [
+      "no_deep_cloth_body_penetration"
+    ],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Tracking failed: {'right': 0.06999895456981463}"
+  },
+  {
+    "run": "seam-adaptive-09",
+    "status": "failed",
+    "simulated_seconds": 54.33,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/seam-wrist-07/state-press.npz",
+      "initialized_from_stage": "press",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [
+      "cloth_not_overstretched",
+      "no_deep_cloth_body_penetration",
+      "velcro_joined_after_contact",
+      "adhesive_seam_distributed"
+    ],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Wrapping checks not satisfied: {'both_front_corners_contact_grasped': True, 'bear_base_fixed': True, 'no_inter_arm_collision': True, 'no_robot_self_collision': True, 'no_robot_table_collision': True, 'cloth_not_overstretched': False, 'finite_state': True, 'no_deep_cloth_body_penetration': False, 'bear_stays_upright': True, 'angular_wrap_over_300_deg': True, 'encircles_body': True, 'corners_near_behind_body': True, 'cloth_lifted_to_belly': True, 'cloth_contacts_front_and_sides': True, 'velcro_joined_after_contact': False, 'adhesive_seam_distributed': False, 'adhesive_error_below_detachment_threshold': True, 'activation_requires_actual_contact': True}"
+  },
+  {
+    "run": "seam-align-10",
+    "status": "failed",
+    "simulated_seconds": 48.39,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/belly-wrap-08/state-press.npz",
+      "initialized_from_stage": "press",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [
+      "no_deep_cloth_body_penetration",
+      "velcro_joined_after_contact",
+      "adhesive_seam_distributed",
+      "activation_requires_actual_contact"
+    ],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Wrapping checks not satisfied: {'both_front_corners_contact_grasped': True, 'bear_base_fixed': True, 'no_inter_arm_collision': True, 'no_robot_self_collision': True, 'no_robot_table_collision': True, 'cloth_not_overstretched': True, 'finite_state': True, 'no_deep_cloth_body_penetration': False, 'bear_stays_upright': True, 'angular_wrap_over_300_deg': True, 'encircles_body': True, 'corners_near_behind_body': True, 'cloth_lifted_to_belly': True, 'cloth_contacts_front_and_sides': True, 'velcro_joined_after_contact': False, 'adhesive_seam_distributed': False, 'adhesive_error_below_detachment_threshold': True, 'activation_requires_actual_contact': False}"
+  },
+  {
+    "run": "seam-early-13",
+    "status": "failed",
+    "simulated_seconds": 47.43,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/belly-wrap-08/state-press_separate.npz",
+      "initialized_from_stage": "press_separate",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "The strips did not form a distributed contact-gated seam"
+  },
+  {
+    "run": "seam-near-pairs-14",
+    "status": "failed",
+    "simulated_seconds": 59.730000000000004,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/surface-barrier-11/state-press_separate.npz",
+      "initialized_from_stage": "press_separate",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "The strips did not form a distributed contact-gated seam"
+  },
+  {
+    "run": "seam-rear-06",
+    "status": "failed",
+    "simulated_seconds": 37.37,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/contact-refined-05/state-wrap.npz",
+      "initialized_from_stage": "wrap",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "The strips did not form a distributed contact-gated seam"
+  },
+  {
+    "run": "seam-right-align-12",
+    "status": "failed",
+    "simulated_seconds": 48.39,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/belly-wrap-08/state-press.npz",
+      "initialized_from_stage": "press",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [
+      "no_deep_cloth_body_penetration",
+      "velcro_joined_after_contact",
+      "adhesive_seam_distributed",
+      "activation_requires_actual_contact"
+    ],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Wrapping checks not satisfied: {'both_front_corners_contact_grasped': True, 'bear_base_fixed': True, 'no_inter_arm_collision': True, 'no_robot_self_collision': True, 'no_robot_table_collision': True, 'cloth_not_overstretched': True, 'finite_state': True, 'no_deep_cloth_body_penetration': False, 'bear_stays_upright': True, 'angular_wrap_over_300_deg': True, 'encircles_body': True, 'corners_near_behind_body': True, 'cloth_lifted_to_belly': True, 'cloth_contacts_front_and_sides': True, 'velcro_joined_after_contact': False, 'adhesive_seam_distributed': False, 'adhesive_error_below_detachment_threshold': True, 'activation_requires_actual_contact': False}"
+  },
+  {
+    "run": "seam-wrist-07",
+    "status": "failed",
+    "simulated_seconds": 43.53,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/seam-rear-06/state-press.npz",
+      "initialized_from_stage": "press",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [
+      "no_deep_cloth_body_penetration",
+      "velcro_joined_after_contact",
+      "adhesive_seam_distributed",
+      "activation_requires_actual_contact"
+    ],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Wrapping checks not satisfied: {'both_front_corners_contact_grasped': True, 'bear_base_fixed': True, 'no_inter_arm_collision': True, 'no_robot_self_collision': True, 'no_robot_table_collision': True, 'cloth_not_overstretched': True, 'finite_state': True, 'no_deep_cloth_body_penetration': False, 'bear_stays_upright': True, 'angular_wrap_over_300_deg': True, 'encircles_body': True, 'corners_near_behind_body': True, 'cloth_lifted_to_belly': True, 'cloth_contacts_front_and_sides': True, 'velcro_joined_after_contact': False, 'adhesive_seam_distributed': False, 'adhesive_error_below_detachment_threshold': True, 'activation_requires_actual_contact': False}"
+  },
+  {
+    "run": "self-clearance-extraction-41",
+    "status": "failed",
+    "simulated_seconds": 60.57,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/raised-left-hole-record-40/state-regrasp_left_outside.npz",
+      "initialized_from_stage": "regrasp_left_outside",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [
+      "cloth_lifted_to_belly"
+    ],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Wrapping checks not satisfied: {'both_front_corners_contact_grasped': True, 'bear_base_fixed': True, 'no_inter_arm_collision': True, 'no_robot_self_collision': True, 'no_robot_table_collision': True, 'cloth_not_overstretched': True, 'finite_state': True, 'no_deep_cloth_body_penetration': True, 'bear_stays_upright': True, 'angular_wrap_over_300_deg': True, 'encircles_body': True, 'corners_near_behind_body': True, 'cloth_lifted_to_belly': False, 'cloth_contacts_front_and_sides': True, 'velcro_joined_after_contact': True, 'adhesive_contact_patch_present': True, 'adhesive_error_below_detachment_threshold': True, 'activation_requires_actual_contact': True, 'accepted_press_state': True, 'both_arms_contact_grasped': True, 'cloth_released_by_both_grippers': True, 'velcro_still_joined': True, 'both_paws_outside_holes': True, 'whole_paw_particle_groups_outside': True, 'both_arm_cores_pass_through_holes': True, 'bear_base_still_fixed': True}"
+  },
+  {
+    "run": "sliding-contact-22",
+    "status": "failed",
+    "simulated_seconds": 36.43,
+    "resumed_from": {
+      "snapshot": "outputs/bear_arms_scene/runs/flat-arms-full-19/state-taut_75.npz",
+      "initialized_from_stage": "taut_75",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Excessive cloth stretch 1.804"
+  },
+  {
+    "run": "stabilized-dressing-complete-48",
+    "status": "passed",
+    "simulated_seconds": 65.67,
+    "resumed_from": null,
+    "complete_fresh_recording": true,
+    "failed_checks": [],
+    "recordings": [
+      "wrapping-process.mp4",
+      "wrapping-left-side.mp4",
+      "wrapping-rear.mp4"
+    ],
+    "source_snapshot": true,
+    "error": null
+  },
+  {
+    "run": "strong-seam-debug-17",
+    "status": "failed",
+    "simulated_seconds": 39.42,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/work/material-resumes/strong-seam.npz",
+      "initialized_from_stage": "press_surface_15",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [
+      "no_deep_cloth_body_penetration"
+    ],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "Inter-arm collision"
+  },
+  {
+    "run": "surface-barrier-11",
+    "status": "failed",
+    "simulated_seconds": 44.15,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/arms-short-04/state-grasp.npz",
+      "initialized_from_stage": "grasp",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": "The strips did not form a distributed contact-gated seam"
+  },
+  {
+    "run": "volume-barrier-extraction-46",
+    "status": "passed",
+    "simulated_seconds": 68.87,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/complete-dressing-record-43/state-grasp_arm_left.npz",
+      "initialized_from_stage": "grasp_arm_left",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": null
+  },
+  {
+    "run": "volume-stability-47",
+    "status": "passed",
+    "simulated_seconds": 69.37,
+    "resumed_from": {
+      "snapshot": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/volume-barrier-extraction-46/state-thread_arms.npz",
+      "initialized_from_stage": "thread_arms",
+      "state_setters_only_at_initialization": true
+    },
+    "complete_fresh_recording": false,
+    "failed_checks": [],
+    "recordings": [],
+    "source_snapshot": true,
+    "error": null
+  }
+]

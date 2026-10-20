@@ -1,0 +1,70 @@
+{
+  "reported_status": "passed",
+  "body_penetration": {
+    "method": "solid-angle winding and exact triangle distance",
+    "body_surface_vertices": 1102,
+    "body_surface_triangles": 2200,
+    "body_watertight": true,
+    "sample_count": 6499,
+    "penetration_tolerance_m": 0.0005,
+    "inside_samples": 0,
+    "max_penetration_m": 0.0,
+    "minimum_sample_clearance_m": 0.0015857837322776314,
+    "near_surface_samples": 1559,
+    "samples": {
+      "vertices": {
+        "count": 1153,
+        "inside": 0,
+        "max_penetration_m": 0.0
+      },
+      "edge_midpoints": {
+        "count": 3250,
+        "inside": 0,
+        "max_penetration_m": 0.0
+      },
+      "face_centroids": {
+        "count": 2096,
+        "inside": 0,
+        "max_penetration_m": 0.0
+      }
+    },
+    "no_sample_penetration_over_tolerance": true,
+    "elapsed_seconds": 1.2842276870069327
+  },
+  "arms": {
+    "left": {
+      "root_signed_distance_m": -0.03920334473691231,
+      "tip_signed_distance_m": 0.06884293168511413,
+      "core_crossings": [
+        {
+          "point_m": [
+            -0.15782780810113678,
+            0.12246324856155402,
+            1.0282551891629337
+          ],
+          "inside_aperture": true,
+          "boundary_clearance_m": 0.019449742898834232
+        }
+      ],
+      "core_passes_through_aperture": true,
+      "hole_planarity_error_m": 0.008298894390463829
+    },
+    "right": {
+      "root_signed_distance_m": -0.05016154391572392,
+      "tip_signed_distance_m": 0.04353357654045122,
+      "core_crossings": [
+        {
+          "point_m": [
+            0.14209627205835443,
+            0.07801249890779023,
+            1.0293409853528686
+          ],
+          "inside_aperture": true,
+          "boundary_clearance_m": 0.012213191042058709
+        }
+      ],
+      "core_passes_through_aperture": true,
+      "hole_planarity_error_m": 0.012627232819795609
+    }
+  }
+}

@@ -1,0 +1,5523 @@
+{
+  "status": "failed",
+  "config": {
+    "seed": 7,
+    "simulation": {
+      "substep_dt": 0.001,
+      "substeps": 10,
+      "particle_size": 0.004,
+      "hash_grid_size": [
+        0.32,
+        0.32,
+        0.32
+      ],
+      "stretch_iterations": 10,
+      "volume_iterations": 10,
+      "bending_iterations": 4
+    },
+    "table": {
+      "height": 0.74,
+      "size": [
+        1.55,
+        1.05,
+        0.07
+      ]
+    },
+    "bear": {
+      "position_xy": [
+        0.0,
+        0.08
+      ],
+      "mass": 0.49,
+      "base_clearance": 0.003,
+      "fixed_band_height": 0.018,
+      "stretch_compliance": 0.001,
+      "volume_compliance": 1e-12,
+      "stretch_relaxation": 0.1,
+      "volume_relaxation": 0.1,
+      "friction": 0.7
+    },
+    "cloth": {
+      "position_xy": [
+        0.0,
+        -0.32
+      ],
+      "initial_clearance": 0.006,
+      "areal_density": 0.18,
+      "stretch_compliance": 1e-07,
+      "bending_compliance": 1e-05,
+      "friction": 0.6
+    },
+    "robots": {
+      "left_base": [
+        -0.6,
+        0.24,
+        0.775
+      ],
+      "right_base": [
+        0.6,
+        0.24,
+        0.775
+      ],
+      "left_yaw": -0.9,
+      "right_yaw": 4.041592653589793,
+      "home": [
+        0.0,
+        -0.45,
+        0.0,
+        -2.15,
+        0.0,
+        1.7,
+        0.7854
+      ],
+      "finger_opening": 0.04
+    },
+    "grasp": {
+      "inset_from_short_edge_m": 0.006,
+      "require_surface_patch": true
+    },
+    "cameras": {
+      "overview": {
+        "position": [
+          1.45,
+          -2.1,
+          1.85
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.94
+        ],
+        "fov": 43.0
+      },
+      "front": {
+        "position": [
+          0.0,
+          -1.25,
+          1.16
+        ],
+        "target": [
+          0.0,
+          0.08,
+          0.98
+        ],
+        "fov": 35.0
+      },
+      "detail": {
+        "position": [
+          0.65,
+          -0.94,
+          1.41
+        ],
+        "target": [
+          0.0,
+          0.06,
+          0.985
+        ],
+        "fov": 36.0
+      },
+      "table_left": {
+        "position": [
+          -2.05,
+          -0.5,
+          1.6
+        ],
+        "target": [
+          0.0,
+          -0.02,
+          1.0
+        ],
+        "fov": 43.0
+      },
+      "bear_rear": {
+        "position": [
+          0.0,
+          1.75,
+          1.52
+        ],
+        "target": [
+          0.0,
+          0.02,
+          1.0
+        ],
+        "fov": 43.0
+      },
+      "overhead": {
+        "position": [
+          0.0,
+          -0.04,
+          2.25
+        ],
+        "target": [
+          0.0,
+          0.02,
+          0.88
+        ],
+        "fov": 47.0
+      },
+      "back": {
+        "position": [
+          0.25,
+          0.95,
+          1.25
+        ],
+        "target": [
+          0.0,
+          0.12,
+          1.0
+        ],
+        "fov": 42.0
+      }
+    },
+    "velcro": {
+      "strip_width_m": 0.04,
+      "activation_distance_m": 0.005,
+      "normal_angle_tolerance_deg": 35.0,
+      "facing_tolerance_m": 0.001,
+      "dwell_time_s": 0.08,
+      "break_error_m": 0.015,
+      "iterations_per_substep": 12,
+      "max_correction_per_pass_m": 0.002,
+      "relaxation": 0.9,
+      "break_dwell_time_s": 0.08,
+      "surface_signs": {
+        "left": 1,
+        "right": 1
+      }
+    }
+  },
+  "geometry": {
+    "units": "metres",
+    "bear_front": "negative Y",
+    "bear_up": "positive Z",
+    "bear": {
+      "height_m": 0.48081444572223947,
+      "bounds_m": [
+        [
+          -0.1657422189912686,
+          -0.12781930532303404,
+          0.0
+        ],
+        [
+          0.16580621882819566,
+          0.10799206495115507,
+          0.48081444572223947
+        ]
+      ],
+      "physics_vertices": 1832,
+      "tetrahedra": 7623,
+      "surface_vertices": 1102,
+      "surface_faces": 2200,
+      "visual_vertices": 6002,
+      "visual_faces": 12000,
+      "volume_m3": 0.016368474136390528,
+      "watertight": true,
+      "connected_components": 1,
+      "fixed_base_vertices": 70,
+      "fixed_base_z_max_m": 0.012,
+      "belly_circumference_m": 0.7678338107335538,
+      "belly_measurement_z_m": 0.17,
+      "mesh": "bear.obj",
+      "physics": "bear.npz",
+      "texture": "bear_fur.png",
+      "features": [
+        "two soft connected hanging arms",
+        "flat fixed base",
+        "round ears",
+        "muzzle",
+        "two small feet"
+      ],
+      "arm_topology": "single connected tetrahedral soft body including shoulders and both arms",
+      "arm_centerline_centers_local_m": [
+        [
+          0.094,
+          0,
+          0.29
+        ],
+        [
+          0.133,
+          0,
+          0.275
+        ],
+        [
+          0.155,
+          0,
+          0.25
+        ],
+        [
+          0.155,
+          -0.005,
+          0.22
+        ]
+      ],
+      "arm_cross_section_scale_xyz": [
+        0.6,
+        1.0,
+        1.0
+      ],
+      "paw_indices": {
+        "left": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          14,
+          15,
+          17,
+          20,
+          21,
+          22,
+          24,
+          25,
+          31,
+          32,
+          33,
+          35,
+          37
+        ],
+        "right": [
+          1050,
+          1053,
+          1054,
+          1056,
+          1059,
+          1064,
+          1065,
+          1068,
+          1070,
+          1071,
+          1073,
+          1075,
+          1076,
+          1077,
+          1078,
+          1079,
+          1080,
+          1081,
+          1082,
+          1084,
+          1087,
+          1089,
+          1090,
+          1091,
+          1092,
+          1094,
+          1095,
+          1097,
+          1098,
+          1100,
+          1805
+        ]
+      }
+    },
+    "cotton": {
+      "length_m": 0.86,
+      "width_m": 0.2,
+      "area_m2": 0.1632753623188406,
+      "belly_overlap_fraction": 0.12003403337812735,
+      "vertices": 1153,
+      "faces": 2096,
+      "grid_spacing_m": [
+        0.012463768115942029,
+        0.0125
+      ],
+      "mesh": "cotton.obj",
+      "physics": "cotton.npz",
+      "texture": "cotton_weave.png",
+      "areal_density_kg_m2": 0.18,
+      "suggested_mass_kg": 0.029389565217391306,
+      "holes": {
+        "left": {
+          "center_material_xy_m": [
+            -0.22,
+            0.05
+          ],
+          "boundary_indices": [
+            628,
+            629,
+            630,
+            631,
+            632,
+            698,
+            764,
+            830,
+            895,
+            962,
+            1032,
+            1031,
+            1030,
+            1029,
+            1028,
+            961,
+            960,
+            894,
+            829,
+            763,
+            696,
+            697
+          ],
+          "boundary_edges": [
+            [
+              628,
+              629
+            ],
+            [
+              628,
+              697
+            ],
+            [
+              629,
+              630
+            ],
+            [
+              630,
+              631
+            ],
+            [
+              631,
+              632
+            ],
+            [
+              632,
+              698
+            ],
+            [
+              696,
+              697
+            ],
+            [
+              696,
+              763
+            ],
+            [
+              698,
+              764
+            ],
+            [
+              763,
+              829
+            ],
+            [
+              764,
+              830
+            ],
+            [
+              829,
+              894
+            ],
+            [
+              830,
+              895
+            ],
+            [
+              894,
+              960
+            ],
+            [
+              895,
+              962
+            ],
+            [
+              960,
+              961
+            ],
+            [
+              961,
+              1028
+            ],
+            [
+              962,
+              1032
+            ],
+            [
+              1028,
+              1029
+            ],
+            [
+              1029,
+              1030
+            ],
+            [
+              1030,
+              1031
+            ],
+            [
+              1031,
+              1032
+            ]
+          ],
+          "bounding_size_m": [
+            0.07478260869565218,
+            0.075
+          ]
+        },
+        "right": {
+          "center_material_xy_m": [
+            0.22,
+            -0.015
+          ],
+          "boundary_indices": [
+            330,
+            331,
+            332,
+            333,
+            334,
+            401,
+            402,
+            467,
+            532,
+            598,
+            667,
+            666,
+            665,
+            731,
+            664,
+            597,
+            531,
+            466,
+            399,
+            400
+          ],
+          "boundary_edges": [
+            [
+              330,
+              331
+            ],
+            [
+              330,
+              400
+            ],
+            [
+              331,
+              332
+            ],
+            [
+              332,
+              333
+            ],
+            [
+              333,
+              334
+            ],
+            [
+              334,
+              401
+            ],
+            [
+              399,
+              400
+            ],
+            [
+              399,
+              466
+            ],
+            [
+              401,
+              402
+            ],
+            [
+              402,
+              467
+            ],
+            [
+              466,
+              531
+            ],
+            [
+              467,
+              532
+            ],
+            [
+              531,
+              597
+            ],
+            [
+              532,
+              598
+            ],
+            [
+              597,
+              664
+            ],
+            [
+              598,
+              667
+            ],
+            [
+              664,
+              731
+            ],
+            [
+              665,
+              666
+            ],
+            [
+              665,
+              731
+            ],
+            [
+              666,
+              667
+            ]
+          ],
+          "bounding_size_m": [
+            0.07478260869565223,
+            0.075
+          ]
+        }
+      },
+      "hole_topology": "actual missing triangles; three boundary loops; no faces span openings",
+      "original_vertex_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399,
+        400,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422,
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        429,
+        430,
+        431,
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443,
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456,
+        457,
+        458,
+        459,
+        460,
+        461,
+        462,
+        463,
+        464,
+        465,
+        466,
+        467,
+        468,
+        469,
+        475,
+        476,
+        477,
+        478,
+        479,
+        480,
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487,
+        488,
+        489,
+        490,
+        491,
+        492,
+        493,
+        494,
+        495,
+        496,
+        497,
+        498,
+        499,
+        500,
+        501,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507,
+        508,
+        509,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516,
+        517,
+        518,
+        519,
+        520,
+        521,
+        522,
+        523,
+        524,
+        525,
+        526,
+        527,
+        528,
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        535,
+        536,
+        537,
+        538,
+        539,
+        545,
+        546,
+        547,
+        548,
+        549,
+        550,
+        551,
+        552,
+        553,
+        554,
+        555,
+        556,
+        557,
+        558,
+        559,
+        560,
+        561,
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        568,
+        569,
+        570,
+        571,
+        572,
+        573,
+        574,
+        575,
+        576,
+        577,
+        578,
+        579,
+        580,
+        581,
+        582,
+        583,
+        584,
+        585,
+        586,
+        587,
+        588,
+        589,
+        590,
+        591,
+        592,
+        593,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599,
+        600,
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608,
+        609,
+        610,
+        615,
+        616,
+        617,
+        618,
+        619,
+        620,
+        621,
+        622,
+        623,
+        624,
+        625,
+        626,
+        627,
+        628,
+        629,
+        630,
+        631,
+        632,
+        633,
+        634,
+        635,
+        636,
+        637,
+        638,
+        639,
+        640,
+        641,
+        642,
+        643,
+        644,
+        645,
+        646,
+        647,
+        648,
+        649,
+        650,
+        651,
+        652,
+        653,
+        654,
+        655,
+        656,
+        657,
+        658,
+        659,
+        660,
+        661,
+        662,
+        663,
+        664,
+        665,
+        666,
+        667,
+        668,
+        669,
+        670,
+        671,
+        672,
+        673,
+        674,
+        675,
+        676,
+        677,
+        678,
+        679,
+        680,
+        681,
+        683,
+        684,
+        685,
+        686,
+        687,
+        688,
+        689,
+        690,
+        691,
+        692,
+        693,
+        694,
+        695,
+        696,
+        697,
+        698,
+        699,
+        700,
+        701,
+        702,
+        703,
+        704,
+        705,
+        706,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712,
+        713,
+        714,
+        715,
+        719,
+        720,
+        721,
+        722,
+        723,
+        724,
+        725,
+        726,
+        727,
+        728,
+        729,
+        730,
+        731,
+        732,
+        733,
+        734,
+        735,
+        736,
+        737,
+        738,
+        739,
+        740,
+        741,
+        742,
+        743,
+        744,
+        745,
+        746,
+        747,
+        748,
+        749,
+        750,
+        751,
+        752,
+        753,
+        754,
+        755,
+        756,
+        757,
+        758,
+        759,
+        760,
+        761,
+        762,
+        763,
+        764,
+        765,
+        766,
+        767,
+        768,
+        769,
+        770,
+        771,
+        772,
+        773,
+        774,
+        775,
+        776,
+        777,
+        778,
+        779,
+        780,
+        781,
+        782,
+        783,
+        784,
+        789,
+        790,
+        791,
+        792,
+        793,
+        794,
+        795,
+        796,
+        797,
+        798,
+        799,
+        800,
+        801,
+        802,
+        803,
+        804,
+        805,
+        806,
+        807,
+        808,
+        809,
+        810,
+        811,
+        812,
+        813,
+        814,
+        815,
+        816,
+        817,
+        818,
+        819,
+        820,
+        821,
+        822,
+        823,
+        824,
+        825,
+        826,
+        827,
+        828,
+        829,
+        830,
+        831,
+        832,
+        833,
+        834,
+        835,
+        836,
+        837,
+        838,
+        839,
+        840,
+        841,
+        842,
+        843,
+        844,
+        845,
+        846,
+        847,
+        848,
+        849,
+        850,
+        851,
+        852,
+        853,
+        854,
+        860,
+        861,
+        862,
+        863,
+        864,
+        865,
+        866,
+        867,
+        868,
+        869,
+        870,
+        871,
+        872,
+        873,
+        874,
+        875,
+        876,
+        877,
+        878,
+        879,
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888,
+        889,
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912,
+        913,
+        914,
+        915,
+        916,
+        917,
+        918,
+        919,
+        920,
+        921,
+        922,
+        923,
+        924,
+        929,
+        930,
+        931,
+        932,
+        933,
+        934,
+        935,
+        936,
+        937,
+        938,
+        939,
+        940,
+        941,
+        942,
+        943,
+        944,
+        945,
+        946,
+        947,
+        948,
+        949,
+        950,
+        951,
+        952,
+        953,
+        954,
+        955,
+        956,
+        957,
+        958,
+        959,
+        960,
+        961,
+        962,
+        963,
+        964,
+        965,
+        966,
+        967,
+        968,
+        969,
+        970,
+        971,
+        972,
+        973,
+        974,
+        975,
+        976,
+        977,
+        978,
+        979,
+        980,
+        981,
+        982,
+        983,
+        984,
+        985,
+        986,
+        987,
+        988,
+        989,
+        990,
+        991,
+        992,
+        993,
+        994,
+        995,
+        999,
+        1000,
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1009,
+        1010,
+        1011,
+        1012,
+        1013,
+        1014,
+        1015,
+        1016,
+        1017,
+        1018,
+        1019,
+        1020,
+        1021,
+        1022,
+        1023,
+        1024,
+        1025,
+        1026,
+        1027,
+        1028,
+        1029,
+        1030,
+        1031,
+        1032,
+        1033,
+        1034,
+        1035,
+        1036,
+        1037,
+        1038,
+        1039,
+        1040,
+        1041,
+        1042,
+        1043,
+        1044,
+        1045,
+        1046,
+        1047,
+        1048,
+        1049,
+        1050,
+        1051,
+        1052,
+        1053,
+        1054,
+        1055,
+        1056,
+        1057,
+        1058,
+        1059,
+        1060,
+        1061,
+        1062,
+        1063,
+        1064,
+        1065,
+        1066,
+        1067,
+        1068,
+        1069,
+        1070,
+        1071,
+        1072,
+        1073,
+        1074,
+        1075,
+        1076,
+        1077,
+        1078,
+        1079,
+        1080,
+        1081,
+        1082,
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1092,
+        1093,
+        1094,
+        1095,
+        1096,
+        1097,
+        1098,
+        1099,
+        1100,
+        1101,
+        1102,
+        1103,
+        1104,
+        1105,
+        1106,
+        1107,
+        1108,
+        1109,
+        1110,
+        1111,
+        1112,
+        1113,
+        1114,
+        1115,
+        1116,
+        1117,
+        1118,
+        1119,
+        1120,
+        1121,
+        1122,
+        1123,
+        1124,
+        1125,
+        1126,
+        1127,
+        1128,
+        1129,
+        1130,
+        1131,
+        1132,
+        1133,
+        1134,
+        1135,
+        1136,
+        1137,
+        1138,
+        1139,
+        1140,
+        1141,
+        1142,
+        1143,
+        1144,
+        1145,
+        1146,
+        1147,
+        1148,
+        1149,
+        1150,
+        1151,
+        1152,
+        1153,
+        1154,
+        1155,
+        1156,
+        1157,
+        1158,
+        1159,
+        1160,
+        1161,
+        1162,
+        1163,
+        1164,
+        1165,
+        1166,
+        1167,
+        1168,
+        1169,
+        1170,
+        1171,
+        1172,
+        1173,
+        1174,
+        1175,
+        1176,
+        1177,
+        1178,
+        1179,
+        1180,
+        1181,
+        1182,
+        1183,
+        1184,
+        1185,
+        1186,
+        1187,
+        1188,
+        1189
+      ]
+    },
+    "provenance": "Original local procedural extension of preserved Velcro scene; torso field, cloth extents and strip textures retained.",
+    "velcro": {
+      "strip_width_m": 0.04,
+      "strip_length_m": 0.2,
+      "locations": "original left/right short-end regions of same cotton mesh",
+      "visual": "navy hook / ochre loop zones; activation sides set by config",
+      "model": "surface bond zones, no additional thickness or mass",
+      "active_faces": "both original +Z faces, meeting as a folded seam"
+    },
+    "parent_assets_sha256": {
+      "metadata.json": "9efbf07a03698ae3bddd6d8b568ad5f2a9fe341488cad3f600a34606b7bbe9cd",
+      "cotton.obj": "26032950ceb5d1d5c68e4996be95b65a857ecda2f8de09db2157e4870fd2109f",
+      "bear_front_preview.png": "caa8999bc58acebebdb870152534f306866d17175bcb635da540745ab1e04679",
+      "bear.mtl": "0fb81a2a795e9992758865ac0a84db36a39c5cf88bab33d24ac794084c11a48d",
+      "cotton.npz": "cc5bb458489604ff2db2f944d5fef363fabb5e2163cdddcd7dab9e80c593de1f",
+      "bear.obj": "2a0fadb6d6b59d2ec83d347dd17cfe5903cc3a04bdfd24d37307036e71a67de5",
+      "cotton_weave.png": "c587f42ece1b0354663857f847340f90783a2beaff0dc5c3ccb09b35a7b416bb",
+      "bear_fur.png": "5cc9a077d02adddd0427c2248a540106e4a69c6576af8a769c35f60430e58e7a",
+      "bear.npz": "9ab45071b71be17caf7781331abefaaed5b2c0421bfda5561a4c06b212cac74d",
+      "cotton.mtl": "d593690597bee8a72b04588f8464269c305f4de01cc5c6392fd65e959ebb1104"
+    }
+  },
+  "source_sha256": {
+    "metadata.json": "145f57ea871df5b88189b741eebe696b421a600242d097fd229ae846fda2df91",
+    "cotton.obj": "28d63352d15e919c04701bf2ac793a290852863d79b12748ece93173a9277426",
+    "bear.mtl": "0fb81a2a795e9992758865ac0a84db36a39c5cf88bab33d24ac794084c11a48d",
+    "cotton.npz": "037f5a2031125d8ce5a71764d883c6db9f425095d0ba1afe3bf12b5ae4516a1e",
+    "bear.obj": "f493b0849780aec1ff4dd4e95d154d63bf3bd64aa4c391e130b67969dec60f01",
+    "cotton_weave.png": "c587f42ece1b0354663857f847340f90783a2beaff0dc5c3ccb09b35a7b416bb",
+    "bear_fur.png": "5cc9a077d02adddd0427c2248a540106e4a69c6576af8a769c35f60430e58e7a",
+    "bear.npz": "ff025e7e5402c0a3666672a1f55734df6dc4ae6453122cace95a68ce635fe912",
+    "cotton.mtl": "d593690597bee8a72b04588f8464269c305f4de01cc5c6392fd65e959ebb1104"
+  },
+  "implementation_sha256": {
+    "wrap_task.py": "0bbf9bd497e8aef10c913913cd2d2ae0bfa37b39929ede5cb4ce8c588c2b1b00",
+    "wrap_contact.py": "837b869728e0035db5e4c3215b46821470a45611060b5c5218798154480c3d3d",
+    "seam_surface_contact.py": "d5345a20ef7f6323297510c7aedd22381224d4609b4133490016d957ca2503af",
+    "arm_geometry.py": "2d68d06c0676bd05b581cb6d8b3f9cfda07a9847db6f6ba7439a131dc640cded",
+    "scene.py": "8c1f2835946fb6835ae4d298c1f6bd0561639a24703a7a6eb71b67de490aaba8",
+    "asset_primitives.py": "154b242810b515d8ce152558b1000a0ee87909cd545acf814a15540137ca7395",
+    "velcro_plan.json": "93f598aa916329ecfa774e085e692882dcbcf81d62288aca4ad6beb904be7dea",
+    "arms_task.py": "b822ed82127bf8d59d8c88acf888e6f1c3f7b845211fff875ac3f4ca18bcb72b",
+    "generate_assets.py": "d97d242e7d89e944c35493dc9d91822960922817fe5349f113b9cd420f6ff442",
+    "run.sh": "e3b4998eef4537e41d349b38f206aa6668c650c9b948137d857a6f1d8a95614f",
+    "wrap_plan.json": "ca03d79ba129cea16241e47ee6d3731590880ec8f082f85406c747170ad05cf2",
+    "velcro_contact.py": "53b4d7655b6261c0f6653b476904a67e0e61822f4a6bf9cc433e28b96f4fb56e",
+    "pbd_adapter.py": "66cae87488ceaee8ed604971597ef8aa01ff597ef9b1adeaeae4271b358efbd5",
+    "robot_geometry.py": "589b3ab9f4a296e7d5b880338c57cc2a49a061beeea96d9e06c0f8a4789cbbdf",
+    "config.toml": "f5e8dd500bc482eb33c1e2d39c17c9148929761da31004958cb1c39e66ecb414",
+    "run-wrap.sh": "af2e8b067e2ebfdb60c1fde68d69e73093f0b5abf47a2fef8eeff7127d08e5e1"
+  },
+  "scope": "Wrap, join complementary Velcro strips, then sequentially grasp and draw both soft bear arms through real cloth openings.",
+  "rigid_pbd_contact": {
+    "adapter": "scene-local Genesis 1.4.3 legacy Coulomb friction",
+    "method": "position-level static/kinetic friction limited by normal SDF projection",
+    "coefficient_combination": "minimum(particle coefficient, rigid coup_friction)",
+    "applies_to": "free PBD particles contacting coupled rigid geometry",
+    "normal_projection_unchanged": true,
+    "reciprocal_rigid_force": true,
+    "world_position_pinning": false,
+    "installed_genesis_modified": false
+  },
+  "grasp_constraints": {
+    "model": "exact local no-slip PBD link constraint on contact-gated grasp nodes",
+    "free_particles_repositioned": false,
+    "actual_robot_link_transform": true,
+    "grasp_load_transferred_to_arm": false,
+    "native_genesis_source_modified": false
+  },
+  "simulation": {
+    "backend": "cuda",
+    "genesis_version": "1.4.3",
+    "step_dt_s": 0.01,
+    "substep_dt_s": 0.001,
+    "bear_model": "PBD.Elastic",
+    "cloth_model": "PBD.Cloth",
+    "cotton_calibrated": false,
+    "bear_particles": 1832,
+    "bear_tetrahedra": 7623,
+    "cloth_particles": 1153,
+    "cloth_mass_kg": 0.029389565217391313,
+    "fixed_particle_count": 92,
+    "free_bear_particles": 1740,
+    "fixed_particle_indices": [
+      68,
+      69,
+      79,
+      107,
+      110,
+      111,
+      113,
+      150,
+      167,
+      176,
+      177,
+      207,
+      208,
+      209,
+      245,
+      255,
+      256,
+      268,
+      272,
+      279,
+      289,
+      301,
+      309,
+      315,
+      325,
+      331,
+      357,
+      362,
+      364,
+      380,
+      381,
+      383,
+      391,
+      395,
+      398,
+      416,
+      444,
+      452,
+      460,
+      463,
+      475,
+      476,
+      484,
+      491,
+      503,
+      518,
+      521,
+      537,
+      551,
+      552,
+      554,
+      562,
+      563,
+      564,
+      568,
+      574,
+      593,
+      601,
+      612,
+      615,
+      618,
+      627,
+      633,
+      635,
+      651,
+      678,
+      693,
+      702,
+      712,
+      713,
+      734,
+      738,
+      744,
+      756,
+      779,
+      789,
+      798,
+      826,
+      838,
+      843,
+      881,
+      882,
+      884,
+      923,
+      951,
+      952,
+      967,
+      973,
+      989,
+      990,
+      1459,
+      1669
+    ],
+    "fixed_band_height_m": 0.018,
+    "robot_dofs": {
+      "left": 9,
+      "right": 9
+    },
+    "import_geometry_and_mass_verified": true
+  },
+  "wrapping": {
+    "controller": "Contact-adaptive grasp IK; prevalidated continuous joint trajectory for wrapping",
+    "grasp_model": "contact-gated local no-slip PBD link attachments",
+    "grasp_friction_or_force_validated": false,
+    "object_position_setters_during_action": false,
+    "robot_position_setters_during_action": false,
+    "cloth_corners": "two front (negative Y) corners of the initial flat rectangle",
+    "corner_particle_indices": {
+      "left": 0,
+      "right": 69
+    },
+    "phases": [
+      {
+        "name": "settle",
+        "start_seconds": 0.0
+      },
+      {
+        "name": "pregrasp",
+        "start_seconds": 0.5
+      },
+      {
+        "name": "grasp",
+        "start_seconds": 2.2800000000000002
+      },
+      {
+        "name": "lift",
+        "start_seconds": 5.7700000000000005
+      },
+      {
+        "name": "approach_body",
+        "start_seconds": 8.35
+      },
+      {
+        "name": "wrap",
+        "start_seconds": 11.63
+      },
+      {
+        "name": "press",
+        "start_seconds": 23.85
+      },
+      {
+        "name": "regrasp_right",
+        "start_seconds": 28.95
+      },
+      {
+        "name": "regrasp_right",
+        "start_seconds": 28.95
+      }
+    ],
+    "grasps": {
+      "left": {
+        "time_s": 5.47,
+        "pad_contacts": [
+          {
+            "finger": "left_finger",
+            "indices": [
+              1,
+              0
+            ],
+            "distances_m": [
+              0.003931968782721732,
+              0.003931983295742308
+            ],
+            "closest_corner_patch_distance_m": 0.003931968782721732
+          },
+          {
+            "finger": "right_finger",
+            "indices": [
+              71,
+              70,
+              1,
+              0
+            ],
+            "distances_m": [
+              0.0036348963406766504,
+              0.0036349111223429073,
+              0.003934449621435678,
+              0.003934455648244581
+            ],
+            "closest_corner_patch_distance_m": 0.0036348963406766504
+          }
+        ],
+        "attached_indices": [
+          0,
+          1,
+          70,
+          71
+        ],
+        "original_corner_included": true
+      },
+      "right": {
+        "time_s": 5.47,
+        "pad_contacts": [
+          {
+            "finger": "left_finger",
+            "indices": [
+              68,
+              69
+            ],
+            "distances_m": [
+              0.00393360160993104,
+              0.003933613495300588
+            ],
+            "closest_corner_patch_distance_m": 0.00393360160993104
+          },
+          {
+            "finger": "right_finger",
+            "indices": [
+              138,
+              139,
+              68,
+              69
+            ],
+            "distances_m": [
+              0.003636786687469248,
+              0.003636800751157879,
+              0.003936840856469893,
+              0.0039368638908243705
+            ],
+            "closest_corner_patch_distance_m": 0.003636786687469248
+          }
+        ],
+        "attached_indices": [
+          68,
+          69,
+          138,
+          139
+        ],
+        "original_corner_included": true
+      }
+    },
+    "grasp_inset_from_short_edge_m": 0.006,
+    "surface_contact": {
+      "method": "mass-weighted cloth vertex/mid-edge/face contacts against the moving tetrahedral bear boundary",
+      "clearance_m": 0.002,
+      "iterations_per_substep": 8,
+      "broadphase_distance_m": 0.02,
+      "maximum_particle_correction_per_pass_m": 0.001,
+      "equal_opposite_free_body_corrections": false,
+      "pinned_particles_unchanged": true,
+      "custom_contact_body_inverse_mass_scale": 0.0,
+      "coupling_note": "Additional sampled surface barrier uses the currently deforming body as an obstacle when scale=0; native particle collisions and robot/body dynamics remain active.",
+      "body_surface_vertices": 1102,
+      "body_surface_faces": 2200,
+      "cloth_contact_samples": 6499,
+      "normal_update": "cached smooth normal transported with current triangle frame each substep",
+      "entry_side_history": "Retain the last exterior triangle and transported normal while a sample is signed-inside; discrete anti-crossing aid, not CCD.",
+      "friction": {
+        "coefficient": 0.2,
+        "model": "Coulomb static/kinetic position friction bounded by this pass's compressive normal multiplier",
+        "motion_reference": "relative cloth/body displacement from this substep's ipos",
+        "separated_contact_friction": false,
+        "world_or_material_point_anchor": false,
+        "combined_normal_tangent_correction_limited": true
+      },
+      "object_pose_targets": false,
+      "continuous_collision_detection": false
+    },
+    "seam_surface_contact": {
+      "model": "reciprocal unsigned-distance sampled VF plus finite edge-edge contact between the two cloth end regions",
+      "sample_counts": {
+        "left": {
+          "vertices": 153,
+          "edge_midpoints": 408,
+          "face_centroids": 256
+        },
+        "right": {
+          "vertices": 153,
+          "edge_midpoints": 408,
+          "face_centroids": 256
+        }
+      },
+      "edge_counts": {
+        "left": 408,
+        "right": 408
+      },
+      "edge_pair_policy": "all close opposite-region edge pairs; closest segment parameters recomputed each substep",
+      "shared_vf_ee_correction_cap": true,
+      "participation_counting": "rebuilt every projection from actual active VF and EE distances; conservative target corners/endpoints",
+      "region_width_m": 0.1,
+      "thickness_m": 0.002,
+      "broadphase_m": 0.012,
+      "history_release_m": 0.02,
+      "maximum_particle_correction_per_pass_m": 0.0003,
+      "iterations_per_substep": 3,
+      "friction": false,
+      "adhesion": false,
+      "normal_alignment_constraint": false,
+      "world_anchors": false,
+      "reciprocal_inverse_mass_projection": true,
+      "continuous_collision_detection": false,
+      "same_region_contacts": false,
+      "all_features": "unsigned radial repulsion only at actual finite triangle or segment distance below thickness",
+      "history_usage": "normal selection only at distance <= 1e-9 m; no side or crossing constraint",
+      "restoration": "transient cache rebuilt; resume from nonintersecting geometry; exact coincidence has ambiguous incoming normal"
+    },
+    "completion_scope": "Wrap, join complementary Velcro strips, then sequentially grasp and draw both soft bear arms through real cloth openings.",
+    "velcro": {
+      "active_bonds": 1,
+      "total_activated": 1,
+      "broken_bonds": 0,
+      "max_bond_error_m": 8.370072996444913e-05,
+      "mean_bond_error_m": 8.370072996444913e-05,
+      "latest_contact_candidates": 0,
+      "minimum_strip_vertex_to_face_distance_m": 0.001364306163436968,
+      "bonded_hook_vertex_area_m2": 0.00010386473429951692,
+      "bonded_width_span_m": 0.0,
+      "activation_events": [
+        {
+          "id": 0,
+          "source_node": 547,
+          "target_nodes": [
+            208,
+            209,
+            279
+          ],
+          "target_face_id": 412,
+          "barycentric": [
+            0.8244050140555891,
+            0.0,
+            0.1755949859444109
+          ],
+          "local_offset_m": [
+            -0.003218210702672042,
+            0.003370431908271534,
+            0.00024337215808477091
+          ],
+          "active": true,
+          "activation_time_s": 27.96,
+          "continuous_contact_start_s": 27.88,
+          "dwell_s": 0.08000000000000185,
+          "activation_distance_m": 0.004666467762925039,
+          "activation_normal_dot": -0.824003812427947,
+          "source_active_face_id": 935,
+          "source_active_normal": [
+            0.7239079181701185,
+            -0.6886573090454455,
+            -0.04133323975798172
+          ],
+          "target_active_normal": [
+            -0.37665674031400553,
+            0.7696587679481967,
+            0.51551438476195
+          ],
+          "source_facing_gap_m": 0.0009660640651857984,
+          "target_facing_gap_m": 0.00024337215808477091
+        }
+      ],
+      "model": "contact-gated ideal local no-slip hook/loop adhesion with geometric detachment",
+      "force_or_peel_strength_calibrated": false
+    },
+    "arm_extraction": {
+      "grasps": {},
+      "measurements": [
+        {
+          "label": "after_press",
+          "time_s": 28.95,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14550310373306274,
+                0.09278121590614319,
+                0.9894517660140991
+              ],
+              "hole_normal": [
+                -0.9182582497596741,
+                0.3180527091026306,
+                0.2358902543783188
+              ],
+              "paw_center_m": [
+                -0.15185263752937317,
+                0.07586808502674103,
+                0.9579424858093262
+              ],
+              "paw_signed_distance_to_hole_m": -0.006981487385928631,
+              "hole_min_boundary_radius_m": 0.03157077357172966,
+              "material_curve": {
+                "root_signed_distance_m": -0.0416683714328934,
+                "tip_signed_distance_m": -0.004233764487967137,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.1470896523090429,
+                      0.0804466192144431,
+                      0.9999065878186069
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.020330775620897946
+                  },
+                  {
+                    "point_m": [
+                      -0.15421725567914554,
+                      0.07784346145654565,
+                      0.9756705750441161
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.01948776708623443
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.011248977854847908
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.1409536600112915,
+                0.10291775315999985,
+                0.9780791401863098
+              ],
+              "hole_normal": [
+                0.7151397466659546,
+                0.6989758014678955,
+                0.0028251181356608868
+              ],
+              "paw_center_m": [
+                0.1522652953863144,
+                0.07834268361330032,
+                0.955293595790863
+              ],
+              "paw_signed_distance_to_hole_m": -0.009152350947260857,
+              "hole_min_boundary_radius_m": 0.027874566614627838,
+              "material_curve": {
+                "root_signed_distance_m": -0.048523378873874895,
+                "tip_signed_distance_m": -0.009343158183768257,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.009326913394033909
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 29.0,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14525963366031647,
+                0.09303884953260422,
+                0.9894309639930725
+              ],
+              "hole_normal": [
+                -0.9124715328216553,
+                0.33608531951904297,
+                0.23332884907722473
+              ],
+              "paw_center_m": [
+                -0.15181869268417358,
+                0.0758807361125946,
+                0.9579604268074036
+              ],
+              "paw_signed_distance_to_hole_m": -0.007124620024114847,
+              "hole_min_boundary_radius_m": 0.031896091997623444,
+              "material_curve": {
+                "root_signed_distance_m": -0.0415849370590469,
+                "tip_signed_distance_m": -0.004403842219303985,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.14726895241763757,
+                      0.0804678630918627,
+                      0.9996803516604954
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.020113863752071512
+                  },
+                  {
+                    "point_m": [
+                      -0.1541910932838275,
+                      0.07795327889798788,
+                      0.9762321510802362
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.01932801694720444
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.011088836938142776
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.1491028070449829,
+                0.09522973001003265,
+                0.9697925448417664
+              ],
+              "hole_normal": [
+                0.8243086934089661,
+                0.5604353547096252,
+                -0.08017098158597946
+              ],
+              "paw_center_m": [
+                0.15238328278064728,
+                0.07807674258947372,
+                0.955321729183197
+              ],
+              "paw_signed_distance_to_hole_m": -0.005748876370489597,
+              "hole_min_boundary_radius_m": 0.026144085451960564,
+              "material_curve": {
+                "root_signed_distance_m": -0.05798291159696393,
+                "tip_signed_distance_m": -0.005769808781551022,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.009867509827017784
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 29.2,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14454935491085052,
+                0.09580273926258087,
+                0.9888246655464172
+              ],
+              "hole_normal": [
+                -0.8752015233039856,
+                0.4363357126712799,
+                0.20888614654541016
+              ],
+              "paw_center_m": [
+                -0.1519194394350052,
+                0.07641438394784927,
+                0.9577782154083252
+              ],
+              "paw_signed_distance_to_hole_m": -0.008494695648550987,
+              "hole_min_boundary_radius_m": 0.03244294226169586,
+              "material_curve": {
+                "root_signed_distance_m": -0.04210279427257719,
+                "tip_signed_distance_m": -0.0059676520958826225,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15012669094065204,
+                      0.08099557803485216,
+                      0.9963866809495578
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019469954292895976
+                  },
+                  {
+                    "point_m": [
+                      -0.15439234153164716,
+                      0.0794414628183813,
+                      0.9817605892958196
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019448000634041285
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010725635103881359
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.15080606937408447,
+                0.09116514027118683,
+                0.9620556831359863
+              ],
+              "hole_normal": [
+                0.9315575957298279,
+                0.3172106444835663,
+                -0.1777014583349228
+              ],
+              "paw_center_m": [
+                0.1527865082025528,
+                0.07813478261232376,
+                0.9557586312294006
+              ],
+              "paw_signed_distance_to_hole_m": -0.0011694802669808269,
+              "hole_min_boundary_radius_m": 0.02769097127020359,
+              "material_curve": {
+                "root_signed_distance_m": -0.06805294885019662,
+                "tip_signed_distance_m": -0.0008934924035612778,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.00767630385234952
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 29.400000000000002,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14448146522045135,
+                0.09561891853809357,
+                0.9888086318969727
+              ],
+              "hole_normal": [
+                -0.8739985227584839,
+                0.43636685609817505,
+                0.21380025148391724
+              ],
+              "paw_center_m": [
+                -0.1519158035516739,
+                0.07611340284347534,
+                0.957773745059967
+              ],
+              "paw_signed_distance_to_hole_m": -0.00864922720938921,
+              "hole_min_boundary_radius_m": 0.032512009143829346,
+              "material_curve": {
+                "root_signed_distance_m": -0.041799505388059884,
+                "tip_signed_distance_m": -0.0061092704391143265,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15006420366367842,
+                      0.08068335940353201,
+                      0.9964703526850456
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.01952268194652729
+                  },
+                  {
+                    "point_m": [
+                      -0.15439913296423488,
+                      0.07915108533770493,
+                      0.9818768797283601
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019440786506925357
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010677291080355644
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.150547057390213,
+                0.09112631529569626,
+                0.9619938731193542
+              ],
+              "hole_normal": [
+                0.9313825368881226,
+                0.3175725042819977,
+                -0.17797265946865082
+              ],
+              "paw_center_m": [
+                0.15233385562896729,
+                0.07818783819675446,
+                0.9554879665374756
+              ],
+              "paw_signed_distance_to_hole_m": -0.0012868382036685944,
+              "hole_min_boundary_radius_m": 0.027676748111844063,
+              "material_curve": {
+                "root_signed_distance_m": -0.06788735389827037,
+                "tip_signed_distance_m": -0.0009675666003351179,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007727148476988077
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 29.6,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14437119662761688,
+                0.09576544165611267,
+                0.9888738393783569
+              ],
+              "hole_normal": [
+                -0.8727084994316101,
+                0.4396413564682007,
+                0.2123565375804901
+              ],
+              "paw_center_m": [
+                -0.15190079808235168,
+                0.07630046457052231,
+                0.9578430652618408
+              ],
+              "paw_signed_distance_to_hole_m": -0.008576050400733948,
+              "hole_min_boundary_radius_m": 0.03248799219727516,
+              "material_curve": {
+                "root_signed_distance_m": -0.041811696801295054,
+                "tip_signed_distance_m": -0.006045697826261351,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.14999851485587118,
+                      0.08089100825309839,
+                      0.9965421110960381
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019536764408057794
+                  },
+                  {
+                    "point_m": [
+                      -0.15435404922514542,
+                      0.07933921976884865,
+                      0.9818551063774633
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019428936218210863
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.01072648260742426
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.150611013174057,
+                0.09109538793563843,
+                0.9619174003601074
+              ],
+              "hole_normal": [
+                0.9318416714668274,
+                0.31550103425979614,
+                -0.17924894392490387
+              ],
+              "paw_center_m": [
+                0.15228214859962463,
+                0.0781334787607193,
+                0.9553845524787903
+              ],
+              "paw_signed_distance_to_hole_m": -0.0013612558832392097,
+              "hole_min_boundary_radius_m": 0.027654362842440605,
+              "material_curve": {
+                "root_signed_distance_m": -0.06793930405576001,
+                "tip_signed_distance_m": -0.0010305352961455846,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007648074068129063
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 29.8,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14435827732086182,
+                0.09574233740568161,
+                0.9888988137245178
+              ],
+              "hole_normal": [
+                -0.8732610940933228,
+                0.4384844899177551,
+                0.21247674524784088
+              ],
+              "paw_center_m": [
+                -0.15186767280101776,
+                0.07624635100364685,
+                0.9578719139099121
+              ],
+              "paw_signed_distance_to_hole_m": -0.008583519607782364,
+              "hole_min_boundary_radius_m": 0.03249600902199745,
+              "material_curve": {
+                "root_signed_distance_m": -0.04183185545938989,
+                "tip_signed_distance_m": -0.006051797697134526,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.14997003388582278,
+                      0.0808540626943872,
+                      0.9965596467391401
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.01954583292946212
+                  },
+                  {
+                    "point_m": [
+                      -0.15431965860253102,
+                      0.07929614524767876,
+                      0.9818981109629762
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019432535891649477
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010716150514781475
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.1506921350955963,
+                0.09130213409662247,
+                0.9618898630142212
+              ],
+              "hole_normal": [
+                0.9323643445968628,
+                0.31287309527397156,
+                -0.1811273694038391
+              ],
+              "paw_center_m": [
+                0.15231217443943024,
+                0.07827930152416229,
+                0.9553505182266235
+              ],
+              "paw_signed_distance_to_hole_m": -0.0013795726699754596,
+              "hole_min_boundary_radius_m": 0.02777094952762127,
+              "material_curve": {
+                "root_signed_distance_m": -0.06814100125258672,
+                "tip_signed_distance_m": -0.0010471621266441768,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.0075073582120239735
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 30.0,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.1444341242313385,
+                0.09566479176282883,
+                0.9888589978218079
+              ],
+              "hole_normal": [
+                -0.8732690811157227,
+                0.43841874599456787,
+                0.212579607963562
+              ],
+              "paw_center_m": [
+                -0.1519344002008438,
+                0.07619211822748184,
+                0.9578165411949158
+              ],
+              "paw_signed_distance_to_hole_m": -0.008586419746279716,
+              "hole_min_boundary_radius_m": 0.03249051049351692,
+              "material_curve": {
+                "root_signed_distance_m": -0.041834860259578784,
+                "tip_signed_distance_m": -0.006054225011758216,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15005130729359567,
+                      0.08076839924179698,
+                      0.9965057587376345
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019544060518400255
+                  },
+                  {
+                    "point_m": [
+                      -0.15439359089086044,
+                      0.07922475603115432,
+                      0.9818513903525529
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019435077411079183
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010710669681429863
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.15058735013008118,
+                0.09112053364515305,
+                0.9619460105895996
+              ],
+              "hole_normal": [
+                0.9324144721031189,
+                0.31400808691978455,
+                -0.17889142036437988
+              ],
+              "paw_center_m": [
+                0.15222644805908203,
+                0.07813596725463867,
+                0.9554065465927124
+              ],
+              "paw_signed_distance_to_hole_m": -0.0013790864031761885,
+              "hole_min_boundary_radius_m": 0.027702411636710167,
+              "material_curve": {
+                "root_signed_distance_m": -0.06798736482544007,
+                "tip_signed_distance_m": -0.0010398507959074447,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007619551848620176
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 30.2,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14445465803146362,
+                0.09582272171974182,
+                0.9888567328453064
+              ],
+              "hole_normal": [
+                -0.8739549517631531,
+                0.43729203939437866,
+                0.212081179022789
+              ],
+              "paw_center_m": [
+                -0.15192575752735138,
+                0.07630329579114914,
+                0.9578229784965515
+              ],
+              "paw_signed_distance_to_hole_m": -0.00858796015381813,
+              "hole_min_boundary_radius_m": 0.03249530494213104,
+              "material_curve": {
+                "root_signed_distance_m": -0.041895874930328744,
+                "tip_signed_distance_m": -0.006054448675709691,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15006552536287643,
+                      0.08091349708214175,
+                      0.9964766450272218
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.01954628639949505
+                  },
+                  {
+                    "point_m": [
+                      -0.15438275746949978,
+                      0.07936180627809528,
+                      0.9818854193675849
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019446302177719855
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.01069254893809557
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.1506688892841339,
+                0.0912892296910286,
+                0.9619304537773132
+              ],
+              "hole_normal": [
+                0.9330035448074341,
+                0.31136783957481384,
+                -0.18042846024036407
+              ],
+              "paw_center_m": [
+                0.15225689113140106,
+                0.0782545730471611,
+                0.9553990960121155
+              ],
+              "paw_signed_distance_to_hole_m": -0.001398518681526184,
+              "hole_min_boundary_radius_m": 0.02776772528886795,
+              "material_curve": {
+                "root_signed_distance_m": -0.06815633932134584,
+                "tip_signed_distance_m": -0.0010601186047235406,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.0074827964417636395
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 30.400000000000002,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.1443539708852768,
+                0.09564387053251266,
+                0.9889165759086609
+              ],
+              "hole_normal": [
+                -0.8730911612510681,
+                0.4387137293815613,
+                0.21270185708999634
+              ],
+              "paw_center_m": [
+                -0.15186826884746552,
+                0.07617989927530289,
+                0.9578791260719299
+              ],
+              "paw_signed_distance_to_hole_m": -0.008580167777836323,
+              "hole_min_boundary_radius_m": 0.03248881921172142,
+              "material_curve": {
+                "root_signed_distance_m": -0.04183581390776667,
+                "tip_signed_distance_m": -0.006049201472851807,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.14996941973183942,
+                      0.08075989572340891,
+                      0.9965658055129111
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019544256901028595
+                  },
+                  {
+                    "point_m": [
+                      -0.1543171772116273,
+                      0.07921358660959504,
+                      0.9819086622635742
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019432241112302868
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010717860423028469
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.15071095526218414,
+                0.09116583317518234,
+                0.96189945936203
+              ],
+              "hole_normal": [
+                0.9327770471572876,
+                0.3122440278530121,
+                -0.1800851970911026
+              ],
+              "paw_center_m": [
+                0.1523202508687973,
+                0.07814206182956696,
+                0.9553560614585876
+              ],
+              "paw_signed_distance_to_hole_m": -0.0013871117262169719,
+              "hole_min_boundary_radius_m": 0.02775026112794876,
+              "material_curve": {
+                "root_signed_distance_m": -0.06810603190128967,
+                "tip_signed_distance_m": -0.0010488998978496903,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007527543697506189
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 30.6,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14445297420024872,
+                0.09578366577625275,
+                0.9888373017311096
+              ],
+              "hole_normal": [
+                -0.8734015822410583,
+                0.438437819480896,
+                0.21199524402618408
+              ],
+              "paw_center_m": [
+                -0.15194842219352722,
+                0.07628267258405685,
+                0.9578044414520264
+              ],
+              "paw_signed_distance_to_hole_m": -0.008582256734371185,
+              "hole_min_boundary_radius_m": 0.032485879957675934,
+              "material_curve": {
+                "root_signed_distance_m": -0.04184843120900679,
+                "tip_signed_distance_m": -0.006050733438374844,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.150072719020741,
+                      0.08089262148447153,
+                      0.9964813551555954
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.01954505352167061
+                  },
+                  {
+                    "point_m": [
+                      -0.15440760696405015,
+                      0.07933635206849397,
+                      0.9818405992579087
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.01943683182385897
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010711871087551117
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.15063801407814026,
+                0.09130234271287918,
+                0.9619377255439758
+              ],
+              "hole_normal": [
+                0.9330874085426331,
+                0.3110378682613373,
+                -0.1805640310049057
+              ],
+              "paw_center_m": [
+                0.1522078961133957,
+                0.07826383411884308,
+                0.9554061889648438
+              ],
+              "paw_signed_distance_to_hole_m": -0.0014112720964476466,
+              "hole_min_boundary_radius_m": 0.027768317610025406,
+              "material_curve": {
+                "root_signed_distance_m": -0.06817288137202275,
+                "tip_signed_distance_m": -0.0010696516638091414,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.00746611924842
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 30.8,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14439044892787933,
+                0.09565796703100204,
+                0.9888937473297119
+              ],
+              "hole_normal": [
+                -0.8731842041015625,
+                0.43865033984184265,
+                0.21245047450065613
+              ],
+              "paw_center_m": [
+                -0.15189923346042633,
+                0.0761902704834938,
+                0.9578533172607422
+              ],
+              "paw_signed_distance_to_hole_m": -0.008577514439821243,
+              "hole_min_boundary_radius_m": 0.03248576447367668,
+              "material_curve": {
+                "root_signed_distance_m": -0.04184547671883905,
+                "tip_signed_distance_m": -0.006046839898132754,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15000975021507548,
+                      0.0807710411329777,
+                      0.9965353870394713
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019543039328739173
+                  },
+                  {
+                    "point_m": [
+                      -0.1543511847093418,
+                      0.07922476147505012,
+                      0.9818844622373009
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.01943255702246859
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010716311633586884
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.1506926715373993,
+                0.09118679910898209,
+                0.9619203805923462
+              ],
+              "hole_normal": [
+                0.93302321434021,
+                0.31140533089637756,
+                -0.18026214838027954
+              ],
+              "paw_center_m": [
+                0.15228597819805145,
+                0.07815121114253998,
+                0.9553797841072083
+              ],
+              "paw_signed_distance_to_hole_m": -0.00139373738784343,
+              "hole_min_boundary_radius_m": 0.027761420235037804,
+              "material_curve": {
+                "root_signed_distance_m": -0.06814932382889802,
+                "tip_signed_distance_m": -0.0010542882218304132,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007493952289223671
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 31.0,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14440244436264038,
+                0.09577071666717529,
+                0.9888744950294495
+              ],
+              "hole_normal": [
+                -0.8732576370239258,
+                0.438751220703125,
+                0.21193979680538177
+              ],
+              "paw_center_m": [
+                -0.151907280087471,
+                0.07628247886896133,
+                0.9578418731689453
+              ],
+              "paw_signed_distance_to_hole_m": -0.008573880419135094,
+              "hole_min_boundary_radius_m": 0.03248143196105957,
+              "material_curve": {
+                "root_signed_distance_m": -0.041854395786092985,
+                "tip_signed_distance_m": -0.006043489562230505,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15002365658327568,
+                      0.080890810552267,
+                      0.9965172808359742
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019543731513745586
+                  },
+                  {
+                    "point_m": [
+                      -0.15436105328893435,
+                      0.07933369915247847,
+                      0.9818693462933096
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019433675387020607
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010717402212321758
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.1506931334733963,
+                0.0912933349609375,
+                0.961911678314209
+              ],
+              "hole_normal": [
+                0.9330742955207825,
+                0.3109700083732605,
+                -0.1807485967874527
+              ],
+              "paw_center_m": [
+                0.15226998925209045,
+                0.07825125753879547,
+                0.9553802013397217
+              ],
+              "paw_signed_distance_to_hole_m": -0.0014038162771612406,
+              "hole_min_boundary_radius_m": 0.027769064530730247,
+              "material_curve": {
+                "root_signed_distance_m": -0.06818117555550673,
+                "tip_signed_distance_m": -0.0010640698017598707,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007460647262632847
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 31.2,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14442171156406403,
+                0.09566955268383026,
+                0.9888678193092346
+              ],
+              "hole_normal": [
+                -0.8732054829597473,
+                0.4386328160762787,
+                0.21239924430847168
+              ],
+              "paw_center_m": [
+                -0.15192608535289764,
+                0.07619860023260117,
+                0.957827091217041
+              ],
+              "paw_signed_distance_to_hole_m": -0.008580765686929226,
+              "hole_min_boundary_radius_m": 0.0324857123196125,
+              "material_curve": {
+                "root_signed_distance_m": -0.04184014945866889,
+                "tip_signed_distance_m": -0.006049656273823031,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15004159298052133,
+                      0.08078043129127523,
+                      0.9965116599649291
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019543400159891016
+                  },
+                  {
+                    "point_m": [
+                      -0.15438223456136416,
+                      0.07923422317601996,
+                      0.9818597509232899
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019433668252881956
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010714896023273468
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.15067097544670105,
+                0.09118775278329849,
+                0.9619380831718445
+              ],
+              "hole_normal": [
+                0.9331430792808533,
+                0.31108635663986206,
+                -0.18019218742847443
+              ],
+              "paw_center_m": [
+                0.15225259959697723,
+                0.07814323157072067,
+                0.9554024338722229
+              ],
+              "paw_signed_distance_to_hole_m": -0.001404418027959764,
+              "hole_min_boundary_radius_m": 0.027764081954956055,
+              "material_curve": {
+                "root_signed_distance_m": -0.06816413775984424,
+                "tip_signed_distance_m": -0.0010639069275258169,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007479068357497454
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 31.400000000000002,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14438916742801666,
+                0.095769502222538,
+                0.9888858795166016
+              ],
+              "hole_normal": [
+                -0.8733221888542175,
+                0.43855345249176025,
+                0.2120831310749054
+              ],
+              "paw_center_m": [
+                -0.15189127624034882,
+                0.07627953588962555,
+                0.9578537344932556
+              ],
+              "paw_signed_distance_to_hole_m": -0.008577028289437294,
+              "hole_min_boundary_radius_m": 0.03248560428619385,
+              "material_curve": {
+                "root_signed_distance_m": -0.04185809666601618,
+                "tip_signed_distance_m": -0.006046037407345648,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15000746962957207,
+                      0.08088600222492867,
+                      0.996527328058935
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019543535699629543
+                  },
+                  {
+                    "point_m": [
+                      -0.1543440761026884,
+                      0.07933049689687789,
+                      0.9818864539376516
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.01943522082073783
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010713716968894005
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.15071572363376617,
+                0.091291144490242,
+                0.9619050025939941
+              ],
+              "hole_normal": [
+                0.9331263303756714,
+                0.31078529357910156,
+                -0.18079744279384613
+              ],
+              "paw_center_m": [
+                0.15229764580726624,
+                0.07824614644050598,
+                0.95537269115448
+              ],
+              "paw_signed_distance_to_hole_m": -0.0013970349682494998,
+              "hole_min_boundary_radius_m": 0.02776925638318062,
+              "material_curve": {
+                "root_signed_distance_m": -0.06818866996346888,
+                "tip_signed_distance_m": -0.0010579923834376078,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007457480300217867
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 31.6,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.1444261521100998,
+                0.09567567706108093,
+                0.9888624548912048
+              ],
+              "hole_normal": [
+                -0.8731282353401184,
+                0.43880683183670044,
+                0.21235749125480652
+              ],
+              "paw_center_m": [
+                -0.15193454921245575,
+                0.07620441913604736,
+                0.9578221440315247
+              ],
+              "paw_signed_distance_to_hole_m": -0.008579970337450504,
+              "hole_min_boundary_radius_m": 0.03248443454504013,
+              "material_curve": {
+                "root_signed_distance_m": -0.04183321743207272,
+                "tip_signed_distance_m": -0.006049181768512613,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15004798201571093,
+                      0.08078879164894712,
+                      0.9965094118652698
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019542472238400672
+                  },
+                  {
+                    "point_m": [
+                      -0.15439085998696173,
+                      0.07924101236158639,
+                      0.9818515194807175
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019432568693882726
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010717218741774559
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.150660902261734,
+                0.0911993533372879,
+                0.9619382619857788
+              ],
+              "hole_normal": [
+                0.9331701397895813,
+                0.31089577078819275,
+                -0.18038111925125122
+              ],
+              "paw_center_m": [
+                0.15223118662834167,
+                0.0781516507267952,
+                0.9554019570350647
+              ],
+              "paw_signed_distance_to_hole_m": -0.0014121071435511112,
+              "hole_min_boundary_radius_m": 0.027766799554228783,
+              "material_curve": {
+                "root_signed_distance_m": -0.06817642139698549,
+                "tip_signed_distance_m": -0.001070526460567885,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007468142546713352
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 31.8,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14438240230083466,
+                0.09575147926807404,
+                0.988891065120697
+              ],
+              "hole_normal": [
+                -0.8732558488845825,
+                0.43869176506996155,
+                0.21207009255886078
+              ],
+              "paw_center_m": [
+                -0.15188798308372498,
+                0.07626686245203018,
+                0.9578574299812317
+              ],
+              "paw_signed_distance_to_hole_m": -0.008574753999710083,
+              "hole_min_boundary_radius_m": 0.032483916729688644,
+              "material_curve": {
+                "root_signed_distance_m": -0.041856361224921305,
+                "tip_signed_distance_m": -0.006044191429481608,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.1500021999584224,
+                      0.08087071397482595,
+                      0.996532633049945
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019543060959766708
+                  },
+                  {
+                    "point_m": [
+                      -0.15434024303640737,
+                      0.07931557689822312,
+                      0.981886552482781
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019433232989415662
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010715609416365623
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.15072008967399597,
+                0.09128091484308243,
+                0.9619048833847046
+              ],
+              "hole_normal": [
+                0.9331157207489014,
+                0.3108051121234894,
+                -0.18081822991371155
+              ],
+              "paw_center_m": [
+                0.15230217576026917,
+                0.07823494076728821,
+                0.9553712606430054
+              ],
+              "paw_signed_distance_to_hole_m": -0.001397087937220931,
+              "hole_min_boundary_radius_m": 0.027771636843681335,
+              "material_curve": {
+                "root_signed_distance_m": -0.06819159055321482,
+                "tip_signed_distance_m": -0.0010583739869771556,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007456221152096987
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 32.0,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14443202316761017,
+                0.09569878876209259,
+                0.9888595938682556
+              ],
+              "hole_normal": [
+                -0.8732319474220276,
+                0.4386533200740814,
+                0.21224814653396606
+              ],
+              "paw_center_m": [
+                -0.15193547308444977,
+                0.07622168213129044,
+                0.957820475101471
+              ],
+              "paw_signed_distance_to_hole_m": -0.008579440414905548,
+              "hole_min_boundary_radius_m": 0.03248489648103714,
+              "material_curve": {
+                "root_signed_distance_m": -0.04184244832223875,
+                "tip_signed_distance_m": -0.00604849605754982,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.1500530512421308,
+                      0.0808105987902415,
+                      0.9965029711863184
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.01954218237628792
+                  },
+                  {
+                    "point_m": [
+                      -0.1543922458392532,
+                      0.0792615175770476,
+                      0.9818521307345323
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019433824508485444
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.01071410346776247
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.15065869688987732,
+                0.09122265130281448,
+                0.9619344472885132
+              ],
+              "hole_normal": [
+                0.9332163333892822,
+                0.3107096552848816,
+                -0.1804627627134323
+              ],
+              "paw_center_m": [
+                0.15222065150737762,
+                0.07817444950342178,
+                0.955398440361023
+              ],
+              "paw_signed_distance_to_hole_m": -0.001417054794728756,
+              "hole_min_boundary_radius_m": 0.027766799554228783,
+              "material_curve": {
+                "root_signed_distance_m": -0.06818126259812882,
+                "tip_signed_distance_m": -0.0010740380041759391,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007461758330464363
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 32.2,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14437881112098694,
+                0.0957193449139595,
+                0.9888921976089478
+              ],
+              "hole_normal": [
+                -0.8731591701507568,
+                0.43883469700813293,
+                0.21217240393161774
+              ],
+              "paw_center_m": [
+                -0.15188802778720856,
+                0.0762430801987648,
+                0.9578582644462585
+              ],
+              "paw_signed_distance_to_hole_m": -0.008574663661420345,
+              "hole_min_boundary_radius_m": 0.032483864575624466,
+              "material_curve": {
+                "root_signed_distance_m": -0.04184831853500113,
+                "tip_signed_distance_m": -0.0060442901790096,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.14999907532049608,
+                      0.08083970678711629,
+                      0.996538414715652
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019542335417039057
+                  },
+                  {
+                    "point_m": [
+                      -0.1543404627559519,
+                      0.07928676606171825,
+                      0.9818841150983182
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019431627927993356
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010717252269387245
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.15071645379066467,
+                0.09125177562236786,
+                0.9619064331054688
+              ],
+              "hole_normal": [
+                0.9331247210502625,
+                0.3108436167240143,
+                -0.18070562183856964
+              ],
+              "paw_center_m": [
+                0.15229634940624237,
+                0.07820569723844528,
+                0.9553705453872681
+              ],
+              "paw_signed_distance_to_hole_m": -0.0013999787624925375,
+              "hole_min_boundary_radius_m": 0.02776864916086197,
+              "material_curve": {
+                "root_signed_distance_m": -0.06818528114588908,
+                "tip_signed_distance_m": -0.0010604718100275206,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007461401168256998
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 32.4,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14443212747573853,
+                0.09573908150196075,
+                0.9888585805892944
+              ],
+              "hole_normal": [
+                -0.8733119368553162,
+                0.43853020668029785,
+                0.21217341721057892
+              ],
+              "paw_center_m": [
+                -0.15193308889865875,
+                0.07625147700309753,
+                0.9578229784965515
+              ],
+              "paw_signed_distance_to_hole_m": -0.008580153807997704,
+              "hole_min_boundary_radius_m": 0.03248576074838638,
+              "material_curve": {
+                "root_signed_distance_m": -0.04184768789385249,
+                "tip_signed_distance_m": -0.006049024898626907,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15005174327186135,
+                      0.08085014117647107,
+                      0.9965012558320816
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019542706334217265
+                  },
+                  {
+                    "point_m": [
+                      -0.15438893461362463,
+                      0.07929787270602852,
+                      0.9818575535301234
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.01943494648576583
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010711722075939178
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.1506694108247757,
+                0.0912623405456543,
+                0.9619302749633789
+              ],
+              "hole_normal": [
+                0.9332526326179504,
+                0.3104959726333618,
+                -0.18064269423484802
+              ],
+              "paw_center_m": [
+                0.15222975611686707,
+                0.07821311056613922,
+                0.9553964138031006
+              ],
+              "paw_signed_distance_to_hole_m": -0.0014152426738291979,
+              "hole_min_boundary_radius_m": 0.02777230739593506,
+              "material_curve": {
+                "root_signed_distance_m": -0.06819544440516188,
+                "tip_signed_distance_m": -0.001072789075136014,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007449007127434015
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 32.6,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14438293874263763,
+                0.09567927569150925,
+                0.988892138004303
+              ],
+              "hole_normal": [
+                -0.8730992674827576,
+                0.4388819932937622,
+                0.2123212218284607
+              ],
+              "paw_center_m": [
+                -0.15189440548419952,
+                0.07621126621961594,
+                0.9578550457954407
+              ],
+              "paw_signed_distance_to_hole_m": -0.008575735613703728,
+              "hole_min_boundary_radius_m": 0.032483991235494614,
+              "material_curve": {
+                "root_signed_distance_m": -0.04184177775876544,
+                "tip_signed_distance_m": -0.0060452659823785355,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15000358238824774,
+                      0.08079820013904093,
+                      0.996539306935774
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019541689348988037
+                  },
+                  {
+                    "point_m": [
+                      -0.1543471892055615,
+                      0.07924880782985763,
+                      0.9818803881589409
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019430727331822956
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.01071738637983799
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.15070678293704987,
+                0.091213658452034,
+                0.9619142413139343
+              ],
+              "hole_normal": [
+                0.9331279993057251,
+                0.31090667843818665,
+                -0.1805800050497055
+              ],
+              "paw_center_m": [
+                0.15228675305843353,
+                0.07816652953624725,
+                0.9553755521774292
+              ],
+              "paw_signed_distance_to_hole_m": -0.001401368877850473,
+              "hole_min_boundary_radius_m": 0.027766667306423187,
+              "material_curve": {
+                "root_signed_distance_m": -0.06818024640189471,
+                "tip_signed_distance_m": -0.0010614240394020624,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007467408664524555
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 32.8,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.1444246470928192,
+                0.09576435387134552,
+                0.9888601303100586
+              ],
+              "hole_normal": [
+                -0.8733153939247131,
+                0.43862900137901306,
+                0.2119547575712204
+              ],
+              "paw_center_m": [
+                -0.15192557871341705,
+                0.07627329975366592,
+                0.9578264355659485
+              ],
+              "paw_signed_distance_to_hole_m": -0.008576402440667152,
+              "hole_min_boundary_radius_m": 0.03248326852917671,
+              "material_curve": {
+                "root_signed_distance_m": -0.04185406868054097,
+                "tip_signed_distance_m": -0.006045654964144373,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15004603094456442,
+                      0.08087935278166804,
+                      0.996502101309731
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019542279542818602
+                  },
+                  {
+                    "point_m": [
+                      -0.1543816814027165,
+                      0.07932368273210234,
+                      0.981857333138289
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019433614985311345
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010712635703384876
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.1506759524345398,
+                0.09129253029823303,
+                0.9619237184524536
+              ],
+              "hole_normal": [
+                0.9332215189933777,
+                0.3105415403842926,
+                -0.18072503805160522
+              ],
+              "paw_center_m": [
+                0.15223929286003113,
+                0.07824496924877167,
+                0.9553908705711365
+              ],
+              "paw_signed_distance_to_hole_m": -0.001412217621691525,
+              "hole_min_boundary_radius_m": 0.02777288295328617,
+              "material_curve": {
+                "root_signed_distance_m": -0.06819524185730622,
+                "tip_signed_distance_m": -0.0010702193976766562,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007448619231581688
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 33.0,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14439131319522858,
+                0.09567587822675705,
+                0.9888888001441956
+              ],
+              "hole_normal": [
+                -0.8731477856636047,
+                0.4387584328651428,
+                0.21237695217132568
+              ],
+              "paw_center_m": [
+                -0.15190084278583527,
+                0.07620592415332794,
+                0.9578509330749512
+              ],
+              "paw_signed_distance_to_hole_m": -0.008577404543757439,
+              "hole_min_boundary_radius_m": 0.032484736293554306,
+              "material_curve": {
+                "root_signed_distance_m": -0.04184293406588055,
+                "tip_signed_distance_m": -0.006046744880173339,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15001122738854689,
+                      0.08079146074941869,
+                      0.9965339237621406
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.01954173997156114
+                  },
+                  {
+                    "point_m": [
+                      -0.15435347954395115,
+                      0.0792432018246353,
+                      0.9818801858543366
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019431562553632188
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010715299285948277
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.15070153772830963,
+                0.09120838344097137,
+                0.9619172811508179
+              ],
+              "hole_normal": [
+                0.9331557750701904,
+                0.3108235001564026,
+                -0.18057985603809357
+              ],
+              "paw_center_m": [
+                0.1522781401872635,
+                0.0781596228480339,
+                0.9553787112236023
+              ],
+              "paw_signed_distance_to_hole_m": -0.0014039116213098168,
+              "hole_min_boundary_radius_m": 0.027767537161707878,
+              "material_curve": {
+                "root_signed_distance_m": -0.06818388847197289,
+                "tip_signed_distance_m": -0.0010635861847975957,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007464319933205843
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 33.2,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14441810548305511,
+                0.09574592858552933,
+                0.9888641834259033
+              ],
+              "hole_normal": [
+                -0.8732187151908875,
+                0.43877097964286804,
+                0.21205927431583405
+              ],
+              "paw_center_m": [
+                -0.15192319452762604,
+                0.07626120001077652,
+                0.9578303694725037
+              ],
+              "paw_signed_distance_to_hole_m": -0.008576757274568081,
+              "hole_min_boundary_radius_m": 0.03248325362801552,
+              "material_curve": {
+                "root_signed_distance_m": -0.041846621455705404,
+                "tip_signed_distance_m": -0.006046161438251932,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.150039820709045,
+                      0.0808629095786381,
+                      0.9965094509489568
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019542233107581082
+                  },
+                  {
+                    "point_m": [
+                      -0.15437855816114,
+                      0.07930861737998729,
+                      0.981859356333483
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019432759531789752
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010715180076658726
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.15067711472511292,
+                0.09127212315797806,
+                0.9619229435920715
+              ],
+              "hole_normal": [
+                0.9332208633422852,
+                0.31058788299560547,
+                -0.18064871430397034
+              ],
+              "paw_center_m": [
+                0.15223930776119232,
+                0.07822636514902115,
+                0.9553881883621216
+              ],
+              "paw_signed_distance_to_hole_m": -0.0014134880620986223,
+              "hole_min_boundary_radius_m": 0.02776939608156681,
+              "material_curve": {
+                "root_signed_distance_m": -0.06818843598327709,
+                "tip_signed_distance_m": -0.0010709586773417234,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007454083301126957
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 33.4,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14439521729946136,
+                0.09570789337158203,
+                0.988883912563324
+              ],
+              "hole_normal": [
+                -0.8732022643089294,
+                0.4387134909629822,
+                0.21224570274353027
+              ],
+              "paw_center_m": [
+                -0.15190112590789795,
+                0.07623133808374405,
+                0.9578481316566467
+              ],
+              "paw_signed_distance_to_hole_m": -0.008577661588788033,
+              "hole_min_boundary_radius_m": 0.03248455375432968,
+              "material_curve": {
+                "root_signed_distance_m": -0.041847508465900816,
+                "tip_signed_distance_m": -0.0060468782915380085,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15001505964377557,
+                      0.08082416822818692,
+                      0.9965280341408455
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019542343789773455
+                  },
+                  {
+                    "point_m": [
+                      -0.15435485114971872,
+                      0.07927345921305712,
+                      0.9818789799365306
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019432616482819964
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010714915581047535
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.1507028043270111,
+                0.09124152362346649,
+                0.9619175791740417
+              ],
+              "hole_normal": [
+                0.9331759214401245,
+                0.310710608959198,
+                -0.18067003786563873
+              ],
+              "paw_center_m": [
+                0.15227879583835602,
+                0.07819270342588425,
+                0.9553799629211426
+              ],
+              "paw_signed_distance_to_hole_m": -0.0014025779673829675,
+              "hole_min_boundary_radius_m": 0.027769481763243675,
+              "material_curve": {
+                "root_signed_distance_m": -0.068190274035789,
+                "tip_signed_distance_m": -0.0010623847607683509,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007457568775862455
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 33.6,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14441724121570587,
+                0.09570885449647903,
+                0.9888700246810913
+              ],
+              "hole_normal": [
+                -0.8732193112373352,
+                0.43870243430137634,
+                0.21219858527183533
+              ],
+              "paw_center_m": [
+                -0.1519232839345932,
+                0.07622984796762466,
+                0.9578326344490051
+              ],
+              "paw_signed_distance_to_hole_m": -0.008577155880630016,
+              "hole_min_boundary_radius_m": 0.032483696937561035,
+              "material_curve": {
+                "root_signed_distance_m": -0.041846028656703026,
+                "tip_signed_distance_m": -0.006046524855445353,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15003856094799883,
+                      0.0808229996437508,
+                      0.9965129399889079
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019541412702647382
+                  },
+                  {
+                    "point_m": [
+                      -0.1543778229125197,
+                      0.07927209041006206,
+                      0.9818627966632344
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019432900333336934
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010714043863117695
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.1506751924753189,
+                0.09123603999614716,
+                0.9619253873825073
+              ],
+              "hole_normal": [
+                0.9332177639007568,
+                0.3106427788734436,
+                -0.18057040870189667
+              ],
+              "paw_center_m": [
+                0.15223705768585205,
+                0.07818882167339325,
+                0.9553876519203186
+              ],
+              "paw_signed_distance_to_hole_m": -0.0014149422058835626,
+              "hole_min_boundary_radius_m": 0.027769194915890694,
+              "material_curve": {
+                "root_signed_distance_m": -0.06818459712952352,
+                "tip_signed_distance_m": -0.0010720980632380253,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007458926644176245
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 33.8,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14439605176448822,
+                0.09574205428361893,
+                0.9888812899589539
+              ],
+              "hole_normal": [
+                -0.8732051253318787,
+                0.4387963116168976,
+                0.21206261217594147
+              ],
+              "paw_center_m": [
+                -0.1519031822681427,
+                0.07626023143529892,
+                0.9578471779823303
+              ],
+              "paw_signed_distance_to_hole_m": -0.008574461564421654,
+              "hole_min_boundary_radius_m": 0.03248228877782822,
+              "material_curve": {
+                "root_signed_distance_m": -0.04185129027871603,
+                "tip_signed_distance_m": -0.006044091344211217,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15001725113376835,
+                      0.0808621065057376,
+                      0.9965243444586971
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019542286271638752
+                  },
+                  {
+                    "point_m": [
+                      -0.15435597452692917,
+                      0.07930752495350882,
+                      0.9818756007635928
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019432753651692523
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010716289281845093
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.15070679783821106,
+                0.09127743542194366,
+                0.9619156122207642
+              ],
+              "hole_normal": [
+                0.9331623315811157,
+                0.3106730580329895,
+                -0.18080474436283112
+              ],
+              "paw_center_m": [
+                0.15228548645973206,
+                0.07822927087545395,
+                0.9553813934326172
+              ],
+              "paw_signed_distance_to_hole_m": -0.001399122760631144,
+              "hole_min_boundary_radius_m": 0.027772575616836548,
+              "material_curve": {
+                "root_signed_distance_m": -0.06819839477644482,
+                "tip_signed_distance_m": -0.0010599257315410027,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007451092358678579
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 34.0,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.1444132775068283,
+                0.09567856788635254,
+                0.9888752102851868
+              ],
+              "hole_normal": [
+                -0.8731393814086914,
+                0.4388072192668915,
+                0.21231064200401306
+              ],
+              "paw_center_m": [
+                -0.15192292630672455,
+                0.07620865106582642,
+                0.957834780216217
+              ],
+              "paw_signed_distance_to_hole_m": -0.00857678335160017,
+              "hole_min_boundary_radius_m": 0.03248237818479538,
+              "material_curve": {
+                "root_signed_distance_m": -0.04184017919863188,
+                "tip_signed_distance_m": -0.006046276219989315,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15003492372020394,
+                      0.08079417672487806,
+                      0.9965191869765263
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019541354431455913
+                  },
+                  {
+                    "point_m": [
+                      -0.15437707581954113,
+                      0.07924563914455098,
+                      0.9818623873970436
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.01943196967175835
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010716038756072521
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.15067359805107117,
+                0.0912056416273117,
+                0.9619259834289551
+              ],
+              "hole_normal": [
+                0.9332136511802673,
+                0.31070199608802795,
+                -0.18048977851867676
+              ],
+              "paw_center_m": [
+                0.15223504602909088,
+                0.0781581699848175,
+                0.9553868174552917
+              ],
+              "paw_signed_distance_to_hole_m": -0.001416458166204393,
+              "hole_min_boundary_radius_m": 0.027766458690166473,
+              "material_curve": {
+                "root_signed_distance_m": -0.06817964405474101,
+                "tip_signed_distance_m": -0.0010733378143619621,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.0074637350626289845
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 34.2,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14439994096755981,
+                0.09575974941253662,
+                0.9888796210289001
+              ],
+              "hole_normal": [
+                -0.873299241065979,
+                0.4385961592197418,
+                0.21208910644054413
+              ],
+              "paw_center_m": [
+                -0.15190346539020538,
+                0.07627090066671371,
+                0.9578456878662109
+              ],
+              "paw_signed_distance_to_hole_m": -0.008576871827244759,
+              "hole_min_boundary_radius_m": 0.03248387202620506,
+              "material_curve": {
+                "root_signed_distance_m": -0.04185434179624083,
+                "tip_signed_distance_m": -0.006046011243234967,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15001917314628782,
+                      0.08087605446657153,
+                      0.9965210330204972
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019542355228052425
+                  },
+                  {
+                    "point_m": [
+                      -0.15435657684332588,
+                      0.07932081729779546,
+                      0.981877516622875
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.01943402417390864
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.01071276143193245
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.15070798993110657,
+                0.09129129350185394,
+                0.9619143605232239
+              ],
+              "hole_normal": [
+                0.9331762790679932,
+                0.31061235070228577,
+                -0.1808370053768158
+              ],
+              "paw_center_m": [
+                0.15228526294231415,
+                0.07824327796697617,
+                0.9553811550140381
+              ],
+              "paw_signed_distance_to_hole_m": -0.0013995555927976966,
+              "hole_min_boundary_radius_m": 0.0277734212577343,
+              "material_curve": {
+                "root_signed_distance_m": -0.06820153068852874,
+                "tip_signed_distance_m": -0.0010602771747933379,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007447632495313883
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 34.4,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14441195130348206,
+                0.09568686038255692,
+                0.988875150680542
+              ],
+              "hole_normal": [
+                -0.8731418251991272,
+                0.43879756331443787,
+                0.21232062578201294
+              ],
+              "paw_center_m": [
+                -0.1519213169813156,
+                0.07621458172798157,
+                0.9578348994255066
+              ],
+              "paw_signed_distance_to_hole_m": -0.008578132838010788,
+              "hole_min_boundary_radius_m": 0.03248358145356178,
+              "material_curve": {
+                "root_signed_distance_m": -0.04183866259846151,
+                "tip_signed_distance_m": -0.006047516263708561,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15003342760394578,
+                      0.08080238130831288,
+                      0.9965189067485405
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019541196377091626
+                  },
+                  {
+                    "point_m": [
+                      -0.15437555159948546,
+                      0.07925328526047329,
+                      0.9818639457050052
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019432385985959193
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010716000571846962
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.1506762057542801,
+                0.09121493995189667,
+                0.9619264602661133
+              ],
+              "hole_normal": [
+                0.9332143068313599,
+                0.3106752932071686,
+                -0.18053217232227325
+              ],
+              "paw_center_m": [
+                0.15223929286003113,
+                0.07816700637340546,
+                0.95538729429245
+              ],
+              "paw_signed_distance_to_hole_m": -0.0014144453452900052,
+              "hole_min_boundary_radius_m": 0.02776697278022766,
+              "material_curve": {
+                "root_signed_distance_m": -0.0681824858276646,
+                "tip_signed_distance_m": -0.0010716574509184668,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.00746190594509244
+              }
+            }
+          }
+        },
+        {
+          "label": "trajectory",
+          "time_s": 34.6,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.1443967968225479,
+                0.09572789072990417,
+                0.9888827800750732
+              ],
+              "hole_normal": [
+                -0.8731812834739685,
+                0.4388062357902527,
+                0.21214039623737335
+              ],
+              "paw_center_m": [
+                -0.15190522372722626,
+                0.07624878734350204,
+                0.9578464031219482
+              ],
+              "paw_signed_distance_to_hole_m": -0.00857540313154459,
+              "hole_min_boundary_radius_m": 0.0324820950627327,
+              "material_curve": {
+                "root_signed_distance_m": -0.04184796629363777,
+                "tip_signed_distance_m": -0.006045023250805568,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15001829644736814,
+                      0.08084696107829291,
+                      0.9965251551096709
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.01954136655819736
+                  },
+                  {
+                    "point_m": [
+                      -0.15435810038068795,
+                      0.07929388436583243,
+                      0.9818747826320232
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019432689773528817
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.01071624644100666
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.15070287883281708,
+                0.0912591740489006,
+                0.9619177579879761
+              ],
+              "hole_normal": [
+                0.9331883788108826,
+                0.31063488125801086,
+                -0.18073585629463196
+              ],
+              "paw_center_m": [
+                0.15227806568145752,
+                0.0782100260257721,
+                0.9553818106651306
+              ],
+              "paw_signed_distance_to_hole_m": -0.001402294379658997,
+              "hole_min_boundary_radius_m": 0.02777058817446232,
+              "material_curve": {
+                "root_signed_distance_m": -0.06819486623844526,
+                "tip_signed_distance_m": -0.0010622127188933007,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.00745385279878974
+              }
+            }
+          }
+        },
+        {
+          "label": "before_grasp_right",
+          "time_s": 34.65,
+          "sides": {
+            "left": {
+              "hole_center_m": [
+                -0.14439761638641357,
+                0.09574864059686661,
+                0.988881528377533
+              ],
+              "hole_normal": [
+                -0.8732390999794006,
+                0.43869549036026,
+                0.2121313363313675
+              ],
+              "paw_center_m": [
+                -0.1519041508436203,
+                0.07626361399888992,
+                0.9578477740287781
+              ],
+              "paw_signed_distance_to_hole_m": -0.008576225489377975,
+              "hole_min_boundary_radius_m": 0.03248383849859238,
+              "material_curve": {
+                "root_signed_distance_m": -0.041850407929832814,
+                "tip_signed_distance_m": -0.006045643351349182,
+                "core_crossings": [
+                  {
+                    "point_m": [
+                      -0.15001727995057826,
+                      0.0808666917673758,
+                      0.9965245947643817
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.01954216563989059
+                  },
+                  {
+                    "point_m": [
+                      -0.15435637105378133,
+                      0.07931197985728033,
+                      0.9818779189848637
+                    ],
+                    "inside_aperture": true,
+                    "boundary_clearance_m": 0.019433761934604492
+                  }
+                ],
+                "core_passes_through_aperture": true,
+                "hole_planarity_error_m": 0.010714729316532612
+              }
+            },
+            "right": {
+              "hole_center_m": [
+                0.1507064402103424,
+                0.09127889573574066,
+                0.9619156718254089
+              ],
+              "hole_normal": [
+                0.9331533908843994,
+                0.31072378158569336,
+                -0.18076369166374207
+              ],
+              "paw_center_m": [
+                0.15228696167469025,
+                0.07823272794485092,
+                0.9553818106651306
+              ],
+              "paw_signed_distance_to_hole_m": -0.0013978008646517992,
+              "hole_min_boundary_radius_m": 0.027770666405558586,
+              "material_curve": {
+                "root_signed_distance_m": -0.06819406865524423,
+                "tip_signed_distance_m": -0.0010587545027785404,
+                "core_crossings": [],
+                "core_passes_through_aperture": false,
+                "hole_planarity_error_m": 0.007454975042492151
+              }
+            }
+          }
+        }
+      ],
+      "minimum_joined_patch": {
+        "bonds": 1,
+        "scope": "A contact-gated ideal point attachment represents initial local hook engagement. Additional bonds require independent real contact. No full-width adhesive coverage, torsional stiffness, or calibrated load/peel rating is assumed."
+      },
+      "arm_topology": "single connected soft tetrahedral bear",
+      "grasp_model": "contact-gated local no-slip link constraints; no force closure calibration",
+      "cloth_holes": "missing mesh faces, not a transparent texture",
+      "motor_paths": [
+        {
+          "side": [
+            "right"
+          ],
+          "phase": "press",
+          "start_s": 23.85,
+          "targets": {
+            "right": [
+              0.03003500359711299,
+              0.2500331212946458,
+              1.0150055870528758
+            ]
+          },
+          "continuous_ik_samples": 61
+        },
+        {
+          "side": [
+            "right"
+          ],
+          "phase": "press",
+          "start_s": 24.75,
+          "targets": {
+            "right": [
+              0.03015254188671608,
+              0.24921901278356776,
+              1.0153426086134658
+            ]
+          },
+          "continuous_ik_samples": 61
+        },
+        {
+          "side": [
+            "right"
+          ],
+          "phase": "press",
+          "start_s": 25.650000000000002,
+          "targets": {
+            "right": [
+              0.030142109093535693,
+              0.24922743030932226,
+              1.015340430017381
+            ]
+          },
+          "continuous_ik_samples": 61
+        },
+        {
+          "side": [
+            "right"
+          ],
+          "phase": "press",
+          "start_s": 26.55,
+          "targets": {
+            "right": [
+              0.03014605343344616,
+              0.2492222455299654,
+              1.0153416781787166
+            ]
+          },
+          "continuous_ik_samples": 61
+        },
+        {
+          "side": [
+            "left"
+          ],
+          "phase": "press",
+          "start_s": 27.45,
+          "targets": {
+            "left": [
+              -0.027181098183825077,
+              0.2508701672920487,
+              1.1034195542262766
+            ]
+          },
+          "continuous_ik_samples": 61
+        },
+        {
+          "side": [
+            "right"
+          ],
+          "phase": "regrasp_right",
+          "start_s": 29.25,
+          "targets": {
+            "right": [
+              0.1451485663946645,
+              0.24921969987557094,
+              1.035338221563947
+            ]
+          },
+          "continuous_ik_samples": 61
+        },
+        {
+          "side": [
+            "right"
+          ],
+          "phase": "regrasp_right",
+          "start_s": 31.45,
+          "targets": {
+            "right": [
+              0.34,
+              0.15,
+              1.1
+            ]
+          },
+          "continuous_ik_samples": 61
+        }
+      ],
+      "cloth_release_events": [
+        {
+          "side": "right",
+          "time_s": 28.95,
+          "indices": [
+            68,
+            69,
+            138,
+            139
+          ],
+          "active_bonds": 1
+        }
+      ],
+      "minimum_active_bonds": 1
+    },
+    "completed_steps": 3465,
+    "simulated_seconds": 34.65,
+    "seam_contact_metrics": {
+      "crossed_samples": null,
+      "minimum_oriented_gap_m": null,
+      "crossing_measurement": "not applicable: unsigned discrete contact is not a crossing or penetration test",
+      "cached_constraints": 608,
+      "violating_samples": 6,
+      "max_clearance_violation_m": 0.001590519561432302,
+      "minimum_surface_distance_m": 0.00040948050445877016,
+      "cached_vertex_face_constraints": 154,
+      "cached_edge_edge_constraints": 454,
+      "violating_edge_pairs": 14,
+      "minimum_edge_edge_distance_m": 0.00040948050445877016,
+      "max_edge_clearance_violation_m": 0.001590519561432302,
+      "maximum_cached_constraints": 704,
+      "refresh_seconds": 25.26584369323973,
+      "retained_side_samples": 297,
+      "initial_side_ambiguities": 0,
+      "initial_edge_normal_ambiguities": 0,
+      "description": {
+        "model": "reciprocal unsigned-distance sampled VF plus finite edge-edge contact between the two cloth end regions",
+        "sample_counts": {
+          "left": {
+            "vertices": 153,
+            "edge_midpoints": 408,
+            "face_centroids": 256
+          },
+          "right": {
+            "vertices": 153,
+            "edge_midpoints": 408,
+            "face_centroids": 256
+          }
+        },
+        "edge_counts": {
+          "left": 408,
+          "right": 408
+        },
+        "edge_pair_policy": "all close opposite-region edge pairs; closest segment parameters recomputed each substep",
+        "shared_vf_ee_correction_cap": true,
+        "participation_counting": "rebuilt every projection from actual active VF and EE distances; conservative target corners/endpoints",
+        "region_width_m": 0.1,
+        "thickness_m": 0.002,
+        "broadphase_m": 0.012,
+        "history_release_m": 0.02,
+        "maximum_particle_correction_per_pass_m": 0.0003,
+        "iterations_per_substep": 3,
+        "friction": false,
+        "adhesion": false,
+        "normal_alignment_constraint": false,
+        "world_anchors": false,
+        "reciprocal_inverse_mass_projection": true,
+        "continuous_collision_detection": false,
+        "same_region_contacts": false,
+        "all_features": "unsigned radial repulsion only at actual finite triangle or segment distance below thickness",
+        "history_usage": "normal selection only at distance <= 1e-9 m; no side or crossing constraint",
+        "restoration": "transient cache rebuilt; resume from nonintersecting geometry; exact coincidence has ambiguous incoming normal"
+      }
+    },
+    "seam_alignment": [
+      {
+        "normal_alignment_attempt": 0,
+        "moving_side": "right",
+        "source_face_id": 935,
+        "target_face_id": 412,
+        "normal_dot_before": -0.7964750536032958,
+        "normal_dot_after": -0.7658824324607849,
+        "next_rotation_feedback_sign": -1.0,
+        "time_s": 24.75
+      },
+      {
+        "normal_alignment_attempt": 1,
+        "moving_side": "right",
+        "source_face_id": 935,
+        "target_face_id": 412,
+        "normal_dot_before": -0.765882506824606,
+        "normal_dot_after": -0.7906540632247925,
+        "next_rotation_feedback_sign": -1.0,
+        "time_s": 25.650000000000002
+      },
+      {
+        "normal_alignment_attempt": 2,
+        "moving_side": "right",
+        "source_face_id": 935,
+        "target_face_id": 412,
+        "normal_dot_before": -0.7906541314760767,
+        "normal_dot_after": -0.811754584312439,
+        "next_rotation_feedback_sign": -1.0,
+        "time_s": 26.55
+      },
+      {
+        "normal_alignment_attempt": 3,
+        "moving_side": "right",
+        "source_face_id": 935,
+        "target_face_id": 412,
+        "normal_dot_before": -0.8117545498105899,
+        "normal_dot_after": -0.8226475119590759,
+        "next_rotation_feedback_sign": -1.0,
+        "time_s": 27.45
+      },
+      {
+        "surface_guided_attempt": 4,
+        "time_s": 28.35,
+        "measured_gap_m": 0.006351762533055768,
+        "moving_side": "left",
+        "motor_tcp_shift_m": [
+          0.0028228722842331177,
+          0.0008764932481906638,
+          -0.0015803365878132088
+        ],
+        "metrics": {
+          "active_bonds": 1,
+          "total_activated": 1,
+          "broken_bonds": 0,
+          "max_bond_error_m": 3.102370263825875e-05,
+          "mean_bond_error_m": 3.102370263825875e-05,
+          "latest_contact_candidates": 0,
+          "minimum_strip_vertex_to_face_distance_m": 0.0032858290373361746,
+          "bonded_hook_vertex_area_m2": 0.00010386473429951692,
+          "bonded_width_span_m": 0.0,
+          "activation_events": [
+            {
+              "id": 0,
+              "source_node": 547,
+              "target_nodes": [
+                208,
+                209,
+                279
+              ],
+              "target_face_id": 412,
+              "barycentric": [
+                0.8244050140555891,
+                0.0,
+                0.1755949859444109
+              ],
+              "local_offset_m": [
+                -0.003218210702672042,
+                0.003370431908271534,
+                0.00024337215808477091
+              ],
+              "active": true,
+              "activation_time_s": 27.96,
+              "continuous_contact_start_s": 27.88,
+              "dwell_s": 0.08000000000000185,
+              "activation_distance_m": 0.004666467762925039,
+              "activation_normal_dot": -0.824003812427947,
+              "source_active_face_id": 935,
+              "source_active_normal": [
+                0.7239079181701185,
+                -0.6886573090454455,
+                -0.04133323975798172
+              ],
+              "target_active_normal": [
+                -0.37665674031400553,
+                0.7696587679481967,
+                0.51551438476195
+              ],
+              "source_facing_gap_m": 0.0009660640651857984,
+              "target_facing_gap_m": 0.00024337215808477091
+            }
+          ],
+          "model": "contact-gated ideal local no-slip hook/loop adhesion with geometric detachment",
+          "force_or_peel_strength_calibrated": false
+        }
+      }
+    ],
+    "adhesion_first_activated_phase": "press",
+    "metrics": {
+      "front_edge_angular_span_deg": 346.05819483721837,
+      "front_edge_closed_winding_number": 1.0000000000000002,
+      "held_corner_gap_m": 0.09657605737447739,
+      "cloth_min_height_above_table_m": 0.10658419132232666,
+      "cloth_max_stretch_ratio_final": 1.1310381858154792,
+      "cloth_max_stretch_ratio_over_run": 1.345314659438168,
+      "bear_base_max_displacement_m": 0.0,
+      "inter_arm_contacts": 0,
+      "robot_self_contacts": 0,
+      "robot_table_contacts": 0,
+      "max_grasp_constraint_error_m": 7.805847047580244e-08,
+      "penetration": {
+        "method": "solid-angle winding and exact triangle distance",
+        "body_surface_vertices": 1102,
+        "body_surface_triangles": 2200,
+        "body_watertight": true,
+        "sample_count": 6499,
+        "penetration_tolerance_m": 0.0005,
+        "inside_samples": 0,
+        "max_penetration_m": 0.0,
+        "minimum_sample_clearance_m": 0.0017018361463341978,
+        "near_surface_samples": 1683,
+        "samples": {
+          "vertices": {
+            "count": 1153,
+            "inside": 0,
+            "max_penetration_m": 0.0
+          },
+          "edge_midpoints": {
+            "count": 3250,
+            "inside": 0,
+            "max_penetration_m": 0.0
+          },
+          "face_centroids": {
+            "count": 2096,
+            "inside": 0,
+            "max_penetration_m": 0.0
+          }
+        },
+        "no_sample_penetration_over_tolerance": true,
+        "elapsed_seconds": 1.1186835279950174
+      },
+      "torso_contact": {
+        "band_height_above_table_m": [
+          0.1,
+          0.3
+        ],
+        "near_distance_m": 0.015,
+        "near_surface_cloth_area_m2": 0.056328725069761276,
+        "sector_area_m2": {
+          "front": 0.01645985245704651,
+          "right": 0.026919439435005188,
+          "back": 0.00330240186303854,
+          "left": 0.009647033177316189
+        },
+        "cloth_area_fraction_near_torso": 0.34299203753471375
+      }
+    },
+    "checks": {
+      "both_front_corners_contact_grasped": true,
+      "bear_base_fixed": true,
+      "no_inter_arm_collision": true,
+      "no_robot_self_collision": true,
+      "no_robot_table_collision": true,
+      "cloth_not_overstretched": true,
+      "finite_state": true,
+      "no_deep_cloth_body_penetration": true,
+      "bear_stays_upright": true,
+      "angular_wrap_over_300_deg": true,
+      "encircles_body": true,
+      "corners_near_behind_body": true,
+      "cloth_lifted_to_belly": true,
+      "cloth_contacts_front_and_sides": true,
+      "velcro_joined_after_contact": true,
+      "adhesive_contact_patch_present": true,
+      "adhesive_error_below_detachment_threshold": true,
+      "activation_requires_actual_contact": true
+    },
+    "press_checks": {
+      "both_front_corners_contact_grasped": true,
+      "bear_base_fixed": true,
+      "no_inter_arm_collision": true,
+      "no_robot_self_collision": true,
+      "no_robot_table_collision": true,
+      "cloth_not_overstretched": true,
+      "finite_state": true,
+      "no_deep_cloth_body_penetration": true,
+      "bear_stays_upright": true,
+      "angular_wrap_over_300_deg": true,
+      "encircles_body": true,
+      "corners_near_behind_body": true,
+      "cloth_lifted_to_belly": true,
+      "cloth_contacts_front_and_sides": true,
+      "velcro_joined_after_contact": true,
+      "adhesive_contact_patch_present": true,
+      "adhesive_error_below_detachment_threshold": true,
+      "activation_requires_actual_contact": true
+    }
+  },
+  "recordings": {
+    "enabled": true,
+    "fps": 15,
+    "files": [
+      "wrapping-process.mp4",
+      "wrapping-left-side.mp4",
+      "wrapping-rear.mp4"
+    ],
+    "left_camera": "table_left",
+    "left_camera_config": {
+      "position": [
+        -2.05,
+        -0.5,
+        1.6
+      ],
+      "target": [
+        0.0,
+        -0.02,
+        1.0
+      ],
+      "fov": 43.0
+    },
+    "left_video_resolution": [
+      1280,
+      720
+    ],
+    "rear_camera": "bear_rear",
+    "rear_camera_config": {
+      "position": [
+        0.0,
+        1.75,
+        1.52
+      ],
+      "target": [
+        0.0,
+        0.02,
+        1.0
+      ],
+      "fov": 43.0
+    },
+    "same_simulation_steps_for_all_videos": true,
+    "simulation_times_s": [
+      0.01,
+      0.07,
+      0.14,
+      0.2,
+      0.27,
+      0.34,
+      0.4,
+      0.47000000000000003,
+      0.54,
+      0.6,
+      0.67,
+      0.74,
+      0.8,
+      0.87,
+      0.9400000000000001,
+      1.0,
+      1.07,
+      1.1400000000000001,
+      1.2,
+      1.27,
+      1.34,
+      1.4000000000000001,
+      1.47,
+      1.54,
+      1.6,
+      1.67,
+      1.74,
+      1.8,
+      1.87,
+      1.94,
+      2.0,
+      2.07,
+      2.14,
+      2.2,
+      2.27,
+      2.34,
+      2.4,
+      2.47,
+      2.54,
+      2.6,
+      2.67,
+      2.74,
+      2.8000000000000003,
+      2.87,
+      2.94,
+      3.0,
+      3.0700000000000003,
+      3.14,
+      3.2,
+      3.27,
+      3.34,
+      3.4,
+      3.47,
+      3.54,
+      3.6,
+      3.67,
+      3.74,
+      3.8000000000000003,
+      3.87,
+      3.94,
+      4.0,
+      4.07,
+      4.14,
+      4.2,
+      4.2700000000000005,
+      4.34,
+      4.4,
+      4.47,
+      4.54,
+      4.6000000000000005,
+      4.67,
+      4.74,
+      4.8,
+      4.87,
+      4.94,
+      5.0,
+      5.07,
+      5.14,
+      5.2,
+      5.2700000000000005,
+      5.34,
+      5.4,
+      5.47,
+      5.54,
+      5.6000000000000005,
+      5.67,
+      5.74,
+      5.8,
+      5.87,
+      5.94,
+      6.0,
+      6.07,
+      6.140000000000001,
+      6.2,
+      6.2700000000000005,
+      6.34,
+      6.4,
+      6.47,
+      6.54,
+      6.6000000000000005,
+      6.67,
+      6.74,
+      6.8,
+      6.87,
+      6.94,
+      7.0,
+      7.07,
+      7.140000000000001,
+      7.2,
+      7.2700000000000005,
+      7.34,
+      7.4,
+      7.47,
+      7.54,
+      7.6000000000000005,
+      7.67,
+      7.74,
+      7.8,
+      7.87,
+      7.94,
+      8.0,
+      8.07,
+      8.14,
+      8.2,
+      8.27,
+      8.34,
+      8.4,
+      8.47,
+      8.540000000000001,
+      8.6,
+      8.67,
+      8.74,
+      8.8,
+      8.870000000000001,
+      8.94,
+      9.0,
+      9.07,
+      9.14,
+      9.200000000000001,
+      9.27,
+      9.34,
+      9.4,
+      9.47,
+      9.540000000000001,
+      9.6,
+      9.67,
+      9.74,
+      9.8,
+      9.870000000000001,
+      9.94,
+      10.0,
+      10.07,
+      10.14,
+      10.200000000000001,
+      10.27,
+      10.34,
+      10.4,
+      10.47,
+      10.540000000000001,
+      10.6,
+      10.67,
+      10.74,
+      10.8,
+      10.870000000000001,
+      10.94,
+      11.0,
+      11.07,
+      11.14,
+      11.200000000000001,
+      11.27,
+      11.34,
+      11.4,
+      11.47,
+      11.540000000000001,
+      11.6,
+      11.67,
+      11.74,
+      11.8,
+      11.870000000000001,
+      11.94,
+      12.0,
+      12.07,
+      12.14,
+      12.200000000000001,
+      12.27,
+      12.34,
+      12.4,
+      12.47,
+      12.540000000000001,
+      12.6,
+      12.67,
+      12.74,
+      12.8,
+      12.870000000000001,
+      12.94,
+      13.0,
+      13.07,
+      13.14,
+      13.200000000000001,
+      13.27,
+      13.34,
+      13.4,
+      13.47,
+      13.540000000000001,
+      13.6,
+      13.67,
+      13.74,
+      13.8,
+      13.870000000000001,
+      13.94,
+      14.0,
+      14.07,
+      14.14,
+      14.200000000000001,
+      14.27,
+      14.34,
+      14.4,
+      14.47,
+      14.540000000000001,
+      14.6,
+      14.67,
+      14.74,
+      14.8,
+      14.870000000000001,
+      14.94,
+      15.0,
+      15.07,
+      15.14,
+      15.200000000000001,
+      15.27,
+      15.34,
+      15.4,
+      15.47,
+      15.540000000000001,
+      15.6,
+      15.67,
+      15.74,
+      15.8,
+      15.870000000000001,
+      15.94,
+      16.0,
+      16.07,
+      16.14,
+      16.2,
+      16.27,
+      16.34,
+      16.4,
+      16.47,
+      16.54,
+      16.6,
+      16.67,
+      16.740000000000002,
+      16.8,
+      16.87,
+      16.94,
+      17.0,
+      17.07,
+      17.14,
+      17.2,
+      17.27,
+      17.34,
+      17.400000000000002,
+      17.47,
+      17.54,
+      17.6,
+      17.67,
+      17.740000000000002,
+      17.8,
+      17.87,
+      17.94,
+      18.0,
+      18.07,
+      18.14,
+      18.2,
+      18.27,
+      18.34,
+      18.400000000000002,
+      18.47,
+      18.54,
+      18.6,
+      18.67,
+      18.740000000000002,
+      18.8,
+      18.87,
+      18.94,
+      19.0,
+      19.07,
+      19.14,
+      19.2,
+      19.27,
+      19.34,
+      19.400000000000002,
+      19.47,
+      19.54,
+      19.6,
+      19.67,
+      19.740000000000002,
+      19.8,
+      19.87,
+      19.94,
+      20.0,
+      20.07,
+      20.14,
+      20.2,
+      20.27,
+      20.34,
+      20.400000000000002,
+      20.47,
+      20.54,
+      20.6,
+      20.67,
+      20.740000000000002,
+      20.8,
+      20.87,
+      20.94,
+      21.0,
+      21.07,
+      21.14,
+      21.2,
+      21.27,
+      21.34,
+      21.400000000000002,
+      21.47,
+      21.54,
+      21.6,
+      21.67,
+      21.740000000000002,
+      21.8,
+      21.87,
+      21.94,
+      22.0,
+      22.07,
+      22.14,
+      22.2,
+      22.27,
+      22.34,
+      22.400000000000002,
+      22.47,
+      22.54,
+      22.6,
+      22.67,
+      22.740000000000002,
+      22.8,
+      22.87,
+      22.94,
+      23.0,
+      23.07,
+      23.14,
+      23.2,
+      23.27,
+      23.34,
+      23.400000000000002,
+      23.47,
+      23.54,
+      23.6,
+      23.67,
+      23.740000000000002,
+      23.8,
+      23.87,
+      23.94,
+      24.0,
+      24.07,
+      24.14,
+      24.2,
+      24.27,
+      24.34,
+      24.400000000000002,
+      24.47,
+      24.54,
+      24.6,
+      24.67,
+      24.740000000000002,
+      24.8,
+      24.87,
+      24.94,
+      25.0,
+      25.07,
+      25.14,
+      25.2,
+      25.27,
+      25.34,
+      25.400000000000002,
+      25.47,
+      25.54,
+      25.6,
+      25.67,
+      25.740000000000002,
+      25.8,
+      25.87,
+      25.94,
+      26.0,
+      26.07,
+      26.14,
+      26.2,
+      26.27,
+      26.34,
+      26.400000000000002,
+      26.47,
+      26.54,
+      26.6,
+      26.67,
+      26.740000000000002,
+      26.8,
+      26.87,
+      26.94,
+      27.0,
+      27.07,
+      27.14,
+      27.2,
+      27.27,
+      27.34,
+      27.400000000000002,
+      27.47,
+      27.54,
+      27.6,
+      27.67,
+      27.740000000000002,
+      27.8,
+      27.87,
+      27.94,
+      28.0,
+      28.07,
+      28.14,
+      28.2,
+      28.27,
+      28.34,
+      28.400000000000002,
+      28.47,
+      28.54,
+      28.6,
+      28.67,
+      28.740000000000002,
+      28.8,
+      28.87,
+      28.94,
+      29.0,
+      29.07,
+      29.14,
+      29.2,
+      29.27,
+      29.34,
+      29.400000000000002,
+      29.47,
+      29.54,
+      29.6,
+      29.67,
+      29.740000000000002,
+      29.8,
+      29.87,
+      29.94,
+      30.0,
+      30.07,
+      30.14,
+      30.2,
+      30.27,
+      30.34,
+      30.400000000000002,
+      30.47,
+      30.54,
+      30.6,
+      30.67,
+      30.740000000000002,
+      30.8,
+      30.87,
+      30.94,
+      31.0,
+      31.07,
+      31.14,
+      31.2,
+      31.27,
+      31.34,
+      31.400000000000002,
+      31.470000000000002,
+      31.54,
+      31.6,
+      31.67,
+      31.740000000000002,
+      31.8,
+      31.87,
+      31.94,
+      32.0,
+      32.07,
+      32.14,
+      32.2,
+      32.27,
+      32.34,
+      32.4,
+      32.47,
+      32.54,
+      32.6,
+      32.67,
+      32.74,
+      32.8,
+      32.87,
+      32.94,
+      33.0,
+      33.07,
+      33.14,
+      33.2,
+      33.27,
+      33.34,
+      33.4,
+      33.47,
+      33.54,
+      33.6,
+      33.67,
+      33.74,
+      33.8,
+      33.87,
+      33.94,
+      34.0,
+      34.07,
+      34.14,
+      34.2,
+      34.27,
+      34.34,
+      34.4,
+      34.47,
+      34.54,
+      34.6
+    ],
+    "per_frame_render_state_archive": "replay-frames.npz"
+  },
+  "error": "right has no reachable grasp that passes through the actual aperture",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-full-dressing-record-37/wrap_task.py\", line 640, in run_wrap\n    okay=experiment.execute()\n         ^^^^^^^^^^^^^^^^^^^^\n  File \"/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-full-dressing-record-37/arms_task.py\", line 384, in execute\n    if continuation!='arm_out_right':self.extract('right',skip_to='aperture' if continuation=='regrasp_right_outside' else 'pull' if continuation in ('grasp_arm_right','regrasp_left_outside') else None)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-full-dressing-record-37/arms_task.py\", line 307, in extract\n    if chosen is None:raise RuntimeError(side+' has no reachable grasp that passes through the actual aperture')\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: right has no reachable grasp that passes through the actual aperture\n",
+  "wall_seconds": 296.4632067099883
+}

@@ -1,0 +1,20 @@
+{
+  "purpose": "Offline placement preflight using exact corresponding material vertices from the earlier run; not a simulated or resumed state.",
+  "predicted_new_left_hole_center_m": [
+    -0.14633013308048248,
+    0.08543980866670609,
+    0.9603947997093201
+  ],
+  "old_run_paw_center_m": [
+    -0.140807643532753,
+    0.07836709171533585,
+    0.9649431109428406
+  ],
+  "center_distance_m": 0.010060235857963562,
+  "predicted_normal": [
+    -0.9671820402145386,
+    0.13968154788017273,
+    -0.21224506199359894
+  ],
+  "boundary_vertex_mapping_exact": true
+}

@@ -1,0 +1,5 @@
+{
+  "status": "stopped_diagnostic",
+  "reason": "Superseded by explicitly scoped local contact adhesion controller; no successful full dressing claimed.",
+  "preserved": "saved states, trajectory, execution log, exact source and assets"
+}

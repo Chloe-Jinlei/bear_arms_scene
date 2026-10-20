@@ -1,0 +1,90 @@
+Genesis backend: cuda
+[38;5;226m[Genesis] [20:55:50] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [20:55:50] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+[38;5;226m[Genesis] [20:55:50] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [20:55:50] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+Building scene and compiling physics kernels...
+[38;5;226m[Genesis] [20:55:51] [WARNING] Neutral robot position (qpos0) exceeds joint limits.[0m
+[38;5;226m[Genesis] [20:55:52] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (12, 17), (13, 17), (20, 27), (21, 26), (22, 29), (23, 28), (36, 41), (37, 41), (44, 51), (45, 50), (46, 53), (47, 52). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+/home/chloe/Desktop/genesis-local/.venv/lib/python3.12/site-packages/quadrants/_test_tools/warnings_helper.py:11: UserWarning: cannot create weak reference to 'tuple' object. Template mapper caching disabled.
+  warnings.warn(message)
+Phase settle: t=0.00s
+Phase pregrasp: t=0.50s
+Step 100, pregrasp, max cloth stretch 1.000
+Step 200, pregrasp, max cloth stretch 1.000
+Phase grasp: t=2.28s
+Step 300, grasp, max cloth stretch 1.000
+Step 400, grasp, max cloth stretch 1.000
+Step 500, grasp, max cloth stretch 1.000
+left grasp gated by both pads: [0, 1, 70, 71]
+right grasp gated by both pads: [68, 69, 138, 139]
+Phase lift: t=5.77s
+Step 600, lift, max cloth stretch 1.006
+Step 700, lift, max cloth stretch 1.239
+Step 800, lift, max cloth stretch 1.203
+Phase approach_body: t=8.35s
+Step 900, approach_body, max cloth stretch 1.214
+Step 1000, approach_body, max cloth stretch 1.253
+Step 1100, approach_body, max cloth stretch 1.066
+Phase wrap: t=11.63s
+Step 1200, wrap, max cloth stretch 1.053
+Step 1300, wrap, max cloth stretch 1.093
+Step 1400, wrap, max cloth stretch 1.120
+Step 1500, wrap, max cloth stretch 1.132
+Step 1600, wrap, max cloth stretch 1.128
+Step 1700, wrap, max cloth stretch 1.139
+Step 1800, wrap, max cloth stretch 1.187
+Step 1900, wrap, max cloth stretch 1.208
+Step 2000, wrap, max cloth stretch 1.130
+Step 2100, wrap, max cloth stretch 1.112
+Step 2200, wrap, max cloth stretch 1.144
+Step 2300, wrap, max cloth stretch 1.107
+Velcro: 1 active / 1 formed, t=23.29s
+Velcro: 2 active / 2 formed, t=23.42s
+Phase press: t=23.85s
+Step 2400, press, max cloth stretch 1.142
+Step 2500, press, max cloth stretch 1.121
+Step 2600, press, max cloth stretch 1.097
+Step 2700, press, max cloth stretch 1.097
+Velcro: 3 active / 3 formed, t=27.38s
+Velcro: 4 active / 4 formed, t=27.52s
+Velcro: 5 active / 5 formed, t=27.70s
+Velcro: 6 active / 6 formed, t=27.74s
+Step 2800, press, max cloth stretch 1.102
+Velcro: 4 active / 6 formed, t=28.12s
+Velcro: 3 active / 6 formed, t=28.30s
+Step 2900, press, max cloth stretch 1.059
+Step 3000, press, max cloth stretch 1.059
+Step 3100, press, max cloth stretch 1.059
+Step 3200, press, max cloth stretch 1.059
+Step 3300, press, max cloth stretch 1.054
+Step 3400, press, max cloth stretch 1.052
+Velcro: 2 active / 6 formed, t=34.42s
+Step 3500, press, max cloth stretch 1.052
+Step 3600, press, max cloth stretch 1.053
+Step 3700, press, max cloth stretch 1.059
+Traceback (most recent call last):
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/scene.py", line 346, in <module>
+    main()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/scene.py", line 252, in main
+    return run_wrap(args)
+           ^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/wrap_task.py", line 598, in run_wrap
+    run.mkdir(parents=True,exist_ok=False)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/arms_task.py", line 175, in execute
+    def execute(self):
+             ^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/wrap_task.py", line 433, in execute
+    self.save("wrap");stage="wrap"
+                  ^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/arms_task.py", line 81, in tighten_seam
+    self.move(target,.65)
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/wrap_task.py", line 254, in move
+    self.step()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/arms_task.py", line 51, in step
+    super().step()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/wrap_task.py", line 203, in step
+    raise RuntimeError("Inter-arm collision")
+RuntimeError: Inter-arm collision
+

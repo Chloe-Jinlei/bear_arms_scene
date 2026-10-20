@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "successful_run": "stabilized-dressing-complete-48",
+  "simulation_seconds": 65.67,
+  "recording_fps": 15,
+  "recordings": [
+    "wrapping-process.mp4",
+    "wrapping-left-side.mp4",
+    "wrapping-rear.mp4"
+  ],
+  "all_three_cameras_synchronized": true,
+  "simulation_checks": {
+    "both_front_corners_contact_grasped": true,
+    "bear_base_fixed": true,
+    "no_inter_arm_collision": true,
+    "no_robot_self_collision": true,
+    "no_robot_table_collision": true,
+    "cloth_not_overstretched": true,
+    "finite_state": true,
+    "no_deep_cloth_body_penetration": true,
+    "bear_stays_upright": true,
+    "angular_wrap_over_300_deg": true,
+    "encircles_body": true,
+    "corners_near_behind_body": true,
+    "cloth_lifted_to_belly": true,
+    "cloth_contacts_front_and_sides": true,
+    "velcro_joined_after_contact": true,
+    "adhesive_contact_patch_present": true,
+    "adhesive_error_below_detachment_threshold": true,
+    "activation_requires_actual_contact": true,
+    "accepted_press_state": true,
+    "both_arms_contact_grasped": true,
+    "cloth_released_by_both_grippers": true,
+    "velcro_still_joined": true,
+    "both_paws_outside_holes": true,
+    "whole_paw_particle_groups_outside": true,
+    "both_arm_cores_pass_through_holes": true,
+    "bear_base_still_fixed": true
+  },
+  "independent_checks": {
+    "reported_complete": true,
+    "fresh_simulation_not_resumed": true,
+    "finite_states": true,
+    "base_fixed_all_saved_stages": true,
+    "no_deep_cloth_body_penetration_saved_stages": true,
+    "no_substantial_negative_body_volume": true,
+    "two_closed_real_apertures": true,
+    "connected_cloth": true,
+    "connected_bear_surface": true,
+    "both_arm_cores_pass_through_openings": true,
+    "cloth_not_overstretched_final": true,
+    "bear_head_remains_over_fixed_base": true,
+    "cloth_free_of_robot_attachments": true,
+    "cloth_free_of_world_pins": true,
+    "both_arms_attached_to_grippers": true,
+    "seam_has_actual_active_contact": true,
+    "both_paws_not_fully_exposed_before_extraction": true,
+    "whole_paw_particle_groups_outside_openings": true,
+    "adhesive_errors_below_break_threshold": true,
+    "all_adhesion_activated_by_actual_contact": true,
+    "both_arm_grasps_after_adhesion": true,
+    "both_arm_grasps_gated_by_two_pads": true,
+    "seam_never_completely_detached_during_extraction": true,
+    "exact_run_source_and_assets_preserved": true
+  },
+  "whole_paw_clearances": {
+    "left": {
+      "minimum_signed_distance_m": 0.03233702853322029,
+      "mean_signed_distance_m": 0.0559673011302948
+    },
+    "right": {
+      "minimum_signed_distance_m": 0.036885496228933334,
+      "mean_signed_distance_m": 0.04907868057489395
+    }
+  },
+  "active_adhesive_contacts": 1,
+  "maximum_inverted_volume_fraction_saved_states": 4.9791447809903476e-05,
+  "old_simulation_archive": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/archives/bear-velcro-before-arms-20261018",
+  "old_scene_changed": false,
+  "model_scope": "Genesis PBD soft-body/cloth simulation, motor-driven Franka motion, contact-gated ideal no-slip grasps and local adhesive contacts; no calibrated real Velcro force or peel model."
+}

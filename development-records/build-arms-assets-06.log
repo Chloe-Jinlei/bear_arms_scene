@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/build_arms_assets.py", line 43, in <module>
+    assert np.abs(vol).min()>1e-14, (np.abs(vol).min(),np.count_nonzero(np.abs(vol)<1e-14))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: (np.float64(1.780919330187017e-15), np.int64(13))

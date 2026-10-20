@@ -1,0 +1,87 @@
+seed = 7
+
+[simulation]
+substep_dt = 0.001
+substeps = 10
+particle_size = 0.004
+# Periodic spatial-hash size in metres, not the simulation boundary.
+hash_grid_size = [0.32, 0.32, 0.32]
+stretch_iterations = 10
+volume_iterations = 10
+bending_iterations = 4
+
+[table]
+height = 0.74
+size = [1.55, 1.05, 0.07]
+
+[bear]
+position_xy = [0.0, 0.08]
+mass = 0.49
+base_clearance = 0.003
+fixed_band_height = 0.018
+stretch_compliance = 0.001
+volume_compliance = 1e-12
+stretch_relaxation = 0.1
+volume_relaxation = 0.1
+friction = 0.7
+
+[cloth]
+position_xy = [0.0, -0.32]
+initial_clearance = 0.006
+areal_density = 0.18
+stretch_compliance = 1e-7
+bending_compliance = 1e-5
+friction = 0.6
+
+[robots]
+left_base = [-0.60, 0.24, 0.775]
+right_base = [0.60, 0.24, 0.775]
+left_yaw = -0.90
+right_yaw = 4.041592653589793
+home = [0.0, -0.45, 0.0, -2.15, 0.0, 1.7, 0.7854]
+finger_opening = 0.04
+
+[grasp]
+inset_from_short_edge_m = 0.006
+require_surface_patch = true
+
+[cameras.overview]
+position = [1.45, -2.1, 1.85]
+target = [0.0, 0.0, 0.94]
+fov = 43.0
+
+[cameras.front]
+position = [0.0, -1.25, 1.16]
+target = [0.0, 0.08, 0.98]
+fov = 35.0
+
+[cameras.detail]
+position = [0.65, -0.94, 1.41]
+target = [0.0, 0.06, 0.985]
+fov = 36.0
+
+[cameras.table_left]
+position = [-2.05, -0.50, 1.60]
+target = [0.0, -0.02, 1.00]
+fov = 43.0
+
+[cameras.bear_rear]
+position = [0.0, 1.75, 1.52]
+target = [0.0, 0.02, 1.00]
+fov = 43.0
+
+[velcro]
+strip_width_m = 0.04
+activation_distance_m = 0.005
+normal_angle_tolerance_deg = 35.0
+facing_tolerance_m = 0.001
+dwell_time_s = 0.08
+break_error_m = 0.015
+iterations_per_substep = 12
+max_correction_per_pass_m = 0.002
+relaxation = 0.9
+break_dwell_time_s = 0.08
+
+[velcro.surface_signs]
+left = 1
+right = 1

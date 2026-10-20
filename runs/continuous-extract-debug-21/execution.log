@@ -1,0 +1,39 @@
+Genesis backend: cuda
+[38;5;226m[Genesis] [21:41:58] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [21:41:58] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+[38;5;226m[Genesis] [21:41:58] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [21:41:58] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+Building scene and compiling physics kernels...
+[38;5;226m[Genesis] [21:41:59] [WARNING] Neutral robot position (qpos0) exceeds joint limits.[0m
+[38;5;226m[Genesis] [21:42:00] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (12, 17), (13, 17), (20, 27), (21, 26), (22, 29), (23, 28), (36, 41), (37, 41), (44, 51), (45, 50), (46, 53), (47, 52). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+/home/chloe/Desktop/genesis-local/.venv/lib/python3.12/site-packages/quadrants/_test_tools/warnings_helper.py:11: UserWarning: cannot create weak reference to 'tuple' object. Template mapper caching disabled.
+  warnings.warn(message)
+Phase press: t=39.07s
+DIAGNOSTIC ONLY: continuing to tune extraction from an unaccepted press state
+Phase regrasp_right: t=39.07s
+Velcro: 3 active / 3 formed, t=39.07s
+Traceback (most recent call last):
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-extract-debug-21/scene.py", line 348, in <module>
+    main()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-extract-debug-21/scene.py", line 254, in main
+    return run_wrap(args)
+           ^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-extract-debug-21/wrap_task.py", line 613, in run_wrap
+    okay=experiment.execute()
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-extract-debug-21/arms_task.py", line 311, in execute
+    self.extract('right')
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-extract-debug-21/arms_task.py", line 232, in extract
+    self.release_cloth(side)
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-extract-debug-21/arms_task.py", line 227, in release_cloth
+    self.wait(.3)
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-extract-debug-21/wrap_task.py", line 233, in wait
+    for _ in range(round(seconds/self.dt)):self.step()
+                                           ^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-extract-debug-21/arms_task.py", line 65, in step
+    super().step()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-continuous-extract-debug-21/wrap_task.py", line 219, in step
+    if stretch.max()>1.8:raise RuntimeError(f"Excessive cloth stretch {stretch.max():.3f}")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Excessive cloth stretch 1.807
+

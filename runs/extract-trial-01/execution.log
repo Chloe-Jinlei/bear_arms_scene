@@ -1,0 +1,41 @@
+Genesis backend: cuda
+[38;5;226m[Genesis] [20:56:29] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [20:56:29] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+[38;5;226m[Genesis] [20:56:29] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [20:56:29] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+Building scene and compiling physics kernels...
+[38;5;226m[Genesis] [20:56:30] [WARNING] Neutral robot position (qpos0) exceeds joint limits.[0m
+[38;5;226m[Genesis] [20:56:31] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (12, 17), (13, 17), (20, 27), (21, 26), (22, 29), (23, 28), (36, 41), (37, 41), (44, 51), (45, 50), (46, 53), (47, 52). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+/home/chloe/Desktop/genesis-local/.venv/lib/python3.12/site-packages/quadrants/_test_tools/warnings_helper.py:11: UserWarning: cannot create weak reference to 'tuple' object. Template mapper caching disabled.
+  warnings.warn(message)
+Phase press: t=36.35s
+Velcro: 1 active / 1 formed, t=36.35s
+Step 3700, press, max cloth stretch 1.217
+Traceback (most recent call last):
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/scene.py", line 346, in <module>
+    main()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/scene.py", line 252, in main
+    return run_wrap(args)
+           ^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/wrap_task.py", line 598, in run_wrap
+    okay=experiment.execute()
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/arms_task.py", line 175, in execute
+    okay=super().execute()
+         ^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/wrap_task.py", line 397, in execute
+    stage=self.restore(self.args.resume) if self.args.resume else None
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/arms_task.py", line 90, in restore
+    self.start('press');self.tighten_seam();self.save('press')
+                        ^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/arms_task.py", line 81, in tighten_seam
+    self.move(target,.65)
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/wrap_task.py", line 254, in move
+    self.step()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/arms_task.py", line 51, in step
+    super().step()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/wrap_task.py", line 203, in step
+    raise RuntimeError("Inter-arm collision")
+RuntimeError: Inter-arm collision
+

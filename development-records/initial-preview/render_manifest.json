@@ -1,0 +1,422 @@
+{
+  "status": "rendered_without_simulation",
+  "scope": "Static native Genesis render of saved positions and robot qpos; not a simulation replay or new action evidence",
+  "state": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/arms-press-01/state-initial.npz",
+  "state_sha256": "354539aecc93b3b867562622bf62b22492e40218047777709b720f12678d657d",
+  "stage": "initial",
+  "saved_step": 50,
+  "scene_source": "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/arms-press-01/source-at-run",
+  "scene_py_sha256": "a6fbb89f01dfb15a3c0037301e4c447e50a9a2c4eaa0fc0850a4609446ae3ecd",
+  "renderer_script_sha256": "8913ca9bd3dfc45f177822142db81938bf91acf469c82385bb3b3056fa91f895",
+  "asset_sha256": {
+    "metadata.json": "b55541a64265da3a0e5770a28817c61ee88a33b545f4d462e30fb530dba61bcd",
+    "cotton.obj": "a8ac3052e2e2af9c4c4492dbb1c1fd2dd8e4fc5f49923534409e451058580483",
+    "bear_front_preview.png": "caa8999bc58acebebdb870152534f306866d17175bcb635da540745ab1e04679",
+    "bear.mtl": "0fb81a2a795e9992758865ac0a84db36a39c5cf88bab33d24ac794084c11a48d",
+    "cotton.npz": "6961b8cc50a72abb99531dca950feaedf4c3106e63fc424ac7f3913722bbcefc",
+    "bear.obj": "f4ce0566aec6e4d9e7d60b744442b2955b7990406f5cde1d5126afe0b20bad93",
+    "cotton_weave.png": "c587f42ece1b0354663857f847340f90783a2beaff0dc5c3ccb09b35a7b416bb",
+    "bear_fur.png": "5cc9a077d02adddd0427c2248a540106e4a69c6576af8a769c35f60430e58e7a",
+    "bear.npz": "e6d4916cbd5951a3e9733f6023342aad170a19aac24926aa6404fb9e90403514",
+    "cotton.mtl": "d593690597bee8a72b04588f8464269c305f4de01cc5c6392fd65e959ebb1104"
+  },
+  "physical_config_from_state_metadata": {
+    "seed": 7,
+    "simulation": {
+      "substep_dt": 0.001,
+      "substeps": 10,
+      "particle_size": 0.004,
+      "hash_grid_size": [
+        0.32,
+        0.32,
+        0.32
+      ],
+      "stretch_iterations": 10,
+      "volume_iterations": 10,
+      "bending_iterations": 4
+    },
+    "table": {
+      "height": 0.74,
+      "size": [
+        1.55,
+        1.05,
+        0.07
+      ]
+    },
+    "bear": {
+      "position_xy": [
+        0.0,
+        0.08
+      ],
+      "mass": 0.49,
+      "base_clearance": 0.003,
+      "fixed_band_height": 0.018,
+      "stretch_compliance": 0.001,
+      "volume_compliance": 1e-12,
+      "stretch_relaxation": 0.1,
+      "volume_relaxation": 0.1,
+      "friction": 0.7
+    },
+    "cloth": {
+      "position_xy": [
+        0.0,
+        -0.32
+      ],
+      "initial_clearance": 0.006,
+      "areal_density": 0.18,
+      "stretch_compliance": 1e-07,
+      "bending_compliance": 1e-05,
+      "friction": 0.6
+    },
+    "robots": {
+      "left_base": [
+        -0.6,
+        0.24,
+        0.775
+      ],
+      "right_base": [
+        0.6,
+        0.24,
+        0.775
+      ],
+      "left_yaw": -0.9,
+      "right_yaw": 4.041592653589793,
+      "home": [
+        0.0,
+        -0.45,
+        0.0,
+        -2.15,
+        0.0,
+        1.7,
+        0.7854
+      ],
+      "finger_opening": 0.04
+    },
+    "grasp": {
+      "inset_from_short_edge_m": 0.006,
+      "require_surface_patch": true
+    },
+    "cameras": {
+      "overview": {
+        "position": [
+          1.45,
+          -2.1,
+          1.85
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.94
+        ],
+        "fov": 43.0
+      },
+      "front": {
+        "position": [
+          0.0,
+          -1.7,
+          1.32
+        ],
+        "target": [
+          0.0,
+          0.03,
+          0.99
+        ],
+        "fov": 48.0
+      },
+      "detail": {
+        "position": [
+          0.65,
+          -0.94,
+          1.41
+        ],
+        "target": [
+          0.0,
+          0.06,
+          0.985
+        ],
+        "fov": 36.0
+      },
+      "table_left": {
+        "position": [
+          -2.05,
+          -0.5,
+          1.6
+        ],
+        "target": [
+          0.0,
+          -0.02,
+          1.0
+        ],
+        "fov": 43.0
+      },
+      "bear_rear": {
+        "position": [
+          0.0,
+          1.75,
+          1.52
+        ],
+        "target": [
+          0.0,
+          0.02,
+          1.0
+        ],
+        "fov": 43.0
+      },
+      "overhead": {
+        "position": [
+          0.0,
+          -0.04,
+          2.25
+        ],
+        "target": [
+          0.0,
+          0.02,
+          0.88
+        ],
+        "fov": 47.0
+      },
+      "back": {
+        "position": [
+          0.25,
+          0.95,
+          1.25
+        ],
+        "target": [
+          0.0,
+          0.12,
+          1.0
+        ],
+        "fov": 42.0
+      }
+    },
+    "velcro": {
+      "strip_width_m": 0.04,
+      "activation_distance_m": 0.005,
+      "normal_angle_tolerance_deg": 35.0,
+      "facing_tolerance_m": 0.001,
+      "dwell_time_s": 0.08,
+      "break_error_m": 0.015,
+      "iterations_per_substep": 3,
+      "max_correction_per_pass_m": 0.0003,
+      "relaxation": 0.8,
+      "surface_signs": {
+        "left": 1,
+        "right": 1
+      }
+    }
+  },
+  "camera_target_method": "configured rear belly fallback; no active bonds recorded",
+  "active_bonds_in_saved_metadata": 0,
+  "cameras": {
+    "front": {
+      "position": [
+        0,
+        -1.25,
+        1.16
+      ],
+      "target": [
+        0,
+        0.08,
+        0.98
+      ],
+      "fov": 35
+    },
+    "left": {
+      "position": [
+        -1.05,
+        -0.25,
+        1.08
+      ],
+      "target": [
+        0,
+        0.08,
+        0.99
+      ],
+      "fov": 35
+    },
+    "rear": {
+      "position": [
+        0,
+        1.4,
+        1.45
+      ],
+      "target": [
+        0,
+        0.08,
+        0.98
+      ],
+      "fov": 43
+    }
+  },
+  "resolution": [
+    960,
+    720
+  ],
+  "robots_visible": true,
+  "objects_hidden": [],
+  "simulation_steps_requested": 0,
+  "initialization_setters": [
+    "robot.set_qpos",
+    "bear.set_particles_pos",
+    "cloth.set_particles_pos"
+  ],
+  "no_dynamics_or_contact_solve_after_saved_state_initialization": true,
+  "native_build_warmup": "Genesis 1.4.3 scene.build internally advances and resets the initial scene before loading the saved state; no saved-state motion is simulated",
+  "rigid_pbd_contact": {
+    "adapter": "scene-local Genesis 1.4.3 legacy Coulomb friction",
+    "method": "position-level static/kinetic friction limited by normal SDF projection",
+    "coefficient_combination": "minimum(particle coefficient, rigid coup_friction)",
+    "applies_to": "free PBD particles contacting coupled rigid geometry",
+    "normal_projection_unchanged": true,
+    "reciprocal_rigid_force": true,
+    "world_position_pinning": false,
+    "installed_genesis_modified": false
+  },
+  "grasp_constraints": {
+    "model": "exact local no-slip PBD link constraint on contact-gated grasp nodes",
+    "free_particles_repositioned": false,
+    "actual_robot_link_transform": true,
+    "grasp_load_transferred_to_arm": false,
+    "native_genesis_source_modified": false
+  },
+  "simulation": {
+    "backend": "cuda",
+    "genesis_version": "1.4.3",
+    "step_dt_s": 0.01,
+    "substep_dt_s": 0.001,
+    "bear_model": "PBD.Elastic",
+    "cloth_model": "PBD.Cloth",
+    "cotton_calibrated": false,
+    "bear_particles": 1822,
+    "bear_tetrahedra": 7646,
+    "cloth_particles": 1148,
+    "cloth_mass_kg": 0.029389565217391313,
+    "fixed_particle_count": 87,
+    "free_bear_particles": 1735,
+    "fixed_particle_indices": [
+      93,
+      94,
+      106,
+      133,
+      140,
+      141,
+      142,
+      179,
+      192,
+      203,
+      204,
+      235,
+      236,
+      237,
+      273,
+      278,
+      280,
+      297,
+      303,
+      309,
+      319,
+      329,
+      339,
+      348,
+      354,
+      359,
+      382,
+      388,
+      390,
+      407,
+      408,
+      409,
+      413,
+      418,
+      422,
+      449,
+      457,
+      478,
+      486,
+      490,
+      499,
+      500,
+      508,
+      515,
+      528,
+      537,
+      549,
+      552,
+      566,
+      578,
+      579,
+      593,
+      596,
+      601,
+      612,
+      620,
+      628,
+      640,
+      642,
+      646,
+      651,
+      653,
+      655,
+      673,
+      691,
+      702,
+      707,
+      713,
+      714,
+      738,
+      740,
+      751,
+      764,
+      772,
+      781,
+      810,
+      822,
+      861,
+      862,
+      899,
+      927,
+      928,
+      942,
+      952,
+      971,
+      972,
+      1818
+    ],
+    "fixed_band_height_m": 0.018,
+    "robot_dofs": {
+      "left": 9,
+      "right": 9
+    },
+    "import_geometry_and_mass_verified": true
+  },
+  "images": {
+    "front": {
+      "file": "front.png",
+      "sha256": "acb4e1dc7292988a45bfca6b45bab919cf39743247e4b174b3343aef37103b2e"
+    },
+    "left": {
+      "file": "left.png",
+      "sha256": "03ffbc1df5b5ad674749c404e37f384777061ea74c376a00964a3ec6d2b8ec53"
+    },
+    "rear": {
+      "file": "rear.png",
+      "sha256": "878fb982f0529012e26fdca1f358de0b75cc7bf1fcf6cca8e857c731d484c04c"
+    }
+  },
+  "initialization_max_abs_errors": {
+    "bear_positions": 0.0,
+    "cloth_positions": 0.0,
+    "left_qpos": 0.0,
+    "right_qpos": 0.0
+  },
+  "render_max_abs_state_changes": {
+    "bear_positions": 0.0,
+    "cloth_positions": 0.0,
+    "left_qpos": 0.0,
+    "right_qpos": 0.0
+  },
+  "native_step_counter_before": 0,
+  "native_step_counter_after": 0,
+  "input_state_file_unchanged": true,
+  "elapsed_seconds": 11.885402289990452
+}

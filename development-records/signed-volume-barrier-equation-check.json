@@ -1,0 +1,15 @@
+{
+  "before": {
+    "negative_tets": 16,
+    "negative_volume_fraction": 0.00016790363007863543,
+    "minimum_relative_volume": -6.663151333473479
+  },
+  "after": {
+    "negative_tets": 1,
+    "negative_volume_fraction": 3.290826906888296e-07,
+    "minimum_relative_volume": -0.057290670208792034
+  },
+  "maximum_particle_correction_m": 0.01484384532303385,
+  "fixed_particle_drift_m": 0.0,
+  "scope": "Offline constraint-equation verification only; no saved simulation state modified."
+}

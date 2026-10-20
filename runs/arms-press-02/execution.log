@@ -1,0 +1,72 @@
+Genesis backend: cuda
+[38;5;226m[Genesis] [20:52:11] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [20:52:11] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+[38;5;226m[Genesis] [20:52:12] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [20:52:12] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+Building scene and compiling physics kernels...
+[38;5;226m[Genesis] [20:52:12] [WARNING] Neutral robot position (qpos0) exceeds joint limits.[0m
+[38;5;226m[Genesis] [20:52:13] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (12, 17), (13, 17), (20, 27), (21, 26), (22, 29), (23, 28), (36, 41), (37, 41), (44, 51), (45, 50), (46, 53), (47, 52). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+/home/chloe/Desktop/genesis-local/.venv/lib/python3.12/site-packages/quadrants/_test_tools/warnings_helper.py:11: UserWarning: cannot create weak reference to 'tuple' object. Template mapper caching disabled.
+  warnings.warn(message)
+Phase settle: t=0.00s
+Phase pregrasp: t=0.50s
+Step 100, pregrasp, max cloth stretch 1.000
+Step 200, pregrasp, max cloth stretch 1.000
+Phase grasp: t=2.28s
+Step 300, grasp, max cloth stretch 1.000
+Step 400, grasp, max cloth stretch 1.000
+Step 500, grasp, max cloth stretch 1.000
+left grasp gated by both pads: [0, 1, 70, 71]
+right grasp gated by both pads: [68, 69, 138, 139]
+Phase lift: t=5.77s
+Step 600, lift, max cloth stretch 1.005
+Step 700, lift, max cloth stretch 1.187
+Step 800, lift, max cloth stretch 1.203
+Phase approach_body: t=8.35s
+Step 900, approach_body, max cloth stretch 1.215
+Step 1000, approach_body, max cloth stretch 1.253
+Step 1100, approach_body, max cloth stretch 1.049
+Phase wrap: t=11.63s
+Step 1200, wrap, max cloth stretch 1.041
+Step 1300, wrap, max cloth stretch 1.067
+Step 1400, wrap, max cloth stretch 1.090
+Step 1500, wrap, max cloth stretch 1.110
+Step 1600, wrap, max cloth stretch 1.162
+Step 1700, wrap, max cloth stretch 1.231
+Step 1800, wrap, max cloth stretch 1.290
+Step 1900, wrap, max cloth stretch 1.197
+Step 2000, wrap, max cloth stretch 1.234
+Step 2100, wrap, max cloth stretch 1.211
+Step 2200, wrap, max cloth stretch 1.227
+Step 2300, wrap, max cloth stretch 1.136
+Phase press: t=23.85s
+Step 2400, press, max cloth stretch 1.148
+Step 2500, press, max cloth stretch 1.222
+Step 2600, press, max cloth stretch 1.129
+Step 2700, press, max cloth stretch 1.132
+Velcro: 1 active / 1 formed, t=27.79s
+Step 2800, press, max cloth stretch 1.111
+Step 2900, press, max cloth stretch 1.189
+Step 3000, press, max cloth stretch 1.191
+Step 3100, press, max cloth stretch 1.206
+Step 3200, press, max cloth stretch 1.206
+Step 3300, press, max cloth stretch 1.196
+Step 3400, press, max cloth stretch 1.210
+Step 3500, press, max cloth stretch 1.217
+Step 3600, press, max cloth stretch 1.217
+Traceback (most recent call last):
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/scene.py", line 346, in <module>
+    main()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/scene.py", line 252, in main
+    return run_wrap(args)
+           ^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/wrap_task.py", line 598, in run_wrap
+    okay=experiment.execute()
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/arms_task.py", line 147, in execute
+    self.task['arm_extraction']['failed_pad_contacts']=details
+                                  ^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/wrap_task.py", line 435, in execute
+    raise RuntimeError("The strips did not form a distributed contact-gated seam")
+RuntimeError: The strips did not form a distributed contact-gated seam
+

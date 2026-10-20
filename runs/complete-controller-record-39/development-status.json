@@ -1,0 +1,5 @@
+{
+  "status": "stopped_diagnostic",
+  "reason": "Left aperture was measured 10 cm below the paw after releasing the cloth; superseded by a corrected material-coordinate location.",
+  "preserved": "recordings, replay frames, numerical snapshots, logs and exact source/assets"
+}

@@ -1,0 +1,90 @@
+Genesis backend: cuda
+[38;5;226m[Genesis] [21:25:03] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [21:25:03] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+[38;5;226m[Genesis] [21:25:03] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [21:25:03] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+Building scene and compiling physics kernels...
+[38;5;226m[Genesis] [21:25:04] [WARNING] Neutral robot position (qpos0) exceeds joint limits.[0m
+[38;5;226m[Genesis] [21:25:05] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (12, 17), (13, 17), (20, 27), (21, 26), (22, 29), (23, 28), (36, 41), (37, 41), (44, 51), (45, 50), (46, 53), (47, 52). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+/home/chloe/Desktop/genesis-local/.venv/lib/python3.12/site-packages/quadrants/_test_tools/warnings_helper.py:11: UserWarning: cannot create weak reference to 'tuple' object. Template mapper caching disabled.
+  warnings.warn(message)
+Phase press: t=26.03s
+Seam refine 0: gap=0.0080 m, normal dot=-0.924, bonds=0
+Seam refine 1: gap=0.0053 m, normal dot=-0.927, bonds=0
+Step 2700, press, max cloth stretch 1.226
+Velcro: 1 active / 1 formed, t=27.22s
+Seam refine 2: gap=0.0052 m, normal dot=-0.933, bonds=1
+Step 2800, press, max cloth stretch 1.225
+Seam refine 3: gap=0.0052 m, normal dot=-0.938, bonds=1
+Step 2900, press, max cloth stretch 1.225
+Seam refine 4: gap=0.0052 m, normal dot=-0.943, bonds=1
+Step 3000, press, max cloth stretch 1.225
+Seam refine 5: gap=0.0052 m, normal dot=-0.947, bonds=1
+Seam refine 6: gap=0.0052 m, normal dot=-0.951, bonds=1
+Step 3100, press, max cloth stretch 1.225
+Seam refine 7: gap=0.0052 m, normal dot=-0.955, bonds=1
+Step 3200, press, max cloth stretch 1.225
+Seam refine 8: gap=0.0052 m, normal dot=-0.959, bonds=1
+Step 3300, press, max cloth stretch 1.225
+Seam refine 9: gap=0.0052 m, normal dot=-0.962, bonds=1
+Step 3400, press, max cloth stretch 1.226
+Seam refine 10: gap=0.0052 m, normal dot=-0.965, bonds=1
+Step 3500, press, max cloth stretch 1.226
+Seam refine 11: gap=0.0051 m, normal dot=-0.967, bonds=1
+Seam refine 12: gap=0.0051 m, normal dot=-0.969, bonds=1
+Step 3600, press, max cloth stretch 1.226
+Seam refine 13: gap=0.0050 m, normal dot=-0.970, bonds=1
+Step 3700, press, max cloth stretch 1.226
+Velcro: 2 active / 2 formed, t=37.16s
+Seam refine 14: gap=0.0063 m, normal dot=-0.971, bonds=2
+Step 3800, press, max cloth stretch 1.226
+Seam refine 15: gap=0.0054 m, normal dot=-0.972, bonds=2
+Velcro: 3 active / 3 formed, t=38.82s
+Step 3900, press, max cloth stretch 1.226
+Phase press: t=39.15s
+Step 4000, press, max cloth stretch 1.223
+Velcro: 2 active / 3 formed, t=40.39s
+Velcro: 1 active / 3 formed, t=40.59s
+Velcro: 0 active / 3 formed, t=40.77s
+Step 4100, press, max cloth stretch 1.146
+Step 4200, press, max cloth stretch 1.125
+Step 4300, press, max cloth stretch 1.118
+Step 4400, press, max cloth stretch 1.103
+Step 4500, press, max cloth stretch 1.243
+Step 4600, press, max cloth stretch 1.199
+Step 4700, press, max cloth stretch 1.115
+Step 4800, press, max cloth stretch 1.118
+Step 4900, press, max cloth stretch 1.122
+Seam refine 0: gap=0.0285 m, normal dot=-0.852, bonds=0
+Step 5000, press, max cloth stretch 1.125
+Step 5100, press, max cloth stretch 1.196
+Step 5200, press, max cloth stretch 1.214
+Step 5300, press, max cloth stretch 1.232
+Step 5400, press, max cloth stretch 1.231
+Step 5500, press, max cloth stretch 1.233
+Seam refine 0: gap=0.0148 m, normal dot=-0.702, bonds=0
+Step 5600, press, max cloth stretch 1.230
+Seam refine 1: gap=0.0139 m, normal dot=-0.704, bonds=0
+Step 5700, press, max cloth stretch 1.230
+Seam refine 2: gap=0.0131 m, normal dot=-0.709, bonds=0
+Step 5800, press, max cloth stretch 1.229
+Seam refine 3: gap=0.0125 m, normal dot=-0.698, bonds=0
+Seam refine 4: gap=0.0120 m, normal dot=-0.697, bonds=0
+Step 5900, press, max cloth stretch 1.230
+Seam refine 5: gap=0.0116 m, normal dot=-0.710, bonds=0
+Traceback (most recent call last):
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-seam-near-pairs-14/scene.py", line 347, in <module>
+    main()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-seam-near-pairs-14/scene.py", line 253, in main
+    return run_wrap(args)
+           ^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-seam-near-pairs-14/wrap_task.py", line 613, in run_wrap
+    okay=experiment.execute()
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-seam-near-pairs-14/arms_task.py", line 259, in execute
+    okay=super().execute()
+         ^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-seam-near-pairs-14/wrap_task.py", line 450, in execute
+    raise RuntimeError("The strips did not form a distributed contact-gated seam")
+RuntimeError: The strips did not form a distributed contact-gated seam
+

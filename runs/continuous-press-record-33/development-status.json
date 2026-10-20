@@ -1,0 +1,5 @@
+{
+  "status": "stopped_diagnostic",
+  "reason": "Superseded by incident-face contact measurement, balanced target selection and measured wrist-rotation feedback. No successful complete dressing claimed.",
+  "preserved": "recordings, per-frame render states, snapshots, trajectory, exact source/assets and execution log"
+}

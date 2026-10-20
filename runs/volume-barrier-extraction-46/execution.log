@@ -1,0 +1,33 @@
+Genesis backend: cuda
+[38;5;226m[Genesis] [22:59:32] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [22:59:32] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+[38;5;226m[Genesis] [22:59:33] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [22:59:33] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+Building scene and compiling physics kernels...
+[38;5;226m[Genesis] [22:59:33] [WARNING] Neutral robot position (qpos0) exceeds joint limits.[0m
+[38;5;226m[Genesis] [22:59:34] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (12, 17), (13, 17), (20, 27), (21, 26), (22, 29), (23, 28), (36, 41), (37, 41), (44, 51), (45, 50), (46, 53), (47, 52). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+/home/chloe/Desktop/genesis-local/.venv/lib/python3.12/site-packages/quadrants/_test_tools/warnings_helper.py:11: UserWarning: cannot create weak reference to 'tuple' object. Template mapper caching disabled.
+  warnings.warn(message)
+Phase pull_left: t=52.77s
+Velcro: 1 active / 1 formed, t=52.77s
+Step 5300, pull_left, max cloth stretch 1.365
+Step 5400, pull_left, max cloth stretch 1.358
+Step 5500, pull_left, max cloth stretch 1.350
+Step 5600, pull_left, max cloth stretch 1.388
+Step 5700, pull_left, max cloth stretch 1.274
+Step 5800, pull_left, max cloth stretch 1.422
+Step 5900, pull_left, max cloth stretch 1.432
+Step 6000, pull_left, max cloth stretch 1.429
+Step 6100, pull_left, max cloth stretch 1.450
+Step 6200, pull_left, max cloth stretch 1.455
+Step 6300, pull_left, max cloth stretch 1.143
+Phase pull_right: t=63.27s
+Phase pull_left: t=63.27s
+Phase pull_left: t=63.27s
+Step 6400, pull_left, max cloth stretch 1.175
+Step 6500, pull_left, max cloth stretch 1.114
+Step 6600, pull_left, max cloth stretch 1.126
+Step 6700, pull_left, max cloth stretch 1.130
+Step 6800, pull_left, max cloth stretch 1.138
+Phase thread_arms: t=68.37s
+PASS: passed /home/chloe/Documents/Codex/2026-10-17/na-m/outputs/bear_arms_scene/runs/volume-barrier-extraction-46

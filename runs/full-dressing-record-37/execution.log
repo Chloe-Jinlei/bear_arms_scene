@@ -1,0 +1,78 @@
+Genesis backend: cuda
+[38;5;226m[Genesis] [22:13:50] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [22:13:50] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+[38;5;226m[Genesis] [22:13:50] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint1`[0m
+[38;5;226m[Genesis] [22:13:50] [WARNING] (MJCF) Approximating tendon by joint actuator for `finger_joint2`[0m
+Building scene and compiling physics kernels...
+[38;5;226m[Genesis] [22:13:51] [WARNING] Neutral robot position (qpos0) exceeds joint limits.[0m
+[38;5;226m[Genesis] [22:13:52] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (12, 17), (13, 17), (20, 27), (21, 26), (22, 29), (23, 28), (36, 41), (37, 41), (44, 51), (45, 50), (46, 53), (47, 52). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+/home/chloe/Desktop/genesis-local/.venv/lib/python3.12/site-packages/quadrants/_test_tools/warnings_helper.py:11: UserWarning: cannot create weak reference to 'tuple' object. Template mapper caching disabled.
+  warnings.warn(message)
+Phase settle: t=0.00s
+Phase pregrasp: t=0.50s
+Step 100, pregrasp, max cloth stretch 1.000
+Step 200, pregrasp, max cloth stretch 1.000
+Phase grasp: t=2.28s
+Step 300, grasp, max cloth stretch 1.000
+Step 400, grasp, max cloth stretch 1.000
+Step 500, grasp, max cloth stretch 1.000
+left grasp gated by both pads: [0, 1, 70, 71]
+right grasp gated by both pads: [68, 69, 138, 139]
+Phase lift: t=5.77s
+Step 600, lift, max cloth stretch 1.005
+Step 700, lift, max cloth stretch 1.119
+Step 800, lift, max cloth stretch 1.093
+Phase approach_body: t=8.35s
+Step 900, approach_body, max cloth stretch 1.093
+Step 1000, approach_body, max cloth stretch 1.093
+Step 1100, approach_body, max cloth stretch 1.085
+Phase wrap: t=11.63s
+Step 1200, wrap, max cloth stretch 1.081
+Step 1300, wrap, max cloth stretch 1.102
+Step 1400, wrap, max cloth stretch 1.127
+Step 1500, wrap, max cloth stretch 1.146
+Step 1600, wrap, max cloth stretch 1.163
+Step 1700, wrap, max cloth stretch 1.199
+Step 1800, wrap, max cloth stretch 1.263
+Step 1900, wrap, max cloth stretch 1.343
+Step 2000, wrap, max cloth stretch 1.231
+Step 2100, wrap, max cloth stretch 1.255
+Step 2200, wrap, max cloth stretch 1.283
+Step 2300, wrap, max cloth stretch 1.146
+Phase press: t=23.85s
+Seam refine 0: gap=0.0067 m, normal dot=-0.796, bonds=0
+Step 2400, press, max cloth stretch 1.120
+Seam refine 1: gap=0.0075 m, normal dot=-0.766, bonds=0
+Step 2500, press, max cloth stretch 1.122
+Seam refine 2: gap=0.0070 m, normal dot=-0.791, bonds=0
+Step 2600, press, max cloth stretch 1.124
+Seam refine 3: gap=0.0066 m, normal dot=-0.812, bonds=0
+Step 2700, press, max cloth stretch 1.126
+Seam refine 4: gap=0.0064 m, normal dot=-0.823, bonds=0
+Velcro: 1 active / 1 formed, t=27.96s
+Step 2800, press, max cloth stretch 1.138
+Phase regrasp_right: t=28.95s
+Phase regrasp_right: t=28.95s
+Step 2900, regrasp_right, max cloth stretch 1.129
+Step 3000, regrasp_right, max cloth stretch 1.110
+Step 3100, regrasp_right, max cloth stretch 1.110
+Step 3200, regrasp_right, max cloth stretch 1.110
+Step 3300, regrasp_right, max cloth stretch 1.110
+Step 3400, regrasp_right, max cloth stretch 1.110
+Traceback (most recent call last):
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-full-dressing-record-37/scene.py", line 348, in <module>
+    main()
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-full-dressing-record-37/scene.py", line 254, in main
+    return run_wrap(args)
+           ^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-full-dressing-record-37/wrap_task.py", line 640, in run_wrap
+    okay=experiment.execute()
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-full-dressing-record-37/arms_task.py", line 384, in execute
+    if continuation!='arm_out_right':self.extract('right',skip_to='aperture' if continuation=='regrasp_right_outside' else 'pull' if continuation in ('grasp_arm_right','regrasp_left_outside') else None)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chloe/Documents/Codex/2026-10-17/na-m/work/frozen-full-dressing-record-37/arms_task.py", line 307, in extract
+    if chosen is None:raise RuntimeError(side+' has no reachable grasp that passes through the actual aperture')
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: right has no reachable grasp that passes through the actual aperture
+
